@@ -1,6 +1,6 @@
-Work: Work 14
-Folder: Work 14
-Title: Metal over Mind
+Work: Work 15
+Folder: Work 15
+Title: The Ethereal Thing
 Year of creation: 2025
 Format: Collage
 Materials: Metal Can, Paper, Paint
@@ -12,6 +12,6 @@ Images used by LaTeX:
   1. work-14-metal-over-mind-01.png - 7500 x 5500 px, RGB, dpi 72.009 x 72.009, 15.12 MB, page 1, single image
 
 Raw Meta.docx text:
-  Title: Metal over Mind
+  Title: The Ethereal Thing
     Year of creation:2025
     Materials: Metal Can, Paper, PaintFormat: CollageSize: 21cm x 29.7cmLocation: (blank)

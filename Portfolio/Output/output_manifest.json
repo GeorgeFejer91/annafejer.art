@@ -9,7 +9,7 @@
         "readable": true,
         "pages": 21,
         "page_size": "841.89 x 595.276 pts (A4)",
-        "file_size_bytes": 188848801
+        "file_size_bytes": 188848811
       },
       "split_pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent",
       "split_page_count": 21,
@@ -97,7 +97,7 @@
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-21.pdf",
-          "file_size_bytes": 15860542
+          "file_size_bytes": 15860552
         }
       ]
     }
