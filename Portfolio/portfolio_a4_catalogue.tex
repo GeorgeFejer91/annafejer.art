@@ -196,11 +196,11 @@
   \draw[PortfolioInk,line width=0.8pt] (774,36) -- (774,76);\node[anchor=east,inner sep=0pt] at (799.8898,49){\fontsize{11.4}{13.4}\selectfont\bfseries\color{PortfolioInk}\padpagenum{\numexpr\csname w@#1@start\endcsname+#2-1\relax}};%
 }
 \newcommand{\tocentryrow}[4][0]{%
-  \pgfmathsetmacro{\toctitlex}{#3+68}\pgfmathsetmacro{\tocrangex}{#3+324}\pgfmathsetmacro{\tocmetay}{#4-18-#1}%
+\pgfmathsetmacro{\toctitlex}{#3+64}\pgfmathsetmacro{\tocrangex}{#3+324}\pgfmathsetmacro{\tocmetay}{#4-18-#1}%
   \node[anchor=north west,inner sep=0pt,text width=62pt,align=left] at (#3,#4){\fontsize{11}{13}\selectfont\bfseries\color{PortfolioGraphite}\textsc{\worklabel{#2}}};%
-  \node[anchor=north west,inner sep=0pt,text width=212pt,align=left] at (\toctitlex,#4){\hyperlink{work:#2}{\fontsize{13.4}{15.8}\selectfont\bfseries\color{PortfolioInk}\workfield{#2}{title}}};%
+  \node[anchor=north west,inner sep=0pt,text width=224pt,align=left] at (\toctitlex,#4){\hyperlink{work:#2}{\fontsize{13.4}{15.8}\selectfont\bfseries\color{PortfolioInk}\workfield{#2}{title}}};%
   \node[anchor=north east,inner sep=0pt] at (\tocrangex,#4){\hyperlink{work:#2}{\fontsize{12.5}{14.5}\selectfont\bfseries\color{PortfolioInk}\workpagerange{#2}}};%
-  \ifcsempty{w@#2@tocmeta}{}{\node[anchor=north west,inner sep=0pt,text width=212pt,align=left] at (\toctitlex,\tocmetay){\fontsize{8.8}{10.4}\selectfont\color{PortfolioGraphite}\workfield{#2}{tocmeta}};}%
+  \ifcsempty{w@#2@tocmeta}{}{\node[anchor=north west,inner sep=0pt,text width=224pt,align=left] at (\toctitlex,\tocmetay){\fontsize{8.8}{10.4}\selectfont\color{PortfolioGraphite}\workfield{#2}{tocmeta}};}%
 }
 \newcommand{\rendertoc}{%
   \node[anchor=west,inner sep=0pt] at (70,520){\fontsize{34}{40}\selectfont\bfseries\color{PortfolioInk} Contents};%
