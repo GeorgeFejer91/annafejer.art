@@ -5,7 +5,11 @@
       "key": "a4",
       "pdf": {
         "path": "Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN.pdf",
-        "exists": false
+        "exists": true,
+        "readable": true,
+        "pages": 22,
+        "page_size": "841.89 x 595.276 pts (A4)",
+        "file_size_bytes": 206451661
       },
       "split_pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN",
       "split_page_count": 22,
