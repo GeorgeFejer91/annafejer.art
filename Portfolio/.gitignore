@@ -8,6 +8,7 @@
 
 Output/build/
 !Output/
+!Output/*_compressed.pdf
 !Output/pages/
 !Output/pages/**
 !Output/pages/**/*.pdf

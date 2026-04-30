@@ -2,7 +2,7 @@
 setlocal
 
 cd /d "%~dp0"
-powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0compile-assets\scripts\build_portfolio_pipeline.ps1" -Language all -Full
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0compile-assets\scripts\build_portfolio_pipeline.ps1" -Language all -Full -Compress -CompressedMaxMb 95
 if errorlevel 1 (
   echo.
   echo English/German A4 portfolio PDF compilation failed.

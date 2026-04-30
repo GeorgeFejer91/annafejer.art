@@ -2,6 +2,8 @@ param(
   [switch]$SkipPdf,
   [switch]$NoOpen,
   [switch]$Full,
+  [switch]$Compress,
+  [int]$CompressedMaxMb = 95,
   [ValidateSet("en", "de", "all")]
   [string]$Language = "all"
 )
@@ -16,6 +18,7 @@ $PageRoot = Join-Path $OutputRoot "pages"
 $ViewerScript = Join-Path $ScriptDir "refresh_portfolio_pdf_viewers.ps1"
 $SplitScript = Join-Path $ScriptDir "split_portfolio_pages.ps1"
 $AuditScript = Join-Path $ScriptDir "audit_portfolio_inclusion.py"
+$CompressScript = Join-Path $ScriptDir "compress_portfolio_pdf.py"
 $PolicyPath = Join-Path $Root "portfolio_compiled_works_metadata\catalogue_policy.json"
 
 Set-Location $Root
@@ -28,6 +31,7 @@ $EnglishTarget = @{
   Tex = "portfolio_current.tex"
   BuildPdfName = "portfolio_from_ppt_images_a4.pdf"
   FinalPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf"
+  CompressedPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_compressed.pdf"
   PageDir = Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent"
   PagePrefix = "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent"
   LegacyPaths = @(
@@ -46,6 +50,7 @@ $GermanTarget = @{
   Tex = "portfolio_current_de.tex"
   BuildPdfName = "portfolio_current_de.pdf"
   FinalPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE.pdf"
+  CompressedPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE_compressed.pdf"
   PageDir = Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE"
   PagePrefix = "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE"
   LegacyPaths = @(
@@ -87,7 +92,7 @@ if (-not $SkipPdf) {
     $target.BuildPdfName = [System.IO.Path]::ChangeExtension($target.Tex, ".pdf")
   }
 
-  $closePaths = @($Targets | ForEach-Object { $_.FinalPdf; $_.LegacyPaths })
+  $closePaths = @($Targets | ForEach-Object { $_.FinalPdf; $_.CompressedPdf; $_.LegacyPaths })
   powershell -NoProfile -ExecutionPolicy Bypass -File $ViewerScript -Close -Paths $closePaths
   if ($LASTEXITCODE -ne 0) { throw "Could not close open portfolio PDF viewers" }
 
@@ -125,6 +130,11 @@ if (-not $SkipPdf) {
       if ($LASTEXITCODE -ne 0) { throw "PDF page splitting failed for $($target.FinalPdf)" }
     }
 
+    if ($Compress) {
+      python $CompressScript --input $target.FinalPdf --output $target.CompressedPdf --max-mb $CompressedMaxMb
+      if ($LASTEXITCODE -ne 0) { throw "PDF compression failed for $($target.FinalPdf)" }
+    }
+
     Remove-Item -LiteralPath $runBuildDir -Recurse -Force -ErrorAction SilentlyContinue
   }
 
@@ -137,6 +147,9 @@ if (-not $SkipPdf) {
 Write-Host "Portfolio PDF compile complete."
 foreach ($target in $Targets) {
   Write-Host "PDF: $($target.FinalPdf)"
+  if ($Compress -and (Test-Path -LiteralPath $target.CompressedPdf)) {
+    Write-Host "Compressed PDF: $($target.CompressedPdf)"
+  }
 }
 
 if (-not $SkipPdf -and -not $NoOpen) {
