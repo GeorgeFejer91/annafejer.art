@@ -219,7 +219,7 @@
     "work_number": 5,
     "work_label": "Work 5",
     "folder": "Work 5",
-    "title": "Split II",
+    "title": "Carrion",
     "year": "2024",
     "materials": "Ink, Paper",
     "format": "Lino Print",
@@ -230,8 +230,8 @@
     "metadata_file": "portfolio_compiled_works_metadata/Work 5/work.json",
     "images": [
       {
-        "filename": "split-ii-01.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 5/split-ii-01.jpg",
+        "filename": "carrion-01.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 5/carrion-01.jpg",
         "width_px": 513,
         "height_px": 749,
         "aspect_ratio": 0.684913,
