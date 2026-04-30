@@ -130,14 +130,14 @@
     {
       "work_number": 4,
       "folder": "Work 4",
-      "title": "Untitled 4",
+      "title": "Riptide",
       "page_count": 1,
       "content_start_page": 6,
       "content_end_page": 6,
       "image_count": 1,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 4/untitled-4-01.jpg",
+          "relative_path": "portfolio_compiled_works_metadata/Work 4/riptide-01.jpg",
           "work_page": 1,
           "page_role": "single-page image",
           "width_px": 539,
@@ -392,14 +392,14 @@
     {
       "work_number": 14,
       "folder": "Work 14",
-      "title": "Untitled 14",
+      "title": "Craig Green (Black) I & II",
       "page_count": 1,
       "content_start_page": 18,
       "content_end_page": 18,
       "image_count": 2,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 14/untitled-14-01.jpg",
+          "relative_path": "portfolio_compiled_works_metadata/Work 14/craig-green-black-i-ii-01.jpg",
           "work_page": 1,
           "page_role": "equal-height spread image 1",
           "width_px": 9500,
@@ -407,7 +407,7 @@
           "file_size_bytes": 8455390
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 14/untitled-14-02.jpg",
+          "relative_path": "portfolio_compiled_works_metadata/Work 14/craig-green-black-i-ii-02.jpg",
           "work_page": 1,
           "page_role": "equal-height spread image 2",
           "width_px": 9770,
@@ -419,14 +419,14 @@
     {
       "work_number": 15,
       "folder": "Work 15",
-      "title": "Untitled 15",
+      "title": "Craig Green (White) I & II",
       "page_count": 1,
       "content_start_page": 19,
       "content_end_page": 19,
       "image_count": 2,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 15/untitled-15-01.jpg",
+          "relative_path": "portfolio_compiled_works_metadata/Work 15/craig-green-white-i-ii-01.jpg",
           "work_page": 1,
           "page_role": "equal-height spread image 1",
           "width_px": 10398,
@@ -434,7 +434,7 @@
           "file_size_bytes": 9514366
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 15/untitled-15-02.jpg",
+          "relative_path": "portfolio_compiled_works_metadata/Work 15/craig-green-white-i-ii-02.jpg",
           "work_page": 1,
           "page_role": "equal-height spread image 2",
           "width_px": 7838,
@@ -486,7 +486,7 @@
         "readable": true,
         "pages": 22,
         "page_size": "841.89 x 595.276 pts (A4)",
-        "file_size_bytes": 206450216
+        "file_size_bytes": 206451329
       },
       "split_pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent",
       "split_page_count": 22,
@@ -494,91 +494,91 @@
       "split_pages": [
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-01.pdf",
-          "file_size_bytes": 42343
+          "file_size_bytes": 42699
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-02.pdf",
-          "file_size_bytes": 51503
+          "file_size_bytes": 52015
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-03.pdf",
-          "file_size_bytes": 4191383
+          "file_size_bytes": 4191739
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-04.pdf",
-          "file_size_bytes": 7015932
+          "file_size_bytes": 7016288
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-05.pdf",
-          "file_size_bytes": 13952776
+          "file_size_bytes": 13953132
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-06.pdf",
-          "file_size_bytes": 12706953
+          "file_size_bytes": 12707309
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-07.pdf",
-          "file_size_bytes": 29190115
+          "file_size_bytes": 29190471
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-08.pdf",
-          "file_size_bytes": 171383
+          "file_size_bytes": 171917
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-09.pdf",
-          "file_size_bytes": 98817
+          "file_size_bytes": 99173
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-10.pdf",
-          "file_size_bytes": 2275254
+          "file_size_bytes": 2275610
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-11.pdf",
-          "file_size_bytes": 7526115
+          "file_size_bytes": 7526471
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-12.pdf",
-          "file_size_bytes": 853524
+          "file_size_bytes": 853880
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-13.pdf",
-          "file_size_bytes": 19748914
+          "file_size_bytes": 19749270
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-14.pdf",
-          "file_size_bytes": 22076605
+          "file_size_bytes": 22076961
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-15.pdf",
-          "file_size_bytes": 10051893
+          "file_size_bytes": 10052249
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-16.pdf",
-          "file_size_bytes": 13991326
+          "file_size_bytes": 13991682
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-17.pdf",
-          "file_size_bytes": 10758182
+          "file_size_bytes": 10758538
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-18.pdf",
-          "file_size_bytes": 615599
+          "file_size_bytes": 615955
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-19.pdf",
-          "file_size_bytes": 4462424
+          "file_size_bytes": 4462780
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-20.pdf",
-          "file_size_bytes": 16755364
+          "file_size_bytes": 16755937
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-21.pdf",
-          "file_size_bytes": 14568538
+          "file_size_bytes": 14569116
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-22.pdf",
-          "file_size_bytes": 15860405
+          "file_size_bytes": 15860761
         }
       ]
     },
@@ -590,7 +590,7 @@
         "readable": true,
         "pages": 22,
         "page_size": "841.89 x 595.276 pts (A4)",
-        "file_size_bytes": 206450315
+        "file_size_bytes": 206451428
       },
       "split_pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE",
       "split_page_count": 22,
@@ -598,91 +598,91 @@
       "split_pages": [
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-01.pdf",
-          "file_size_bytes": 42310
+          "file_size_bytes": 42659
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-02.pdf",
-          "file_size_bytes": 51442
+          "file_size_bytes": 51949
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-03.pdf",
-          "file_size_bytes": 4191611
+          "file_size_bytes": 4191960
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-04.pdf",
-          "file_size_bytes": 7016161
+          "file_size_bytes": 7016510
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-05.pdf",
-          "file_size_bytes": 13953015
+          "file_size_bytes": 13953364
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-06.pdf",
-          "file_size_bytes": 12707188
+          "file_size_bytes": 12707537
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-07.pdf",
-          "file_size_bytes": 29190349
+          "file_size_bytes": 29190698
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-08.pdf",
-          "file_size_bytes": 171611
+          "file_size_bytes": 172152
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-09.pdf",
-          "file_size_bytes": 99061
+          "file_size_bytes": 99410
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-10.pdf",
-          "file_size_bytes": 2275495
+          "file_size_bytes": 2275844
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-11.pdf",
-          "file_size_bytes": 7526343
+          "file_size_bytes": 7526692
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-12.pdf",
-          "file_size_bytes": 853760
+          "file_size_bytes": 854109
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-13.pdf",
-          "file_size_bytes": 19749138
+          "file_size_bytes": 19749487
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-14.pdf",
-          "file_size_bytes": 22076827
+          "file_size_bytes": 22077176
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-15.pdf",
-          "file_size_bytes": 10052126
+          "file_size_bytes": 10052475
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-16.pdf",
-          "file_size_bytes": 13991576
+          "file_size_bytes": 13991925
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-17.pdf",
-          "file_size_bytes": 10758444
+          "file_size_bytes": 10758793
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-18.pdf",
-          "file_size_bytes": 615848
+          "file_size_bytes": 616197
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-19.pdf",
-          "file_size_bytes": 4462670
+          "file_size_bytes": 4463019
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-20.pdf",
-          "file_size_bytes": 16755592
+          "file_size_bytes": 16756154
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-21.pdf",
-          "file_size_bytes": 14568766
+          "file_size_bytes": 14569339
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-22.pdf",
-          "file_size_bytes": 15860646
+          "file_size_bytes": 15860995
         }
       ]
     }
