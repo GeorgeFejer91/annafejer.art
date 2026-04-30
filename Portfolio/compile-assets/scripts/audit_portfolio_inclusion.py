@@ -48,6 +48,7 @@ GERMAN_TRANSLATIONS = {
         "Illustration": "Illustration",
         "Installation": "Installation",
         "Lino Print": "Linoldruck",
+        "Live 5 Hour Illustration Performance on Canvas": "Live 5-stündige Illustrations-Performance auf Leinwand",
         "Sculpture": "Skulptur",
     },
     "materials": {
@@ -72,6 +73,7 @@ GERMAN_TRANSLATIONS = {
         "Sand": "Sand",
         "Tape": "Klebeband",
         "Tin foil": "Alufolie",
+        "Tin Foil": "Alufolie",
         "Umbrella": "Regenschirm",
         "Wire": "Draht",
         "Wood": "Holz",
