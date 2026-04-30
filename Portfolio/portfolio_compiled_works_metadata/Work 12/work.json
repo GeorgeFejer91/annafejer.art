@@ -1,67 +1,51 @@
 {
-  "work_number": 12,
-  "work_label": "Work 12",
-  "folder": "Work 12",
-  "title": "Corset",
+  "work_number": 10,
+  "work_label": "Work 10",
+  "folder": "Work 10",
+  "title": "Bricks",
   "year": "2025",
-  "materials": "Balloons, Umbrella",
-  "format": "Digital Photograph",
-  "size": "29.7 cm x 21 cm",
+  "materials": "Polystyrene, Newspaper, Maps, Copper Pipes, Fishing line",
+  "format": "Installation",
+  "size": "85 cm x 120 cm x 45 cm",
   "location": "",
-  "key": "work12",
-  "page_count": 2,
-  "metadata_file": "portfolio_compiled_works_metadata/Work 12/work.json",
+  "key": "work10",
+  "page_count": 1,
+  "metadata_file": "portfolio_compiled_works_metadata/Work 10/work.json",
   "source_meta_docx": "",
   "images": [
     {
-      "filename": "corset-01.jpg",
-      "relative_path": "portfolio_compiled_works_metadata/Work 12/corset-01.jpg",
-      "width_px": 2511,
-      "height_px": 1946,
-      "aspect_ratio": 1.290339,
+      "filename": "bricks-01.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 10/bricks-01.png",
+      "width_px": 4032,
+      "height_px": 3024,
+      "aspect_ratio": 1.333333,
       "mode": "RGB",
       "dpi": [
-        72,
-        72
+        96.012,
+        96.012
       ],
-      "file_size_bytes": 591357,
+      "file_size_bytes": 7034635,
       "sequence": 1,
       "work_page": 1,
-      "page_role": "hero image"
-    },
-    {
-      "filename": "corset-02.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 12/corset-02.png",
-      "width_px": 1620,
-      "height_px": 2160,
-      "aspect_ratio": 0.75,
-      "mode": "RGB",
-      "dpi": [
-        191.99859999999998,
-        191.99859999999998
-      ],
-      "file_size_bytes": 4032819,
-      "sequence": 2,
-      "work_page": 2,
       "page_role": "equal-height spread image 1"
     },
     {
-      "filename": "corset-03.jpg",
-      "relative_path": "portfolio_compiled_works_metadata/Work 12/corset-03.jpg",
-      "width_px": 1719,
-      "height_px": 2160,
-      "aspect_ratio": 0.795833,
+      "filename": "bricks-02.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 10/bricks-02.png",
+      "width_px": 4032,
+      "height_px": 3024,
+      "aspect_ratio": 1.333333,
       "mode": "RGB",
       "dpi": [
-        72,
-        72
+        72.009,
+        72.009
       ],
-      "file_size_bytes": 411014,
-      "sequence": 3,
-      "work_page": 2,
+      "file_size_bytes": 6952598,
+      "sequence": 2,
+      "work_page": 1,
       "page_role": "equal-height spread image 2"
     }
   ],
-  "content_start_page": 15,
-  "content_end_page": 16
+  "content_start_page": 12,
+  "content_end_page": 12
 }

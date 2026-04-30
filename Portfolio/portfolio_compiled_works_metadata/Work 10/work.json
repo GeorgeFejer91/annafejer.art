@@ -1,51 +1,67 @@
 {
-  "work_number": 10,
-  "work_label": "Work 10",
-  "folder": "Work 10",
-  "title": "Bricks",
+  "work_number": 11,
+  "work_label": "Work 11",
+  "folder": "Work 11",
+  "title": "Layers of Brierley Hill",
   "year": "2025",
-  "materials": "Polystyrene, Newspaper, Maps, Copper Pipes, Fishing line",
+  "materials": "Metal Grates, Cardboard, Tape, Paint, Fishing Line",
   "format": "Installation",
-  "size": "85 cm x 120 cm x 45 cm",
-  "location": "",
-  "key": "work10",
-  "page_count": 1,
-  "metadata_file": "portfolio_compiled_works_metadata/Work 10/work.json",
+  "size": "110 cm x 100 cm x 80 cm",
+  "location": "Exhibition at Dudley College of Technology",
+  "key": "work11",
+  "page_count": 2,
+  "metadata_file": "portfolio_compiled_works_metadata/Work 11/work.json",
   "source_meta_docx": "",
   "images": [
     {
-      "filename": "bricks-01.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 10/bricks-01.png",
-      "width_px": 4032,
-      "height_px": 3024,
-      "aspect_ratio": 1.333333,
-      "mode": "RGB",
-      "dpi": [
-        96.012,
-        96.012
-      ],
-      "file_size_bytes": 7034635,
-      "sequence": 1,
-      "work_page": 1,
-      "page_role": "equal-height spread image 1"
-    },
-    {
-      "filename": "bricks-02.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 10/bricks-02.png",
-      "width_px": 4032,
-      "height_px": 3024,
-      "aspect_ratio": 1.333333,
+      "filename": "layers-of-brierley-hill-01.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 11/layers-of-brierley-hill-01.png",
+      "width_px": 4000,
+      "height_px": 4500,
+      "aspect_ratio": 0.888889,
       "mode": "RGB",
       "dpi": [
         72.009,
         72.009
       ],
-      "file_size_bytes": 6952598,
-      "sequence": 2,
+      "file_size_bytes": 12169019,
+      "sequence": 1,
       "work_page": 1,
+      "page_role": "hero image"
+    },
+    {
+      "filename": "layers-of-brierley-hill-02.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 11/layers-of-brierley-hill-02.png",
+      "width_px": 3024,
+      "height_px": 4032,
+      "aspect_ratio": 0.75,
+      "mode": "RGB",
+      "dpi": [
+        96.012,
+        96.012
+      ],
+      "file_size_bytes": 10836388,
+      "sequence": 2,
+      "work_page": 2,
+      "page_role": "equal-height spread image 1"
+    },
+    {
+      "filename": "layers-of-brierley-hill-03.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 11/layers-of-brierley-hill-03.png",
+      "width_px": 3024,
+      "height_px": 4032,
+      "aspect_ratio": 0.75,
+      "mode": "RGB",
+      "dpi": [
+        72.009,
+        72.009
+      ],
+      "file_size_bytes": 11247869,
+      "sequence": 3,
+      "work_page": 2,
       "page_role": "equal-height spread image 2"
     }
   ],
-  "content_start_page": 12,
-  "content_end_page": 12
+  "content_start_page": 13,
+  "content_end_page": 14
 }

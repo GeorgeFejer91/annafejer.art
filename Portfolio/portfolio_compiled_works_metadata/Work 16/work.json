@@ -1,0 +1,35 @@
+{
+  "work_number": 15,
+  "work_label": "Work 15",
+  "folder": "Work 15",
+  "title": "The Ethereal Thing",
+  "year": "2025",
+  "materials": "Metal Can, Paper, Paint",
+  "format": "Collage",
+  "size": "21 cm x 29.7 cm",
+  "location": "",
+  "key": "work15",
+  "page_count": 1,
+  "metadata_file": "portfolio_compiled_works_metadata/Work 15/work.json",
+  "source_meta_docx": "",
+  "images": [
+    {
+      "filename": "the-ethereal-thing-01.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 15/the-ethereal-thing-01.png",
+      "width_px": 7500,
+      "height_px": 5500,
+      "aspect_ratio": 1.363636,
+      "mode": "RGB",
+      "dpi": [
+        72.009,
+        72.009
+      ],
+      "file_size_bytes": 15859356,
+      "sequence": 1,
+      "work_page": 1,
+      "page_role": "single image"
+    }
+  ],
+  "content_start_page": 19,
+  "content_end_page": 19
+}
