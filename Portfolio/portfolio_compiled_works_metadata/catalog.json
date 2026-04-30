@@ -185,7 +185,7 @@
     "work_number": 4,
     "work_label": "Work 4",
     "folder": "Work 4",
-    "title": "Split I",
+    "title": "Riptide",
     "year": "2024",
     "materials": "Ink, Paper",
     "format": "Lino Print",
@@ -196,8 +196,8 @@
     "metadata_file": "portfolio_compiled_works_metadata/Work 4/work.json",
     "images": [
       {
-        "filename": "split-i-01.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 4/split-i-01.jpg",
+        "filename": "riptide-01.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 4/riptide-01.jpg",
         "width_px": 539,
         "height_px": 749,
         "aspect_ratio": 0.719626,
@@ -256,7 +256,7 @@
     "title": "Der Golem",
     "year": "2026",
     "materials": "Ink, Paper",
-    "format": "Filmplakat",
+    "format": "Filmplakat, Linoldruck",
     "size": "29.7 cm x 21 cm",
     "location": "",
     "key": "work06",
