@@ -1,6 +1,25 @@
 {
   "catalogue_source": "portfolio_compiled_works_metadata/Work */work.json",
   "aggregate_catalogue": "portfolio_compiled_works_metadata/catalog.json",
+  "ordering_authority": "portfolio_order_contract.json",
+  "ordering_authority_rule": "Sort direct child folders matching Work <number> by numeric suffix in ascending order. Do not infer portfolio order from TeX order, PDF page order, CSV row order, file timestamps, image filenames, or metadata fields inside the Work folders.",
+  "work_folder_numeric_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
   "tex_sources": [
     "portfolio_current.tex",
     "portfolio_current_de.tex"

@@ -21,14 +21,17 @@ GERMAN_TEX_POINTER = "portfolio_current_de.tex"
 DEFAULT_TEX_FILE = "portfolio_from_ppt_images_a4.tex"
 TEX_FILES = [CANONICAL_TEX_POINTER, GERMAN_TEX_POINTER]
 CATALOGUE_POLICY = {
-    "version": 1,
+    "version": 2,
     "source_of_truth": {
-        "work_order": "The numbered folders portfolio_compiled_works_metadata/Work 1, Work 2, ... define the permanent portfolio order.",
-        "metadata": "Each Work N/Meta.txt file is the human-editable metadata source for that work.",
+        "work_order": "The folder names directly under portfolio_compiled_works_metadata are the sole authority for portfolio ordering. Work 1 comes before Work 2, Work 2 before Work 3, and so on by numeric suffix.",
+        "work_identity": "The numeric Work N folder is the stable identity and grouping boundary for each artwork throughout the repo.",
+        "metadata": "Metadata files inside a Work N folder describe only that folder's contents: caption text, descriptor fields, image list, and page grouping for that work.",
         "images": "Image files inside each Work N folder are the authoritative source images for that work.",
+        "generated_outputs": "TeX files, PDFs, CSVs, aggregate JSON files, manifests, and page-split outputs are generated from the Work folder order and must not override it.",
     },
-    "ordering_rule": "Sort work folders by their numeric suffix in ascending order. Do not infer portfolio order from TeX order, file timestamps, or filenames outside the Work folders.",
+    "ordering_rule": "Sort direct child folders matching Work <number> by numeric suffix in ascending order. Do not infer portfolio order from TeX order, PDF page order, CSV row order, file timestamps, image filenames, or metadata fields inside the Work folders.",
     "image_naming_rule": "On every catalogue refresh, artwork images are renamed to work-XX-title-slug-YY.ext, where XX is the zero-padded Work folder number and YY is the image sequence within that folder.",
+    "metadata_scope_rule": "Meta.txt and work.json may change captions, titles, descriptors, materials, dimensions, locations, and image grouping inside the same Work N folder. They must not change cross-work ordering.",
     "tex_rule": "The LaTeX inventory is generated from the Work folder catalogue and should not be treated as the source of truth.",
 }
 
@@ -422,8 +425,11 @@ def write_filename_maps(metadata_root: Path, rows: list[dict[str, Any]]) -> None
 def write_policy(metadata_root: Path, catalog: list[dict[str, Any]]) -> None:
     tex_filename = language_tex_filename(catalog, "en")
     german_tex_filename = language_tex_filename(catalog, "de")
+    root = metadata_root.parent
     payload = {
         **CATALOGUE_POLICY,
+        "contract_file": "portfolio_order_contract.json",
+        "metadata_policy_file": "portfolio_compiled_works_metadata/catalogue_policy.json",
         "canonical_tex": tex_filename,
         "compile_tex_pointer": CANONICAL_TEX_POINTER,
         "german_tex": german_tex_filename,
@@ -439,6 +445,7 @@ def write_policy(metadata_root: Path, catalog: list[dict[str, Any]]) -> None:
         ],
     }
     write_json(metadata_root / "catalogue_policy.json", payload)
+    write_json(root / "portfolio_order_contract.json", payload)
 
 
 def parse_tex_references(root: Path) -> dict[str, list[str]]:
@@ -797,6 +804,20 @@ def build_manifest(root: Path, catalog: list[dict[str, Any]]) -> tuple[dict[str,
     all_images = sorted(image["relative_path"] for work in catalog for image in work["images"])
     all_image_set = set(all_images)
     errors: list[str] = []
+    metadata_root = root / "portfolio_compiled_works_metadata"
+    folder_numbers = [work_number(path) for path in sorted(metadata_root.glob("Work *"), key=work_number)]
+    catalog_numbers = [int(work["work_number"]) for work in catalog]
+    expected_numbers = list(range(1, len(folder_numbers) + 1))
+    if folder_numbers != expected_numbers:
+        errors.append(
+            "Work folders are not a contiguous numeric ordering authority: "
+            f"found {folder_numbers}, expected {expected_numbers}"
+        )
+    if catalog_numbers != folder_numbers:
+        errors.append(
+            "Aggregate catalogue order does not match numeric Work folder order: "
+            f"catalogue {catalog_numbers}, folders {folder_numbers}"
+        )
 
     tex_checks = {}
     for tex_name, refs in tex_refs.items():
@@ -824,6 +845,9 @@ def build_manifest(root: Path, catalog: list[dict[str, Any]]) -> tuple[dict[str,
     manifest = {
         "catalogue_source": "portfolio_compiled_works_metadata/Work */work.json",
         "aggregate_catalogue": "portfolio_compiled_works_metadata/catalog.json",
+        "ordering_authority": "portfolio_order_contract.json",
+        "ordering_authority_rule": CATALOGUE_POLICY["ordering_rule"],
+        "work_folder_numeric_order": folder_numbers,
         "tex_sources": TEX_FILES,
         "work_count": len(catalog),
         "library_image_count": len(all_images),
