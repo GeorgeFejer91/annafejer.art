@@ -3,7 +3,7 @@
     "work_number": 1,
     "work_label": "Work 1",
     "folder": "Work 1",
-    "title": "Frames of Absence",
+    "title": "Embodied Absence",
     "year": "2025",
     "materials": "Glass, Metal, Sand, Fishing line",
     "format": "Installation",
@@ -14,8 +14,8 @@
     "metadata_file": "portfolio_compiled_works_metadata/Work 1/work.json",
     "images": [
       {
-        "filename": "frames-of-absence-01-A.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 1/frames-of-absence-01-A.png",
+        "filename": "embodied-absence-01-A.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 1/embodied-absence-01-A.png",
         "width_px": 2160,
         "height_px": 2796,
         "aspect_ratio": 0.772532,
@@ -30,8 +30,8 @@
         "page_role": "page 1 image"
       },
       {
-        "filename": "frames-of-absence-02-B.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 1/frames-of-absence-02-B.png",
+        "filename": "embodied-absence-02-B.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 1/embodied-absence-02-B.png",
         "width_px": 1660,
         "height_px": 2160,
         "aspect_ratio": 0.768519,
@@ -46,8 +46,8 @@
         "page_role": "page 2 image"
       },
       {
-        "filename": "frames-of-absence-03-B.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 1/frames-of-absence-03-B.png",
+        "filename": "embodied-absence-03-B.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 1/embodied-absence-03-B.png",
         "width_px": 1497,
         "height_px": 2160,
         "aspect_ratio": 0.693056,
@@ -69,7 +69,7 @@
     "work_number": 2,
     "work_label": "Work 2",
     "folder": "Work 2",
-    "title": "Reflects on Wrinkles",
+    "title": "Reflections on Wrinkles",
     "year": "2025",
     "materials": "Tin foil, Ink, Paper",
     "format": "Illustration",
@@ -80,8 +80,8 @@
     "metadata_file": "portfolio_compiled_works_metadata/Work 2/work.json",
     "images": [
       {
-        "filename": "reflects-on-wrinkles-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 2/reflects-on-wrinkles-01.png",
+        "filename": "reflections-on-wrinkles-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 2/reflections-on-wrinkles-01.png",
         "width_px": 2435,
         "height_px": 3340,
         "aspect_ratio": 0.729042,
@@ -96,8 +96,8 @@
         "page_role": "equal-height spread image 1"
       },
       {
-        "filename": "reflects-on-wrinkles-02.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 2/reflects-on-wrinkles-02.png",
+        "filename": "reflections-on-wrinkles-02.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 2/reflections-on-wrinkles-02.png",
         "width_px": 2518,
         "height_px": 3544,
         "aspect_ratio": 0.710497,

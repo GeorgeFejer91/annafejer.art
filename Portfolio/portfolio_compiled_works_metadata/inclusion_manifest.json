@@ -33,14 +33,14 @@
     {
       "work_number": 1,
       "folder": "Work 1",
-      "title": "Frames of Absence",
+      "title": "Embodied Absence",
       "page_count": 2,
       "content_start_page": 1,
       "content_end_page": 2,
       "image_count": 3,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 1/frames-of-absence-01-A.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 1/embodied-absence-01-A.png",
           "work_page": 1,
           "page_role": "page 1 image",
           "width_px": 2160,
@@ -48,7 +48,7 @@
           "file_size_bytes": 4173105
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 1/frames-of-absence-02-B.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 1/embodied-absence-02-B.png",
           "work_page": 2,
           "page_role": "page 2 image",
           "width_px": 1660,
@@ -56,7 +56,7 @@
           "file_size_bytes": 3575111
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 1/frames-of-absence-03-B.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 1/embodied-absence-03-B.png",
           "work_page": 2,
           "page_role": "page 2 image",
           "width_px": 1497,
@@ -68,14 +68,14 @@
     {
       "work_number": 2,
       "folder": "Work 2",
-      "title": "Reflects on Wrinkles",
+      "title": "Reflections on Wrinkles",
       "page_count": 1,
       "content_start_page": 3,
       "content_end_page": 3,
       "image_count": 2,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 2/reflects-on-wrinkles-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 2/reflections-on-wrinkles-01.png",
           "work_page": 1,
           "page_role": "equal-height spread image 1",
           "width_px": 2435,
@@ -83,7 +83,7 @@
           "file_size_bytes": 7642942
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 2/reflects-on-wrinkles-02.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 2/reflections-on-wrinkles-02.png",
           "work_page": 1,
           "page_role": "equal-height spread image 2",
           "width_px": 2518,
@@ -478,7 +478,7 @@
         "readable": true,
         "pages": 22,
         "page_size": "841.89 x 595.276 pts (A4)",
-        "file_size_bytes": 198877832
+        "file_size_bytes": 198877829
       },
       "split_pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent",
       "split_page_count": 22,
@@ -490,19 +490,19 @@
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-02.pdf",
-          "file_size_bytes": 51822
+          "file_size_bytes": 51826
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-03.pdf",
-          "file_size_bytes": 4191605
+          "file_size_bytes": 4191599
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-04.pdf",
-          "file_size_bytes": 7016154
+          "file_size_bytes": 7016148
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-05.pdf",
-          "file_size_bytes": 13952993
+          "file_size_bytes": 13952992
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-06.pdf",
@@ -582,7 +582,7 @@
         "readable": true,
         "pages": 22,
         "page_size": "841.89 x 595.276 pts (A4)",
-        "file_size_bytes": 198877942
+        "file_size_bytes": 198877947
       },
       "split_pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE",
       "split_page_count": 22,
@@ -594,19 +594,19 @@
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-02.pdf",
-          "file_size_bytes": 51779
+          "file_size_bytes": 51785
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-03.pdf",
-          "file_size_bytes": 4191841
+          "file_size_bytes": 4191836
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-04.pdf",
-          "file_size_bytes": 7016390
+          "file_size_bytes": 7016386
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-05.pdf",
-          "file_size_bytes": 13953241
+          "file_size_bytes": 13953240
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-06.pdf",
