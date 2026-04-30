@@ -1,35 +1,8 @@
 {
-  "work_number": 4,
-  "work_label": "Work 4",
-  "folder": "Work 4",
   "title": "Split I",
   "year": "2024",
   "materials": "Ink, Paper",
   "format": "Lino Print",
   "size": "21 cm x 14.8 cm",
-  "location": "",
-  "key": "work04",
-  "page_count": 1,
-  "metadata_file": "portfolio_compiled_works_metadata/Work 4/work.json",
-  "source_meta_docx": "",
-  "images": [
-    {
-      "filename": "split-i-01.jpg",
-      "relative_path": "portfolio_compiled_works_metadata/Work 4/split-i-01.jpg",
-      "width_px": 539,
-      "height_px": 749,
-      "aspect_ratio": 0.719626,
-      "mode": "RGB",
-      "dpi": [
-        96,
-        96
-      ],
-      "file_size_bytes": 147352,
-      "sequence": 1,
-      "work_page": 1,
-      "page_role": "single-page image"
-    }
-  ],
-  "content_start_page": 6,
-  "content_end_page": 6
+  "location": ""
 }

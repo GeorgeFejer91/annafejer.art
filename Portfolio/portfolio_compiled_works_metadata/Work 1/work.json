@@ -1,67 +1,8 @@
 {
-  "work_number": 1,
-  "work_label": "Work 1",
-  "folder": "Work 1",
   "title": "Frames of Absence",
   "year": "2025",
   "materials": "Glass, Metal, Sand, Fishing line",
   "format": "Installation",
   "size": "175 cm x 210 cm x 70 cm",
-  "location": "Exhibition view, Dudley College of Technology, England",
-  "key": "work01",
-  "page_count": 2,
-  "metadata_file": "portfolio_compiled_works_metadata/Work 1/work.json",
-  "source_meta_docx": "",
-  "images": [
-    {
-      "filename": "body-frames-01.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 1/body-frames-01.png",
-      "width_px": 2160,
-      "height_px": 2796,
-      "aspect_ratio": 0.772532,
-      "mode": "RGB",
-      "dpi": [
-        191.99859999999998,
-        191.99859999999998
-      ],
-      "file_size_bytes": 4173105,
-      "sequence": 1,
-      "work_page": 1,
-      "page_role": "hero image"
-    },
-    {
-      "filename": "body-frames-02.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 1/body-frames-02.png",
-      "width_px": 1660,
-      "height_px": 2160,
-      "aspect_ratio": 0.768519,
-      "mode": "RGB",
-      "dpi": [
-        191.99859999999998,
-        191.99859999999998
-      ],
-      "file_size_bytes": 3575111,
-      "sequence": 2,
-      "work_page": 2,
-      "page_role": "equal-height spread image 1"
-    },
-    {
-      "filename": "body-frames-03.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 1/body-frames-03.png",
-      "width_px": 1497,
-      "height_px": 2160,
-      "aspect_ratio": 0.693056,
-      "mode": "RGB",
-      "dpi": [
-        191.99859999999998,
-        191.99859999999998
-      ],
-      "file_size_bytes": 3426444,
-      "sequence": 3,
-      "work_page": 2,
-      "page_role": "equal-height spread image 2"
-    }
-  ],
-  "content_start_page": 1,
-  "content_end_page": 2
+  "location": "Exhibition view, Dudley College of Technology, England"
 }

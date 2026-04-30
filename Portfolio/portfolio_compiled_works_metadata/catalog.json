@@ -3,7 +3,7 @@
     "work_number": 1,
     "work_label": "Work 1",
     "folder": "Work 1",
-    "title": "Body Frames",
+    "title": "Frames of Absence",
     "year": "2025",
     "materials": "Glass, Metal, Sand, Fishing line",
     "format": "Installation",
@@ -12,11 +12,10 @@
     "key": "work01",
     "page_count": 2,
     "metadata_file": "portfolio_compiled_works_metadata/Work 1/work.json",
-    "source_meta_docx": "",
     "images": [
       {
-        "filename": "body-frames-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 1/body-frames-01.png",
+        "filename": "frames-of-absence-01-A.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 1/frames-of-absence-01-A.png",
         "width_px": 2160,
         "height_px": 2796,
         "aspect_ratio": 0.772532,
@@ -28,11 +27,11 @@
         "file_size_bytes": 4173105,
         "sequence": 1,
         "work_page": 1,
-        "page_role": "hero image"
+        "page_role": "page 1 image"
       },
       {
-        "filename": "body-frames-02.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 1/body-frames-02.png",
+        "filename": "frames-of-absence-02-B.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 1/frames-of-absence-02-B.png",
         "width_px": 1660,
         "height_px": 2160,
         "aspect_ratio": 0.768519,
@@ -44,11 +43,11 @@
         "file_size_bytes": 3575111,
         "sequence": 2,
         "work_page": 2,
-        "page_role": "equal-height spread image 1"
+        "page_role": "page 2 image"
       },
       {
-        "filename": "body-frames-03.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 1/body-frames-03.png",
+        "filename": "frames-of-absence-03-B.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 1/frames-of-absence-03-B.png",
         "width_px": 1497,
         "height_px": 2160,
         "aspect_ratio": 0.693056,
@@ -60,7 +59,7 @@
         "file_size_bytes": 3426444,
         "sequence": 3,
         "work_page": 2,
-        "page_role": "equal-height spread image 2"
+        "page_role": "page 2 image"
       }
     ],
     "content_start_page": 1,
@@ -70,7 +69,7 @@
     "work_number": 2,
     "work_label": "Work 2",
     "folder": "Work 2",
-    "title": "Bodies of Foil",
+    "title": "Reflects on Wrinkles",
     "year": "2025",
     "materials": "Tin foil, Ink, Paper",
     "format": "Illustration",
@@ -79,11 +78,10 @@
     "key": "work02",
     "page_count": 1,
     "metadata_file": "portfolio_compiled_works_metadata/Work 2/work.json",
-    "source_meta_docx": "",
     "images": [
       {
-        "filename": "bodies-of-foil-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 2/bodies-of-foil-01.png",
+        "filename": "reflects-on-wrinkles-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 2/reflects-on-wrinkles-01.png",
         "width_px": 2435,
         "height_px": 3340,
         "aspect_ratio": 0.729042,
@@ -98,8 +96,8 @@
         "page_role": "equal-height spread image 1"
       },
       {
-        "filename": "bodies-of-foil-02.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 2/bodies-of-foil-02.png",
+        "filename": "reflects-on-wrinkles-02.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 2/reflects-on-wrinkles-02.png",
         "width_px": 2518,
         "height_px": 3544,
         "aspect_ratio": 0.710497,
@@ -121,7 +119,7 @@
     "work_number": 3,
     "work_label": "Work 3",
     "folder": "Work 3",
-    "title": "Can you Sit?",
+    "title": "Out-Clave",
     "year": "2025",
     "materials": "Wire, Wood",
     "format": "Sculpture",
@@ -130,11 +128,10 @@
     "key": "work03",
     "page_count": 2,
     "metadata_file": "portfolio_compiled_works_metadata/Work 3/work.json",
-    "source_meta_docx": "",
     "images": [
       {
-        "filename": "can-you-sit-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-01.png",
+        "filename": "out-clave-01-B.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 3/out-clave-01-B.png",
         "width_px": 3024,
         "height_px": 4032,
         "aspect_ratio": 0.75,
@@ -145,12 +142,12 @@
         ],
         "file_size_bytes": 14195596,
         "sequence": 1,
-        "work_page": 1,
-        "page_role": "equal-height spread image 1"
+        "work_page": 2,
+        "page_role": "page 2 image"
       },
       {
-        "filename": "can-you-sit-02.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-02.png",
+        "filename": "out-clave-02-B.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 3/out-clave-02-B.png",
         "width_px": 3024,
         "height_px": 4032,
         "aspect_ratio": 0.75,
@@ -161,12 +158,12 @@
         ],
         "file_size_bytes": 15012790,
         "sequence": 2,
-        "work_page": 1,
-        "page_role": "equal-height spread image 2"
+        "work_page": 2,
+        "page_role": "page 2 image"
       },
       {
-        "filename": "can-you-sit-03.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-03.png",
+        "filename": "out-clave-03-A.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 3/out-clave-03-A.png",
         "width_px": 3024,
         "height_px": 4032,
         "aspect_ratio": 0.75,
@@ -177,8 +174,8 @@
         ],
         "file_size_bytes": 12701314,
         "sequence": 3,
-        "work_page": 2,
-        "page_role": "equal-height spread image 2"
+        "work_page": 1,
+        "page_role": "page 1 image"
       }
     ],
     "content_start_page": 4,
@@ -197,7 +194,6 @@
     "key": "work04",
     "page_count": 1,
     "metadata_file": "portfolio_compiled_works_metadata/Work 4/work.json",
-    "source_meta_docx": "",
     "images": [
       {
         "filename": "split-i-01.jpg",
@@ -232,7 +228,6 @@
     "key": "work05",
     "page_count": 1,
     "metadata_file": "portfolio_compiled_works_metadata/Work 5/work.json",
-    "source_meta_docx": "",
     "images": [
       {
         "filename": "split-ii-01.jpg",
@@ -267,7 +262,6 @@
     "key": "work06",
     "page_count": 1,
     "metadata_file": "portfolio_compiled_works_metadata/Work 6/work.json",
-    "source_meta_docx": "",
     "images": [
       {
         "filename": "der-golem-01.png",
@@ -293,20 +287,19 @@
     "work_number": 7,
     "work_label": "Work 7",
     "folder": "Work 7",
-    "title": "Live 5 Hour Illustration Performance",
+    "title": "Narrow Stretch",
     "year": "2024",
     "materials": "Paint, Ink",
-    "format": "Canvas",
+    "format": "Live 5 Hour Illustration Performance on Canvas",
     "size": "118.9 cm x 84.1 cm",
-    "location": "Kings Heath Eid - England",
+    "location": "Kings eath Eid - England",
     "key": "work07",
     "page_count": 1,
     "metadata_file": "portfolio_compiled_works_metadata/Work 7/work.json",
-    "source_meta_docx": "",
     "images": [
       {
-        "filename": "live-5-hour-illustration-performance-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 7/live-5-hour-illustration-performance-01.png",
+        "filename": "narrow-stretch-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 7/narrow-stretch-01.png",
         "width_px": 1251,
         "height_px": 1728,
         "aspect_ratio": 0.723958,
@@ -321,8 +314,8 @@
         "page_role": "equal-height spread image 1"
       },
       {
-        "filename": "live-5-hour-illustration-performance-02.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 7/live-5-hour-illustration-performance-02.png",
+        "filename": "narrow-stretch-02.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 7/narrow-stretch-02.png",
         "width_px": 1690,
         "height_px": 2048,
         "aspect_ratio": 0.825195,
@@ -344,7 +337,7 @@
     "work_number": 8,
     "work_label": "Work 8",
     "folder": "Work 8",
-    "title": "Studies of Brierley Hill",
+    "title": "Brierley Hill Canal",
     "year": "2025",
     "materials": "Ink, Paper",
     "format": "Illustration",
@@ -353,11 +346,10 @@
     "key": "work08",
     "page_count": 1,
     "metadata_file": "portfolio_compiled_works_metadata/Work 8/work.json",
-    "source_meta_docx": "",
     "images": [
       {
-        "filename": "studies-of-brierley-hill-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 8/studies-of-brierley-hill-01.png",
+        "filename": "brierley-hill-canal-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 8/brierley-hill-canal-01.png",
         "width_px": 984,
         "height_px": 1230,
         "aspect_ratio": 0.8,
@@ -379,36 +371,51 @@
     "work_number": 9,
     "work_label": "Work 9",
     "folder": "Work 9",
-    "title": "Traffic",
+    "title": "Layers of Brierley Hill",
     "year": "2025",
-    "materials": "Polystyrene, Newspaper, Maps, Plastic, Copper Pipes, Fishing Line",
+    "materials": "Metal Grates, Cardboard, Tape, Paint, Fishing Line",
     "format": "Installation",
-    "size": "110 cm x 170 cm x 30 cm",
-    "location": "",
+    "size": "110 cm x 100 cm x 80 cm",
+    "location": "Exhibition at Dudley College of Technology",
     "key": "work09",
-    "page_count": 1,
+    "page_count": 2,
     "metadata_file": "portfolio_compiled_works_metadata/Work 9/work.json",
-    "source_meta_docx": "",
     "images": [
       {
-        "filename": "traffic-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 9/traffic-01.png",
-        "width_px": 2640,
-        "height_px": 2160,
-        "aspect_ratio": 1.222222,
+        "filename": "layers-of-brierley-hill-01-A.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-01-A.png",
+        "width_px": 4000,
+        "height_px": 4500,
+        "aspect_ratio": 0.888889,
         "mode": "RGB",
         "dpi": [
-          191.99859999999998,
-          191.99859999999998
+          72.009,
+          72.009
         ],
-        "file_size_bytes": 4091730,
+        "file_size_bytes": 12169019,
         "sequence": 1,
         "work_page": 1,
-        "page_role": "equal-height spread image 1"
+        "page_role": "page 1 image"
       },
       {
-        "filename": "traffic-02.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 9/traffic-02.png",
+        "filename": "layers-of-brierley-hill-02-B.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-02-B.png",
+        "width_px": 3024,
+        "height_px": 4032,
+        "aspect_ratio": 0.75,
+        "mode": "RGB",
+        "dpi": [
+          96.012,
+          96.012
+        ],
+        "file_size_bytes": 10836388,
+        "sequence": 2,
+        "work_page": 2,
+        "page_role": "page 2 image"
+      },
+      {
+        "filename": "layers-of-brierley-hill-03-B.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-03-B.png",
         "width_px": 3024,
         "height_px": 4032,
         "aspect_ratio": 0.75,
@@ -417,33 +424,82 @@
           72.009,
           72.009
         ],
-        "file_size_bytes": 6657604,
-        "sequence": 2,
-        "work_page": 1,
-        "page_role": "equal-height spread image 2"
+        "file_size_bytes": 11247869,
+        "sequence": 3,
+        "work_page": 2,
+        "page_role": "page 2 image"
       }
     ],
     "content_start_page": 11,
-    "content_end_page": 11
+    "content_end_page": 12
   },
   {
     "work_number": 10,
     "work_label": "Work 10",
     "folder": "Work 10",
+    "title": "Brierley Hill Illustrations",
+    "year": "2025",
+    "materials": "Ink, Paper",
+    "format": "Illustration",
+    "size": "29.7 cm x 21 cm",
+    "location": "",
+    "key": "work10",
+    "page_count": 1,
+    "metadata_file": "portfolio_compiled_works_metadata/Work 10/work.json",
+    "images": [
+      {
+        "filename": "brierley-hill-illustrations-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 10/brierley-hill-illustrations-01.png",
+        "width_px": 3024,
+        "height_px": 4032,
+        "aspect_ratio": 0.75,
+        "mode": "RGB",
+        "dpi": [
+          72.009,
+          72.009
+        ],
+        "file_size_bytes": 2793414,
+        "sequence": 1,
+        "work_page": 1,
+        "page_role": "equal-height spread image 1"
+      },
+      {
+        "filename": "brierley-hill-illustrations-02.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 10/brierley-hill-illustrations-02.png",
+        "width_px": 3024,
+        "height_px": 4032,
+        "aspect_ratio": 0.75,
+        "mode": "RGB",
+        "dpi": [
+          72.009,
+          72.009
+        ],
+        "file_size_bytes": 7248669,
+        "sequence": 2,
+        "work_page": 1,
+        "page_role": "equal-height spread image 2"
+      }
+    ],
+    "content_start_page": 13,
+    "content_end_page": 13
+  },
+  {
+    "work_number": 11,
+    "work_label": "Work 11",
+    "folder": "Work 11",
     "title": "Bricks",
     "year": "2025",
     "materials": "Polystyrene, Newspaper, Maps, Copper Pipes, Fishing line",
     "format": "Installation",
     "size": "85 cm x 120 cm x 45 cm",
     "location": "",
-    "key": "work10",
+    "key": "work11",
     "page_count": 1,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 10/work.json",
-    "source_meta_docx": "",
+    "metadata_file": "portfolio_compiled_works_metadata/Work 11/work.json",
     "images": [
       {
         "filename": "bricks-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 10/bricks-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 11/bricks-01.png",
         "width_px": 4032,
         "height_px": 3024,
         "aspect_ratio": 1.333333,
@@ -459,7 +515,7 @@
       },
       {
         "filename": "bricks-02.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 10/bricks-02.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 11/bricks-02.png",
         "width_px": 4032,
         "height_px": 3024,
         "aspect_ratio": 1.333333,
@@ -474,94 +530,76 @@
         "page_role": "equal-height spread image 2"
       }
     ],
-    "content_start_page": 12,
-    "content_end_page": 12
-  },
-  {
-    "work_number": 11,
-    "work_label": "Work 11",
-    "folder": "Work 11",
-    "title": "Layers of Brierley Hill",
-    "year": "2025",
-    "materials": "Metal Grates, Cardboard, Tape, Paint, Fishing Line",
-    "format": "Installation",
-    "size": "110 cm x 100 cm x 80 cm",
-    "location": "Exhibition at Dudley College of Technology",
-    "key": "work11",
-    "page_count": 2,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 11/work.json",
-    "source_meta_docx": "",
-    "images": [
-      {
-        "filename": "layers-of-brierley-hill-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 11/layers-of-brierley-hill-01.png",
-        "width_px": 4000,
-        "height_px": 4500,
-        "aspect_ratio": 0.888889,
-        "mode": "RGB",
-        "dpi": [
-          72.009,
-          72.009
-        ],
-        "file_size_bytes": 12169019,
-        "sequence": 1,
-        "work_page": 1,
-        "page_role": "hero image"
-      },
-      {
-        "filename": "layers-of-brierley-hill-02.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 11/layers-of-brierley-hill-02.png",
-        "width_px": 3024,
-        "height_px": 4032,
-        "aspect_ratio": 0.75,
-        "mode": "RGB",
-        "dpi": [
-          96.012,
-          96.012
-        ],
-        "file_size_bytes": 10836388,
-        "sequence": 2,
-        "work_page": 2,
-        "page_role": "equal-height spread image 1"
-      },
-      {
-        "filename": "layers-of-brierley-hill-03.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 11/layers-of-brierley-hill-03.png",
-        "width_px": 3024,
-        "height_px": 4032,
-        "aspect_ratio": 0.75,
-        "mode": "RGB",
-        "dpi": [
-          72.009,
-          72.009
-        ],
-        "file_size_bytes": 11247869,
-        "sequence": 3,
-        "work_page": 2,
-        "page_role": "equal-height spread image 2"
-      }
-    ],
-    "content_start_page": 13,
+    "content_start_page": 14,
     "content_end_page": 14
   },
   {
     "work_number": 12,
     "work_label": "Work 12",
     "folder": "Work 12",
-    "title": "Corset",
+    "title": "Traffic",
+    "year": "2025",
+    "materials": "Polystyrene, Newspaper, Maps, Plastic, Copper Pipes, Fishing Line",
+    "format": "Installation",
+    "size": "85 cm x 120 cm x 45 cm",
+    "location": "",
+    "key": "work12",
+    "page_count": 1,
+    "metadata_file": "portfolio_compiled_works_metadata/Work 12/work.json",
+    "images": [
+      {
+        "filename": "traffic-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 12/traffic-01.png",
+        "width_px": 2640,
+        "height_px": 2160,
+        "aspect_ratio": 1.222222,
+        "mode": "RGB",
+        "dpi": [
+          191.99859999999998,
+          191.99859999999998
+        ],
+        "file_size_bytes": 4091730,
+        "sequence": 1,
+        "work_page": 1,
+        "page_role": "equal-height spread image 1"
+      },
+      {
+        "filename": "traffic-02.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 12/traffic-02.png",
+        "width_px": 3024,
+        "height_px": 4032,
+        "aspect_ratio": 0.75,
+        "mode": "RGB",
+        "dpi": [
+          72.009,
+          72.009
+        ],
+        "file_size_bytes": 6657604,
+        "sequence": 2,
+        "work_page": 1,
+        "page_role": "equal-height spread image 2"
+      }
+    ],
+    "content_start_page": 15,
+    "content_end_page": 15
+  },
+  {
+    "work_number": 13,
+    "work_label": "Work 13",
+    "folder": "Work 13",
+    "title": "Thorax",
     "year": "2025",
     "materials": "Balloons, Umbrella",
     "format": "Digital Photograph",
     "size": "29.7 cm x 21 cm",
     "location": "",
-    "key": "work12",
+    "key": "work13",
     "page_count": 2,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 12/work.json",
-    "source_meta_docx": "",
+    "metadata_file": "portfolio_compiled_works_metadata/Work 13/work.json",
     "images": [
       {
-        "filename": "corset-01.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 12/corset-01.jpg",
+        "filename": "thorax-01.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 13/thorax-01.jpg",
         "width_px": 2511,
         "height_px": 1946,
         "aspect_ratio": 1.290339,
@@ -576,8 +614,8 @@
         "page_role": "hero image"
       },
       {
-        "filename": "corset-02.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 12/corset-02.png",
+        "filename": "thorax-02.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 13/thorax-02.png",
         "width_px": 1620,
         "height_px": 2160,
         "aspect_ratio": 0.75,
@@ -592,8 +630,8 @@
         "page_role": "equal-height spread image 1"
       },
       {
-        "filename": "corset-03.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 12/corset-03.jpg",
+        "filename": "thorax-03.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 13/thorax-03.jpg",
         "width_px": 1719,
         "height_px": 2160,
         "aspect_ratio": 0.795833,
@@ -608,27 +646,26 @@
         "page_role": "equal-height spread image 2"
       }
     ],
-    "content_start_page": 15,
-    "content_end_page": 16
+    "content_start_page": 16,
+    "content_end_page": 17
   },
   {
-    "work_number": 13,
-    "work_label": "Work 13",
-    "folder": "Work 13",
-    "title": "Craig Green Collection Black",
+    "work_number": 14,
+    "work_label": "Work 14",
+    "folder": "Work 14",
+    "title": "Craig Green Black: I & II",
     "year": "2025",
     "materials": "Paper, Prints, Oil",
     "format": "Collage",
     "size": "21 cm x 14.4 cm",
     "location": "",
-    "key": "work13",
+    "key": "work14",
     "page_count": 1,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 13/work.json",
-    "source_meta_docx": "",
+    "metadata_file": "portfolio_compiled_works_metadata/Work 14/work.json",
     "images": [
       {
-        "filename": "craig-green-collection-black-01.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 13/craig-green-collection-black-01.jpg",
+        "filename": "craig-green-black-i-ii-01.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 14/craig-green-black-i-ii-01.jpg",
         "width_px": 9500,
         "height_px": 14096,
         "aspect_ratio": 0.67395,
@@ -643,8 +680,8 @@
         "page_role": "equal-height spread image 1"
       },
       {
-        "filename": "craig-green-collection-black-02.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 13/craig-green-collection-black-02.jpg",
+        "filename": "craig-green-black-i-ii-02.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 14/craig-green-black-i-ii-02.jpg",
         "width_px": 9770,
         "height_px": 13915,
         "aspect_ratio": 0.70212,
@@ -659,27 +696,26 @@
         "page_role": "equal-height spread image 2"
       }
     ],
-    "content_start_page": 17,
-    "content_end_page": 17
+    "content_start_page": 18,
+    "content_end_page": 18
   },
   {
-    "work_number": 14,
-    "work_label": "Work 14",
-    "folder": "Work 14",
-    "title": "Craig Green Collection White",
+    "work_number": 15,
+    "work_label": "Work 15",
+    "folder": "Work 15",
+    "title": "Craig Green White: I & II",
     "year": "2025",
     "materials": "Paper, Prints, Oil",
     "format": "Collage",
     "size": "21 cm x 14.4 cm",
     "location": "",
-    "key": "work14",
+    "key": "work15",
     "page_count": 1,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 14/work.json",
-    "source_meta_docx": "",
+    "metadata_file": "portfolio_compiled_works_metadata/Work 15/work.json",
     "images": [
       {
-        "filename": "craig-green-collection-white-01.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 14/craig-green-collection-white-01.jpg",
+        "filename": "craig-green-white-i-ii-01.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 15/craig-green-white-i-ii-01.jpg",
         "width_px": 10398,
         "height_px": 14506,
         "aspect_ratio": 0.716807,
@@ -694,8 +730,8 @@
         "page_role": "equal-height spread image 1"
       },
       {
-        "filename": "craig-green-collection-white-02.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 14/craig-green-collection-white-02.jpg",
+        "filename": "craig-green-white-i-ii-02.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 15/craig-green-white-i-ii-02.jpg",
         "width_px": 7838,
         "height_px": 10864,
         "aspect_ratio": 0.721465,
@@ -710,27 +746,26 @@
         "page_role": "equal-height spread image 2"
       }
     ],
-    "content_start_page": 18,
-    "content_end_page": 18
+    "content_start_page": 19,
+    "content_end_page": 19
   },
   {
-    "work_number": 15,
-    "work_label": "Work 15",
-    "folder": "Work 15",
+    "work_number": 16,
+    "work_label": "Work 16",
+    "folder": "Work 16",
     "title": "The Ethereal Thing",
     "year": "2025",
     "materials": "Metal Can, Paper, Paint",
     "format": "Collage",
     "size": "21 cm x 29.7 cm",
     "location": "",
-    "key": "work15",
+    "key": "work16",
     "page_count": 1,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 15/work.json",
-    "source_meta_docx": "",
+    "metadata_file": "portfolio_compiled_works_metadata/Work 16/work.json",
     "images": [
       {
         "filename": "the-ethereal-thing-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 15/the-ethereal-thing-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 16/the-ethereal-thing-01.png",
         "width_px": 7500,
         "height_px": 5500,
         "aspect_ratio": 1.363636,
@@ -745,7 +780,7 @@
         "page_role": "single image"
       }
     ],
-    "content_start_page": 19,
-    "content_end_page": 19
+    "content_start_page": 20,
+    "content_end_page": 20
   }
 ]

@@ -1,51 +1,8 @@
 {
-  "work_number": 2,
-  "work_label": "Work 2",
-  "folder": "Work 2",
   "title": "Reflects on Wrinkles",
   "year": "2025",
   "materials": "Tin foil, Ink, Paper",
   "format": "Illustration",
   "size": "29.7 cm x 21 cm",
-  "location": "",
-  "key": "work02",
-  "page_count": 1,
-  "metadata_file": "portfolio_compiled_works_metadata/Work 2/work.json",
-  "source_meta_docx": "",
-  "images": [
-    {
-      "filename": "bodies-of-foil-01.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 2/bodies-of-foil-01.png",
-      "width_px": 2435,
-      "height_px": 3340,
-      "aspect_ratio": 0.729042,
-      "mode": "RGB",
-      "dpi": [
-        96.012,
-        96.012
-      ],
-      "file_size_bytes": 7642942,
-      "sequence": 1,
-      "work_page": 1,
-      "page_role": "equal-height spread image 1"
-    },
-    {
-      "filename": "bodies-of-foil-02.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 2/bodies-of-foil-02.png",
-      "width_px": 2518,
-      "height_px": 3544,
-      "aspect_ratio": 0.710497,
-      "mode": "L",
-      "dpi": [
-        71.9836,
-        71.9836
-      ],
-      "file_size_bytes": 4311907,
-      "sequence": 2,
-      "work_page": 1,
-      "page_role": "equal-height spread image 2"
-    }
-  ],
-  "content_start_page": 3,
-  "content_end_page": 3
+  "location": ""
 }

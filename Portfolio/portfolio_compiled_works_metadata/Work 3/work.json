@@ -1,67 +1,8 @@
 {
-  "work_number": 3,
-  "work_label": "Work 3",
-  "folder": "Work 3",
   "title": "Out-Clave",
   "year": "2025",
   "materials": "Wire, Wood",
   "format": "Sculpture",
   "size": "25 cm x 10 cm x 10 cm",
-  "location": "",
-  "key": "work03",
-  "page_count": 2,
-  "metadata_file": "portfolio_compiled_works_metadata/Work 3/work.json",
-  "source_meta_docx": "",
-  "images": [
-    {
-      "filename": "can-you-sit-01.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-01.png",
-      "width_px": 3024,
-      "height_px": 4032,
-      "aspect_ratio": 0.75,
-      "mode": "RGB",
-      "dpi": [
-        72.009,
-        72.009
-      ],
-      "file_size_bytes": 14195596,
-      "sequence": 1,
-      "work_page": 1,
-      "page_role": "equal-height spread image 1"
-    },
-    {
-      "filename": "can-you-sit-02.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-02.png",
-      "width_px": 3024,
-      "height_px": 4032,
-      "aspect_ratio": 0.75,
-      "mode": "RGB",
-      "dpi": [
-        72.009,
-        72.009
-      ],
-      "file_size_bytes": 15012790,
-      "sequence": 2,
-      "work_page": 1,
-      "page_role": "equal-height spread image 2"
-    },
-    {
-      "filename": "can-you-sit-03.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-03.png",
-      "width_px": 3024,
-      "height_px": 4032,
-      "aspect_ratio": 0.75,
-      "mode": "RGB",
-      "dpi": [
-        72.009,
-        72.009
-      ],
-      "file_size_bytes": 12701314,
-      "sequence": 3,
-      "work_page": 2,
-      "page_role": "equal-height spread image 2"
-    }
-  ],
-  "content_start_page": 4,
-  "content_end_page": 5
+  "location": ""
 }

@@ -16,22 +16,23 @@ Image.MAX_IMAGE_PIXELS = None
 
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".tif", ".tiff"}
 LEGACY_METADATA_FILENAMES = {"Meta.txt", "Meta.docx"}
+CAPTION_METADATA_FIELDS = ["title", "year", "materials", "format", "size", "location"]
 CANONICAL_TEX_POINTER = "portfolio_current.tex"
 GERMAN_TEX_POINTER = "portfolio_current_de.tex"
 DEFAULT_TEX_FILE = "portfolio_from_ppt_images_a4.tex"
 TEX_FILES = [CANONICAL_TEX_POINTER, GERMAN_TEX_POINTER]
 CATALOGUE_POLICY = {
-    "version": 2,
+    "version": 3,
     "source_of_truth": {
         "work_order": "The folder names directly under portfolio_compiled_works_metadata are the sole authority for portfolio ordering. Work 1 comes before Work 2, Work 2 before Work 3, and so on by numeric suffix.",
         "work_identity": "The numeric Work N folder is the stable identity and grouping boundary for each artwork throughout the repo.",
-        "metadata": "work.json inside each Work N folder is the sole per-work metadata file. It describes only that folder's contents: caption text, descriptor fields, image list, and page grouping for that work.",
+        "metadata": "work.json inside each Work N folder is the sole human-edited per-work metadata file. It contains only the caption fields displayed in the portfolio.",
         "images": "Image files inside each Work N folder are the authoritative source images for that work.",
         "generated_outputs": "TeX files, PDFs, CSVs, aggregate JSON files, manifests, and page-split outputs are generated from the Work folder order and must not override it.",
     },
     "ordering_rule": "Sort direct child folders matching Work <number> by numeric suffix in ascending order. Do not infer portfolio order from TeX order, PDF page order, CSV row order, file timestamps, image filenames, or metadata fields inside the Work folders.",
     "image_naming_rule": "On every catalogue refresh, artwork images are renamed to title-slug-YY.ext, where title-slug is a short lowercase slug for the artwork title and YY is the image sequence within that folder. Image filenames must not encode the Work folder number or cross-work order.",
-    "metadata_scope_rule": "work.json may change captions, titles, descriptors, materials, dimensions, locations, and image grouping inside the same Work N folder. It must not change cross-work ordering.",
+    "metadata_scope_rule": "work.json may change only caption fields: title, year, materials, format, size, and location. It must not contain Work numbers, image lists, generated paths, page counts, or cross-work ordering.",
     "tex_rule": "The LaTeX inventory is generated from the Work folder catalogue and should not be treated as the source of truth.",
 }
 
@@ -182,9 +183,50 @@ def parse_meta_txt(path: Path) -> dict[str, str]:
     return meta
 
 
-def canonical_image_path(folder: Path, work_num: int, title: str, sequence: int, suffix: str) -> Path:
+def caption_metadata(payload: dict[str, Any]) -> dict[str, str]:
+    return {
+        field: clean_meta_value(str(payload.get(field, "") or ""))
+        for field in CAPTION_METADATA_FIELDS
+    }
+
+
+def valid_work_metadata(folder: Path, payload: Any) -> dict[str, str]:
+    if not isinstance(payload, dict):
+        return {}
+    recorded_folder = str(payload.get("folder", "") or "")
+    if recorded_folder and recorded_folder != folder.name:
+        return {}
+    return caption_metadata(payload)
+
+
+def image_page_suffix(path: Path) -> str:
+    match = re.search(r"(?:[-_ ])([A-Z])$", path.stem)
+    return f"-{match.group(1)}" if match else ""
+
+
+def image_page_hint(path: Path) -> int | None:
+    match = re.search(r"(?:[-_ ])([A-Z])$", path.stem)
+    if not match:
+        return None
+    return ord(match.group(1)) - ord("A") + 1
+
+
+def image_signature(paths: list[Path]) -> tuple[str, ...]:
+    return tuple(sorted(path.name for path in paths))
+
+
+def catalog_by_image_signature(catalog: list[dict[str, Any]]) -> dict[tuple[str, ...], dict[str, Any]]:
+    rows: dict[tuple[str, ...], dict[str, Any]] = {}
+    for work in catalog:
+        signature = tuple(sorted(str(image.get("filename", "")) for image in work.get("images", [])))
+        if signature and signature not in rows:
+            rows[signature] = work
+    return rows
+
+
+def canonical_image_path(folder: Path, work_num: int, title: str, sequence: int, path: Path) -> Path:
     slug = slugify(title or "untitled")
-    return folder / f"{slug}-{sequence:02d}{suffix.lower()}"
+    return folder / f"{slug}-{sequence:02d}{image_page_suffix(path)}{path.suffix.lower()}"
 
 
 def canonical_tex_filename(catalog: list[dict[str, Any]]) -> str:
@@ -206,7 +248,7 @@ def canonicalize_work_images(folder: Path, work_num: int, title: str, root: Path
     )
     rows: list[dict[str, Any]] = []
     for sequence, path in enumerate(image_paths, start=1):
-        target = canonical_image_path(folder, work_num, title, sequence, path.suffix)
+        target = canonical_image_path(folder, work_num, title, sequence, path)
         old_rel = rel(path, root)
         if path.name != target.name:
             if target.exists():
@@ -283,6 +325,10 @@ def image_info(path: Path, root: Path, sequence: int, existing: dict[str, Any], 
 
     work_page = existing.get("work_page")
     page_role = existing.get("page_role")
+    hinted_page = image_page_hint(path)
+    if work_page is None and hinted_page is not None:
+        work_page = hinted_page
+        page_role = f"page {hinted_page} image"
     if work_page is None:
         if total == 3 and sequence == 1:
             work_page = 1
@@ -319,6 +365,7 @@ def normalize_catalog(root: Path) -> list[dict[str, Any]]:
     catalog_path = metadata_root / "catalog.json"
     existing_catalog = json_load(catalog_path, [])
     catalog_by_number = {int(work["work_number"]): work for work in existing_catalog}
+    catalog_by_signature = catalog_by_image_signature(existing_catalog)
     normalized: list[dict[str, Any]] = []
     filename_rows: list[dict[str, Any]] = []
 
@@ -328,11 +375,27 @@ def normalize_catalog(root: Path) -> list[dict[str, Any]]:
         number = work_number(folder)
         work_json = json_load(folder / "work.json", {})
         meta_txt = parse_meta_txt(folder / "Meta.txt")
-        base = {**catalog_by_number.get(number, {}), **meta_txt, **work_json}
-        title = base.get("title") or f"Work {number}"
+        current_image_paths = sorted(
+            path
+            for path in folder.iterdir()
+            if path.is_file() and path.suffix.lower() in IMAGE_EXTENSIONS
+        )
+        signature_match = catalog_by_signature.get(image_signature(current_image_paths), {})
+        work_meta = valid_work_metadata(folder, work_json)
+        base = {
+            **caption_metadata(catalog_by_number.get(number, {})),
+            **caption_metadata(signature_match),
+            **meta_txt,
+            **work_meta,
+        }
+        title = base.get("title") or f"Untitled {number}"
         rename_rows = canonicalize_work_images(folder, number, title, root)
         filename_rows.extend(rename_rows)
-        existing_images = {image.get("filename"): image for image in base.get("images", [])}
+        existing_images: dict[str, Any] = {}
+        for source in [catalog_by_number.get(number, {}), signature_match, work_json if work_meta else {}]:
+            for image in source.get("images", []) if isinstance(source, dict) else []:
+                if image.get("filename"):
+                    existing_images[image["filename"]] = image
         for row in rename_rows:
             old_name = Path(row["old_path"]).name
             new_name = Path(row["new_path"]).name
@@ -348,7 +411,6 @@ def normalize_catalog(root: Path) -> list[dict[str, Any]]:
             for sequence, path in enumerate(image_paths, start=1)
         ]
         page_count = max((int(image["work_page"]) for image in images), default=0)
-        metadata_file = rel(folder / "work.json", root)
         work = {
             "work_number": number,
             "work_label": f"Work {number}",
@@ -361,8 +423,7 @@ def normalize_catalog(root: Path) -> list[dict[str, Any]]:
             "location": base.get("location", ""),
             "key": f"work{number:02d}",
             "page_count": page_count,
-            "metadata_file": metadata_file,
-            "source_meta_docx": "",
+            "metadata_file": rel(folder / "work.json", root),
             "images": images,
             "content_start_page": content_page if page_count else None,
             "content_end_page": content_page + page_count - 1 if page_count else None,
@@ -370,7 +431,7 @@ def normalize_catalog(root: Path) -> list[dict[str, Any]]:
         if page_count:
             content_page = int(work["content_end_page"]) + 1
         normalized.append(work)
-        write_json(folder / "work.json", work)
+        write_json(folder / "work.json", caption_metadata(work))
         remove_legacy_metadata_files(folder)
 
     write_json(catalog_path, normalized)
@@ -849,7 +910,7 @@ def build_manifest(root: Path, catalog: list[dict[str, Any]]) -> tuple[dict[str,
     outputs = output_manifest(root, expected_pdf_pages)
 
     manifest = {
-        "catalogue_source": "portfolio_compiled_works_metadata/Work */work.json",
+        "catalogue_source": "portfolio_compiled_works_metadata/Work */work.json caption fields plus images in each Work folder",
         "aggregate_catalogue": "portfolio_compiled_works_metadata/catalog.json",
         "ordering_authority": "portfolio_order_contract.json",
         "ordering_authority_rule": CATALOGUE_POLICY["ordering_rule"],

@@ -1,50 +1,50 @@
 [
   {
     "work": "Work 1",
-    "old_path": "portfolio_compiled_works_metadata/Work 1/body-frames-01.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 1/body-frames-01.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 1/frames-of-absence-01-A.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 1/frames-of-absence-01-A.png",
     "renamed": false
   },
   {
     "work": "Work 1",
-    "old_path": "portfolio_compiled_works_metadata/Work 1/body-frames-02.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 1/body-frames-02.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 1/frames-of-absence-02-B.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 1/frames-of-absence-02-B.png",
     "renamed": false
   },
   {
     "work": "Work 1",
-    "old_path": "portfolio_compiled_works_metadata/Work 1/body-frames-03.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 1/body-frames-03.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 1/frames-of-absence-03-B.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 1/frames-of-absence-03-B.png",
     "renamed": false
   },
   {
     "work": "Work 2",
-    "old_path": "portfolio_compiled_works_metadata/Work 2/bodies-of-foil-01.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 2/bodies-of-foil-01.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 2/reflects-on-wrinkles-01.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 2/reflects-on-wrinkles-01.png",
     "renamed": false
   },
   {
     "work": "Work 2",
-    "old_path": "portfolio_compiled_works_metadata/Work 2/bodies-of-foil-02.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 2/bodies-of-foil-02.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 2/reflects-on-wrinkles-02.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 2/reflects-on-wrinkles-02.png",
     "renamed": false
   },
   {
     "work": "Work 3",
-    "old_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-01.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-01.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 3/out-clave-01-B.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 3/out-clave-01-B.png",
     "renamed": false
   },
   {
     "work": "Work 3",
-    "old_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-02.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-02.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 3/out-clave-02-B.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 3/out-clave-02-B.png",
     "renamed": false
   },
   {
     "work": "Work 3",
-    "old_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-03.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-03.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 3/out-clave-03-A.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 3/out-clave-03-A.png",
     "renamed": false
   },
   {
@@ -67,110 +67,122 @@
   },
   {
     "work": "Work 7",
-    "old_path": "portfolio_compiled_works_metadata/Work 7/live-5-hour-illustration-performance-01.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 7/live-5-hour-illustration-performance-01.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 7/narrow-stretch-01.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 7/narrow-stretch-01.png",
     "renamed": false
   },
   {
     "work": "Work 7",
-    "old_path": "portfolio_compiled_works_metadata/Work 7/live-5-hour-illustration-performance-02.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 7/live-5-hour-illustration-performance-02.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 7/narrow-stretch-02.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 7/narrow-stretch-02.png",
     "renamed": false
   },
   {
     "work": "Work 8",
-    "old_path": "portfolio_compiled_works_metadata/Work 8/studies-of-brierley-hill-01.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 8/studies-of-brierley-hill-01.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 8/brierley-hill-canal-01.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 8/brierley-hill-canal-01.png",
     "renamed": false
   },
   {
     "work": "Work 9",
-    "old_path": "portfolio_compiled_works_metadata/Work 9/traffic-01.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 9/traffic-01.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-01-A.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-01-A.png",
     "renamed": false
   },
   {
     "work": "Work 9",
-    "old_path": "portfolio_compiled_works_metadata/Work 9/traffic-02.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 9/traffic-02.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-02-B.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-02-B.png",
+    "renamed": false
+  },
+  {
+    "work": "Work 9",
+    "old_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-03-B.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-03-B.png",
     "renamed": false
   },
   {
     "work": "Work 10",
-    "old_path": "portfolio_compiled_works_metadata/Work 10/bricks-01.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 10/bricks-01.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 10/brierley-hill-illustrations-01.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 10/brierley-hill-illustrations-01.png",
     "renamed": false
   },
   {
     "work": "Work 10",
-    "old_path": "portfolio_compiled_works_metadata/Work 10/bricks-02.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 10/bricks-02.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 10/brierley-hill-illustrations-02.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 10/brierley-hill-illustrations-02.png",
     "renamed": false
   },
   {
     "work": "Work 11",
-    "old_path": "portfolio_compiled_works_metadata/Work 11/layers-of-brierley-hill-01.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 11/layers-of-brierley-hill-01.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 11/bricks-01.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 11/bricks-01.png",
     "renamed": false
   },
   {
     "work": "Work 11",
-    "old_path": "portfolio_compiled_works_metadata/Work 11/layers-of-brierley-hill-02.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 11/layers-of-brierley-hill-02.png",
-    "renamed": false
-  },
-  {
-    "work": "Work 11",
-    "old_path": "portfolio_compiled_works_metadata/Work 11/layers-of-brierley-hill-03.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 11/layers-of-brierley-hill-03.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 11/bricks-02.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 11/bricks-02.png",
     "renamed": false
   },
   {
     "work": "Work 12",
-    "old_path": "portfolio_compiled_works_metadata/Work 12/corset-01.jpg",
-    "new_path": "portfolio_compiled_works_metadata/Work 12/corset-01.jpg",
+    "old_path": "portfolio_compiled_works_metadata/Work 12/traffic-01.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 12/traffic-01.png",
     "renamed": false
   },
   {
     "work": "Work 12",
-    "old_path": "portfolio_compiled_works_metadata/Work 12/corset-02.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 12/corset-02.png",
-    "renamed": false
-  },
-  {
-    "work": "Work 12",
-    "old_path": "portfolio_compiled_works_metadata/Work 12/corset-03.jpg",
-    "new_path": "portfolio_compiled_works_metadata/Work 12/corset-03.jpg",
+    "old_path": "portfolio_compiled_works_metadata/Work 12/traffic-02.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 12/traffic-02.png",
     "renamed": false
   },
   {
     "work": "Work 13",
-    "old_path": "portfolio_compiled_works_metadata/Work 13/craig-green-collection-black-01.jpg",
-    "new_path": "portfolio_compiled_works_metadata/Work 13/craig-green-collection-black-01.jpg",
+    "old_path": "portfolio_compiled_works_metadata/Work 13/thorax-01.jpg",
+    "new_path": "portfolio_compiled_works_metadata/Work 13/thorax-01.jpg",
     "renamed": false
   },
   {
     "work": "Work 13",
-    "old_path": "portfolio_compiled_works_metadata/Work 13/craig-green-collection-black-02.jpg",
-    "new_path": "portfolio_compiled_works_metadata/Work 13/craig-green-collection-black-02.jpg",
+    "old_path": "portfolio_compiled_works_metadata/Work 13/thorax-02.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 13/thorax-02.png",
+    "renamed": false
+  },
+  {
+    "work": "Work 13",
+    "old_path": "portfolio_compiled_works_metadata/Work 13/thorax-03.jpg",
+    "new_path": "portfolio_compiled_works_metadata/Work 13/thorax-03.jpg",
     "renamed": false
   },
   {
     "work": "Work 14",
-    "old_path": "portfolio_compiled_works_metadata/Work 14/craig-green-collection-white-01.jpg",
-    "new_path": "portfolio_compiled_works_metadata/Work 14/craig-green-collection-white-01.jpg",
+    "old_path": "portfolio_compiled_works_metadata/Work 14/craig-green-black-i-ii-01.jpg",
+    "new_path": "portfolio_compiled_works_metadata/Work 14/craig-green-black-i-ii-01.jpg",
     "renamed": false
   },
   {
     "work": "Work 14",
-    "old_path": "portfolio_compiled_works_metadata/Work 14/craig-green-collection-white-02.jpg",
-    "new_path": "portfolio_compiled_works_metadata/Work 14/craig-green-collection-white-02.jpg",
+    "old_path": "portfolio_compiled_works_metadata/Work 14/craig-green-black-i-ii-02.jpg",
+    "new_path": "portfolio_compiled_works_metadata/Work 14/craig-green-black-i-ii-02.jpg",
     "renamed": false
   },
   {
     "work": "Work 15",
-    "old_path": "portfolio_compiled_works_metadata/Work 15/the-ethereal-thing-01.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 15/the-ethereal-thing-01.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 15/craig-green-white-i-ii-01.jpg",
+    "new_path": "portfolio_compiled_works_metadata/Work 15/craig-green-white-i-ii-01.jpg",
+    "renamed": false
+  },
+  {
+    "work": "Work 15",
+    "old_path": "portfolio_compiled_works_metadata/Work 15/craig-green-white-i-ii-02.jpg",
+    "new_path": "portfolio_compiled_works_metadata/Work 15/craig-green-white-i-ii-02.jpg",
+    "renamed": false
+  },
+  {
+    "work": "Work 16",
+    "old_path": "portfolio_compiled_works_metadata/Work 16/the-ethereal-thing-01.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 16/the-ethereal-thing-01.png",
     "renamed": false
   }
 ]

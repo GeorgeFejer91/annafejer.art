@@ -1,67 +1,8 @@
 {
-  "work_number": 13,
-  "work_label": "Work 13",
-  "folder": "Work 13",
   "title": "Thorax",
   "year": "2025",
   "materials": "Balloons, Umbrella",
   "format": "Digital Photograph",
   "size": "29.7 cm x 21 cm",
-  "location": "",
-  "key": "work13",
-  "page_count": 2,
-  "metadata_file": "portfolio_compiled_works_metadata/Work 13/work.json",
-  "source_meta_docx": "",
-  "images": [
-    {
-      "filename": "corset-01.jpg",
-      "relative_path": "portfolio_compiled_works_metadata/Work 13/corset-01.jpg",
-      "width_px": 2511,
-      "height_px": 1946,
-      "aspect_ratio": 1.290339,
-      "mode": "RGB",
-      "dpi": [
-        72,
-        72
-      ],
-      "file_size_bytes": 591357,
-      "sequence": 1,
-      "work_page": 1,
-      "page_role": "hero image"
-    },
-    {
-      "filename": "corset-02.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 13/corset-02.png",
-      "width_px": 1620,
-      "height_px": 2160,
-      "aspect_ratio": 0.75,
-      "mode": "RGB",
-      "dpi": [
-        191.99859999999998,
-        191.99859999999998
-      ],
-      "file_size_bytes": 4032819,
-      "sequence": 2,
-      "work_page": 2,
-      "page_role": "equal-height spread image 1"
-    },
-    {
-      "filename": "corset-03.jpg",
-      "relative_path": "portfolio_compiled_works_metadata/Work 13/corset-03.jpg",
-      "width_px": 1719,
-      "height_px": 2160,
-      "aspect_ratio": 0.795833,
-      "mode": "RGB",
-      "dpi": [
-        72,
-        72
-      ],
-      "file_size_bytes": 411014,
-      "sequence": 3,
-      "work_page": 2,
-      "page_role": "equal-height spread image 2"
-    }
-  ],
-  "content_start_page": 15,
-  "content_end_page": 16
+  "location": ""
 }

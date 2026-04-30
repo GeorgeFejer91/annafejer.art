@@ -1,51 +1,8 @@
 {
-  "work_number": 15,
-  "work_label": "Work 15",
-  "folder": "Work 15",
   "title": "Craig Green White: I & II",
   "year": "2025",
   "materials": "Paper, Prints, Oil",
   "format": "Collage",
   "size": "21 cm x 14.4 cm",
-  "location": "",
-  "key": "work15",
-  "page_count": 1,
-  "metadata_file": "portfolio_compiled_works_metadata/Work 15/work.json",
-  "source_meta_docx": "",
-  "images": [
-    {
-      "filename": "craig-green-collection-white-01.jpg",
-      "relative_path": "portfolio_compiled_works_metadata/Work 15/craig-green-collection-white-01.jpg",
-      "width_px": 10398,
-      "height_px": 14506,
-      "aspect_ratio": 0.716807,
-      "mode": "RGB",
-      "dpi": [
-        96,
-        96
-      ],
-      "file_size_bytes": 9514366,
-      "sequence": 1,
-      "work_page": 1,
-      "page_role": "equal-height spread image 1"
-    },
-    {
-      "filename": "craig-green-collection-white-02.jpg",
-      "relative_path": "portfolio_compiled_works_metadata/Work 15/craig-green-collection-white-02.jpg",
-      "width_px": 7838,
-      "height_px": 10864,
-      "aspect_ratio": 0.721465,
-      "mode": "RGB",
-      "dpi": [
-        96,
-        96
-      ],
-      "file_size_bytes": 5029895,
-      "sequence": 2,
-      "work_page": 1,
-      "page_role": "equal-height spread image 2"
-    }
-  ],
-  "content_start_page": 18,
-  "content_end_page": 18
+  "location": ""
 }

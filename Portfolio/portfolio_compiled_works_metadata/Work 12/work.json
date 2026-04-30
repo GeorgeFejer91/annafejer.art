@@ -1,51 +1,8 @@
 {
-  "work_number": 12,
-  "work_label": "Work 12",
-  "folder": "Work 12",
   "title": "Traffic",
   "year": "2025",
   "materials": "Polystyrene, Newspaper, Maps, Plastic, Copper Pipes, Fishing Line",
   "format": "Installation",
   "size": "85 cm x 120 cm x 45 cm",
-  "location": "",
-  "key": "work12",
-  "page_count": 1,
-  "metadata_file": "portfolio_compiled_works_metadata/Work 12/work.json",
-  "source_meta_docx": "",
-  "images": [
-    {
-      "filename": "traffic-01.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 12/traffic-01.png",
-      "width_px": 2640,
-      "height_px": 2160,
-      "aspect_ratio": 1.222222,
-      "mode": "RGB",
-      "dpi": [
-        191.99859999999998,
-        191.99859999999998
-      ],
-      "file_size_bytes": 4091730,
-      "sequence": 1,
-      "work_page": 1,
-      "page_role": "equal-height spread image 1"
-    },
-    {
-      "filename": "traffic-02.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 12/traffic-02.png",
-      "width_px": 3024,
-      "height_px": 4032,
-      "aspect_ratio": 0.75,
-      "mode": "RGB",
-      "dpi": [
-        72.009,
-        72.009
-      ],
-      "file_size_bytes": 6657604,
-      "sequence": 2,
-      "work_page": 1,
-      "page_role": "equal-height spread image 2"
-    }
-  ],
-  "content_start_page": 11,
-  "content_end_page": 11
+  "location": ""
 }

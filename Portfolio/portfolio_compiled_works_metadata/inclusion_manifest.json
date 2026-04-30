@@ -1,5 +1,5 @@
 {
-  "catalogue_source": "portfolio_compiled_works_metadata/Work */work.json",
+  "catalogue_source": "portfolio_compiled_works_metadata/Work */work.json caption fields plus images in each Work folder",
   "aggregate_catalogue": "portfolio_compiled_works_metadata/catalog.json",
   "ordering_authority": "portfolio_order_contract.json",
   "ordering_authority_rule": "Sort direct child folders matching Work <number> by numeric suffix in ascending order. Do not infer portfolio order from TeX order, PDF page order, CSV row order, file timestamps, image filenames, or metadata fields inside the Work folders.",
@@ -18,46 +18,47 @@
     12,
     13,
     14,
-    15
+    15,
+    16
   ],
   "tex_sources": [
     "portfolio_current.tex",
     "portfolio_current_de.tex"
   ],
-  "work_count": 15,
-  "library_image_count": 29,
-  "content_page_count": 19,
-  "expected_pdf_page_count": 21,
+  "work_count": 16,
+  "library_image_count": 31,
+  "content_page_count": 20,
+  "expected_pdf_page_count": 22,
   "works": [
     {
       "work_number": 1,
       "folder": "Work 1",
-      "title": "Body Frames",
+      "title": "Frames of Absence",
       "page_count": 2,
       "content_start_page": 1,
       "content_end_page": 2,
       "image_count": 3,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 1/body-frames-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 1/frames-of-absence-01-A.png",
           "work_page": 1,
-          "page_role": "hero image",
+          "page_role": "page 1 image",
           "width_px": 2160,
           "height_px": 2796,
           "file_size_bytes": 4173105
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 1/body-frames-02.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 1/frames-of-absence-02-B.png",
           "work_page": 2,
-          "page_role": "equal-height spread image 1",
+          "page_role": "page 2 image",
           "width_px": 1660,
           "height_px": 2160,
           "file_size_bytes": 3575111
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 1/body-frames-03.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 1/frames-of-absence-03-B.png",
           "work_page": 2,
-          "page_role": "equal-height spread image 2",
+          "page_role": "page 2 image",
           "width_px": 1497,
           "height_px": 2160,
           "file_size_bytes": 3426444
@@ -67,14 +68,14 @@
     {
       "work_number": 2,
       "folder": "Work 2",
-      "title": "Bodies of Foil",
+      "title": "Reflects on Wrinkles",
       "page_count": 1,
       "content_start_page": 3,
       "content_end_page": 3,
       "image_count": 2,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 2/bodies-of-foil-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 2/reflects-on-wrinkles-01.png",
           "work_page": 1,
           "page_role": "equal-height spread image 1",
           "width_px": 2435,
@@ -82,7 +83,7 @@
           "file_size_bytes": 7642942
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 2/bodies-of-foil-02.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 2/reflects-on-wrinkles-02.png",
           "work_page": 1,
           "page_role": "equal-height spread image 2",
           "width_px": 2518,
@@ -94,32 +95,32 @@
     {
       "work_number": 3,
       "folder": "Work 3",
-      "title": "Can you Sit?",
+      "title": "Out-Clave",
       "page_count": 2,
       "content_start_page": 4,
       "content_end_page": 5,
       "image_count": 3,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-01.png",
-          "work_page": 1,
-          "page_role": "equal-height spread image 1",
+          "relative_path": "portfolio_compiled_works_metadata/Work 3/out-clave-01-B.png",
+          "work_page": 2,
+          "page_role": "page 2 image",
           "width_px": 3024,
           "height_px": 4032,
           "file_size_bytes": 14195596
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-02.png",
-          "work_page": 1,
-          "page_role": "equal-height spread image 2",
+          "relative_path": "portfolio_compiled_works_metadata/Work 3/out-clave-02-B.png",
+          "work_page": 2,
+          "page_role": "page 2 image",
           "width_px": 3024,
           "height_px": 4032,
           "file_size_bytes": 15012790
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-03.png",
-          "work_page": 2,
-          "page_role": "equal-height spread image 2",
+          "relative_path": "portfolio_compiled_works_metadata/Work 3/out-clave-03-A.png",
+          "work_page": 1,
+          "page_role": "page 1 image",
           "width_px": 3024,
           "height_px": 4032,
           "file_size_bytes": 12701314
@@ -186,14 +187,14 @@
     {
       "work_number": 7,
       "folder": "Work 7",
-      "title": "Live 5 Hour Illustration Performance",
+      "title": "Narrow Stretch",
       "page_count": 1,
       "content_start_page": 9,
       "content_end_page": 9,
       "image_count": 2,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 7/live-5-hour-illustration-performance-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 7/narrow-stretch-01.png",
           "work_page": 1,
           "page_role": "equal-height spread image 1",
           "width_px": 1251,
@@ -201,7 +202,7 @@
           "file_size_bytes": 2847795
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 7/live-5-hour-illustration-performance-02.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 7/narrow-stretch-02.png",
           "work_page": 1,
           "page_role": "equal-height spread image 2",
           "width_px": 1690,
@@ -213,14 +214,14 @@
     {
       "work_number": 8,
       "folder": "Work 8",
-      "title": "Studies of Brierley Hill",
+      "title": "Brierley Hill Canal",
       "page_count": 1,
       "content_start_page": 10,
       "content_end_page": 10,
       "image_count": 1,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 8/studies-of-brierley-hill-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 8/brierley-hill-canal-01.png",
           "work_page": 1,
           "page_role": "single image",
           "width_px": 984,
@@ -232,41 +233,76 @@
     {
       "work_number": 9,
       "folder": "Work 9",
-      "title": "Traffic",
-      "page_count": 1,
+      "title": "Layers of Brierley Hill",
+      "page_count": 2,
       "content_start_page": 11,
-      "content_end_page": 11,
-      "image_count": 2,
+      "content_end_page": 12,
+      "image_count": 3,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 9/traffic-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-01-A.png",
           "work_page": 1,
-          "page_role": "equal-height spread image 1",
-          "width_px": 2640,
-          "height_px": 2160,
-          "file_size_bytes": 4091730
+          "page_role": "page 1 image",
+          "width_px": 4000,
+          "height_px": 4500,
+          "file_size_bytes": 12169019
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 9/traffic-02.png",
-          "work_page": 1,
-          "page_role": "equal-height spread image 2",
+          "relative_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-02-B.png",
+          "work_page": 2,
+          "page_role": "page 2 image",
           "width_px": 3024,
           "height_px": 4032,
-          "file_size_bytes": 6657604
+          "file_size_bytes": 10836388
+        },
+        {
+          "relative_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-03-B.png",
+          "work_page": 2,
+          "page_role": "page 2 image",
+          "width_px": 3024,
+          "height_px": 4032,
+          "file_size_bytes": 11247869
         }
       ]
     },
     {
       "work_number": 10,
       "folder": "Work 10",
-      "title": "Bricks",
+      "title": "Brierley Hill Illustrations",
       "page_count": 1,
-      "content_start_page": 12,
-      "content_end_page": 12,
+      "content_start_page": 13,
+      "content_end_page": 13,
       "image_count": 2,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 10/bricks-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 10/brierley-hill-illustrations-01.png",
+          "work_page": 1,
+          "page_role": "equal-height spread image 1",
+          "width_px": 3024,
+          "height_px": 4032,
+          "file_size_bytes": 2793414
+        },
+        {
+          "relative_path": "portfolio_compiled_works_metadata/Work 10/brierley-hill-illustrations-02.png",
+          "work_page": 1,
+          "page_role": "equal-height spread image 2",
+          "width_px": 3024,
+          "height_px": 4032,
+          "file_size_bytes": 7248669
+        }
+      ]
+    },
+    {
+      "work_number": 11,
+      "folder": "Work 11",
+      "title": "Bricks",
+      "page_count": 1,
+      "content_start_page": 14,
+      "content_end_page": 14,
+      "image_count": 2,
+      "images": [
+        {
+          "relative_path": "portfolio_compiled_works_metadata/Work 11/bricks-01.png",
           "work_page": 1,
           "page_role": "equal-height spread image 1",
           "width_px": 4032,
@@ -274,7 +310,7 @@
           "file_size_bytes": 7034635
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 10/bricks-02.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 11/bricks-02.png",
           "work_page": 1,
           "page_role": "equal-height spread image 2",
           "width_px": 4032,
@@ -284,51 +320,43 @@
       ]
     },
     {
-      "work_number": 11,
-      "folder": "Work 11",
-      "title": "Layers of Brierley Hill",
-      "page_count": 2,
-      "content_start_page": 13,
-      "content_end_page": 14,
-      "image_count": 3,
+      "work_number": 12,
+      "folder": "Work 12",
+      "title": "Traffic",
+      "page_count": 1,
+      "content_start_page": 15,
+      "content_end_page": 15,
+      "image_count": 2,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 11/layers-of-brierley-hill-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 12/traffic-01.png",
           "work_page": 1,
-          "page_role": "hero image",
-          "width_px": 4000,
-          "height_px": 4500,
-          "file_size_bytes": 12169019
-        },
-        {
-          "relative_path": "portfolio_compiled_works_metadata/Work 11/layers-of-brierley-hill-02.png",
-          "work_page": 2,
           "page_role": "equal-height spread image 1",
-          "width_px": 3024,
-          "height_px": 4032,
-          "file_size_bytes": 10836388
+          "width_px": 2640,
+          "height_px": 2160,
+          "file_size_bytes": 4091730
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 11/layers-of-brierley-hill-03.png",
-          "work_page": 2,
+          "relative_path": "portfolio_compiled_works_metadata/Work 12/traffic-02.png",
+          "work_page": 1,
           "page_role": "equal-height spread image 2",
           "width_px": 3024,
           "height_px": 4032,
-          "file_size_bytes": 11247869
+          "file_size_bytes": 6657604
         }
       ]
     },
     {
-      "work_number": 12,
-      "folder": "Work 12",
-      "title": "Corset",
+      "work_number": 13,
+      "folder": "Work 13",
+      "title": "Thorax",
       "page_count": 2,
-      "content_start_page": 15,
-      "content_end_page": 16,
+      "content_start_page": 16,
+      "content_end_page": 17,
       "image_count": 3,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 12/corset-01.jpg",
+          "relative_path": "portfolio_compiled_works_metadata/Work 13/thorax-01.jpg",
           "work_page": 1,
           "page_role": "hero image",
           "width_px": 2511,
@@ -336,7 +364,7 @@
           "file_size_bytes": 591357
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 12/corset-02.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 13/thorax-02.png",
           "work_page": 2,
           "page_role": "equal-height spread image 1",
           "width_px": 1620,
@@ -344,7 +372,7 @@
           "file_size_bytes": 4032819
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 12/corset-03.jpg",
+          "relative_path": "portfolio_compiled_works_metadata/Work 13/thorax-03.jpg",
           "work_page": 2,
           "page_role": "equal-height spread image 2",
           "width_px": 1719,
@@ -354,16 +382,16 @@
       ]
     },
     {
-      "work_number": 13,
-      "folder": "Work 13",
-      "title": "Craig Green Collection Black",
+      "work_number": 14,
+      "folder": "Work 14",
+      "title": "Craig Green Black: I & II",
       "page_count": 1,
-      "content_start_page": 17,
-      "content_end_page": 17,
+      "content_start_page": 18,
+      "content_end_page": 18,
       "image_count": 2,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 13/craig-green-collection-black-01.jpg",
+          "relative_path": "portfolio_compiled_works_metadata/Work 14/craig-green-black-i-ii-01.jpg",
           "work_page": 1,
           "page_role": "equal-height spread image 1",
           "width_px": 9500,
@@ -371,7 +399,7 @@
           "file_size_bytes": 8455390
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 13/craig-green-collection-black-02.jpg",
+          "relative_path": "portfolio_compiled_works_metadata/Work 14/craig-green-black-i-ii-02.jpg",
           "work_page": 1,
           "page_role": "equal-height spread image 2",
           "width_px": 9770,
@@ -381,16 +409,16 @@
       ]
     },
     {
-      "work_number": 14,
-      "folder": "Work 14",
-      "title": "Craig Green Collection White",
+      "work_number": 15,
+      "folder": "Work 15",
+      "title": "Craig Green White: I & II",
       "page_count": 1,
-      "content_start_page": 18,
-      "content_end_page": 18,
+      "content_start_page": 19,
+      "content_end_page": 19,
       "image_count": 2,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 14/craig-green-collection-white-01.jpg",
+          "relative_path": "portfolio_compiled_works_metadata/Work 15/craig-green-white-i-ii-01.jpg",
           "work_page": 1,
           "page_role": "equal-height spread image 1",
           "width_px": 10398,
@@ -398,7 +426,7 @@
           "file_size_bytes": 9514366
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 14/craig-green-collection-white-02.jpg",
+          "relative_path": "portfolio_compiled_works_metadata/Work 15/craig-green-white-i-ii-02.jpg",
           "work_page": 1,
           "page_role": "equal-height spread image 2",
           "width_px": 7838,
@@ -408,16 +436,16 @@
       ]
     },
     {
-      "work_number": 15,
-      "folder": "Work 15",
+      "work_number": 16,
+      "folder": "Work 16",
       "title": "The Ethereal Thing",
       "page_count": 1,
-      "content_start_page": 19,
-      "content_end_page": 19,
+      "content_start_page": 20,
+      "content_end_page": 20,
       "image_count": 1,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 15/the-ethereal-thing-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 16/the-ethereal-thing-01.png",
           "work_page": 1,
           "page_role": "single image",
           "width_px": 7500,
@@ -429,13 +457,13 @@
   ],
   "tex_inclusion_checks": {
     "portfolio_current.tex": {
-      "image_reference_count": 29,
+      "image_reference_count": 31,
       "missing_library_images": [],
       "missing_files": [],
       "extra_references": []
     },
     "portfolio_current_de.tex": {
-      "image_reference_count": 29,
+      "image_reference_count": 31,
       "missing_library_images": [],
       "missing_files": [],
       "extra_references": []
@@ -448,97 +476,101 @@
         "path": "Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf",
         "exists": true,
         "readable": true,
-        "pages": 21,
+        "pages": 22,
         "page_size": "841.89 x 595.276 pts (A4)",
-        "file_size_bytes": 188848971
+        "file_size_bytes": 198877625
       },
       "split_pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent",
-      "split_page_count": 21,
-      "expected_page_count": 21,
+      "split_page_count": 22,
+      "expected_page_count": 22,
       "split_pages": [
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-01.pdf",
-          "file_size_bytes": 42482
+          "file_size_bytes": 42559
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-02.pdf",
-          "file_size_bytes": 51373
+          "file_size_bytes": 51281
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-03.pdf",
-          "file_size_bytes": 4191523
+          "file_size_bytes": 4191605
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-04.pdf",
-          "file_size_bytes": 7016072
+          "file_size_bytes": 7016154
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-05.pdf",
-          "file_size_bytes": 13952894
+          "file_size_bytes": 13952993
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-06.pdf",
-          "file_size_bytes": 29190255
+          "file_size_bytes": 12707169
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-07.pdf",
-          "file_size_bytes": 12707093
+          "file_size_bytes": 29190331
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-08.pdf",
-          "file_size_bytes": 171700
+          "file_size_bytes": 171777
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-09.pdf",
-          "file_size_bytes": 98954
+          "file_size_bytes": 99031
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-10.pdf",
-          "file_size_bytes": 2275360
+          "file_size_bytes": 2275437
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-11.pdf",
-          "file_size_bytes": 7526213
+          "file_size_bytes": 7526331
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-12.pdf",
-          "file_size_bytes": 853674
+          "file_size_bytes": 853740
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-13.pdf",
-          "file_size_bytes": 10758318
+          "file_size_bytes": 12175843
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-14.pdf",
-          "file_size_bytes": 13991465
+          "file_size_bytes": 22076822
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-15.pdf",
-          "file_size_bytes": 12175768
+          "file_size_bytes": 10052108
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-16.pdf",
-          "file_size_bytes": 22076745
+          "file_size_bytes": 13991542
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-17.pdf",
-          "file_size_bytes": 615736
+          "file_size_bytes": 10758393
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-18.pdf",
-          "file_size_bytes": 4462561
+          "file_size_bytes": 615816
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-19.pdf",
-          "file_size_bytes": 16755720
+          "file_size_bytes": 4462639
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-20.pdf",
-          "file_size_bytes": 14568902
+          "file_size_bytes": 16755799
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-21.pdf",
-          "file_size_bytes": 15860545
+          "file_size_bytes": 14568975
+        },
+        {
+          "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-22.pdf",
+          "file_size_bytes": 15860621
         }
       ]
     },
@@ -548,97 +580,101 @@
         "path": "Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE.pdf",
         "exists": true,
         "readable": true,
-        "pages": 21,
+        "pages": 22,
         "page_size": "841.89 x 595.276 pts (A4)",
-        "file_size_bytes": 188849033
+        "file_size_bytes": 198877733
       },
       "split_pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE",
-      "split_page_count": 21,
-      "expected_page_count": 21,
+      "split_page_count": 22,
+      "expected_page_count": 22,
       "split_pages": [
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-01.pdf",
-          "file_size_bytes": 42387
+          "file_size_bytes": 42535
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-02.pdf",
-          "file_size_bytes": 51268
+          "file_size_bytes": 51235
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-03.pdf",
-          "file_size_bytes": 4191686
+          "file_size_bytes": 4191841
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-04.pdf",
-          "file_size_bytes": 7016236
+          "file_size_bytes": 7016390
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-05.pdf",
-          "file_size_bytes": 13953070
+          "file_size_bytes": 13953241
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-06.pdf",
-          "file_size_bytes": 29190427
+          "file_size_bytes": 12707413
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-07.pdf",
-          "file_size_bytes": 12707265
+          "file_size_bytes": 29190574
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-08.pdf",
-          "file_size_bytes": 171880
+          "file_size_bytes": 172028
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-09.pdf",
-          "file_size_bytes": 99135
+          "file_size_bytes": 99283
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-10.pdf",
-          "file_size_bytes": 2275535
+          "file_size_bytes": 2275683
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-11.pdf",
-          "file_size_bytes": 7526386
+          "file_size_bytes": 7526568
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-12.pdf",
-          "file_size_bytes": 853847
+          "file_size_bytes": 853985
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-13.pdf",
-          "file_size_bytes": 10758516
+          "file_size_bytes": 12176075
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-14.pdf",
-          "file_size_bytes": 13991652
+          "file_size_bytes": 22077054
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-15.pdf",
-          "file_size_bytes": 12175929
+          "file_size_bytes": 10052350
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-16.pdf",
-          "file_size_bytes": 22076906
+          "file_size_bytes": 13991801
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-17.pdf",
-          "file_size_bytes": 615925
+          "file_size_bytes": 10758663
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-18.pdf",
-          "file_size_bytes": 4462750
+          "file_size_bytes": 616074
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-19.pdf",
-          "file_size_bytes": 16755883
+          "file_size_bytes": 4462895
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-20.pdf",
-          "file_size_bytes": 14569070
+          "file_size_bytes": 16756033
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-21.pdf",
-          "file_size_bytes": 15860725
+          "file_size_bytes": 14569215
+        },
+        {
+          "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE-page-22.pdf",
+          "file_size_bytes": 15860872
         }
       ]
     }

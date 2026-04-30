@@ -1,51 +1,8 @@
 {
-  "work_number": 7,
-  "work_label": "Work 7",
-  "folder": "Work 7",
   "title": "Narrow Stretch",
   "year": "2024",
   "materials": "Paint, Ink",
   "format": "Live 5 Hour Illustration Performance on Canvas",
   "size": "118.9 cm x 84.1 cm",
-  "location": "Kings eath Eid - England",
-  "key": "work07",
-  "page_count": 1,
-  "metadata_file": "portfolio_compiled_works_metadata/Work 7/work.json",
-  "source_meta_docx": "",
-  "images": [
-    {
-      "filename": "live-5-hour-illustration-performance-01.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 7/live-5-hour-illustration-performance-01.png",
-      "width_px": 1251,
-      "height_px": 1728,
-      "aspect_ratio": 0.723958,
-      "mode": "RGB",
-      "dpi": [
-        72.009,
-        72.009
-      ],
-      "file_size_bytes": 2847795,
-      "sequence": 1,
-      "work_page": 1,
-      "page_role": "equal-height spread image 1"
-    },
-    {
-      "filename": "live-5-hour-illustration-performance-02.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 7/live-5-hour-illustration-performance-02.png",
-      "width_px": 1690,
-      "height_px": 2048,
-      "aspect_ratio": 0.825195,
-      "mode": "RGB",
-      "dpi": [
-        191.99859999999998,
-        191.99859999999998
-      ],
-      "file_size_bytes": 4664688,
-      "sequence": 2,
-      "work_page": 1,
-      "page_role": "equal-height spread image 2"
-    }
-  ],
-  "content_start_page": 9,
-  "content_end_page": 9
+  "location": "Kings eath Eid - England"
 }
