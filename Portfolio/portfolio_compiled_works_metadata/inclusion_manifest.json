@@ -447,14 +447,14 @@
     {
       "work_number": 16,
       "folder": "Work 16",
-      "title": "Untitled 16",
+      "title": "Reflections on Wrinkles II",
       "page_count": 1,
       "content_start_page": 20,
       "content_end_page": 20,
       "image_count": 1,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 16/untitled-16-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 16/reflections-on-wrinkles-ii-01.png",
           "work_page": 1,
           "page_role": "single image",
           "width_px": 3706,
@@ -486,15 +486,27 @@
   "tex_inclusion_checks": {
     "portfolio_current.tex": {
       "image_reference_count": 33,
-      "missing_library_images": [],
-      "missing_files": [],
-      "extra_references": []
+      "missing_library_images": [
+        "portfolio_compiled_works_metadata/Work 16/reflections-on-wrinkles-ii-01.png"
+      ],
+      "missing_files": [
+        "portfolio_compiled_works_metadata/Work 16/untitled-16-01.png"
+      ],
+      "extra_references": [
+        "portfolio_compiled_works_metadata/Work 16/untitled-16-01.png"
+      ]
     },
     "portfolio_current_de.tex": {
       "image_reference_count": 33,
-      "missing_library_images": [],
-      "missing_files": [],
-      "extra_references": []
+      "missing_library_images": [
+        "portfolio_compiled_works_metadata/Work 16/reflections-on-wrinkles-ii-01.png"
+      ],
+      "missing_files": [
+        "portfolio_compiled_works_metadata/Work 16/untitled-16-01.png"
+      ],
+      "extra_references": [
+        "portfolio_compiled_works_metadata/Work 16/untitled-16-01.png"
+      ]
     }
   },
   "outputs": [
@@ -504,12 +516,12 @@
         "path": "Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN.pdf",
         "exists": true,
         "readable": true,
-        "pages": 22,
+        "pages": 23,
         "page_size": "841.89 x 595.276 pts (A4)",
-        "file_size_bytes": 206451661
+        "file_size_bytes": 195900778
       },
       "split_pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN",
-      "split_page_count": 22,
+      "split_page_count": 23,
       "expected_page_count": 23,
       "split_pages": [
         {
@@ -518,7 +530,7 @@
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN-page-02.pdf",
-          "file_size_bytes": 55079
+          "file_size_bytes": 55766
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN-page-03.pdf",
@@ -598,7 +610,11 @@
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN-page-22.pdf",
-          "file_size_bytes": 15860762
+          "file_size_bytes": 2660448
+        },
+        {
+          "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN-page-23.pdf",
+          "file_size_bytes": 2672937
         }
       ]
     },
@@ -608,12 +624,12 @@
         "path": "Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf",
         "exists": true,
         "readable": true,
-        "pages": 22,
+        "pages": 23,
         "page_size": "841.89 x 595.276 pts (A4)",
-        "file_size_bytes": 206451769
+        "file_size_bytes": 195900885
       },
       "split_pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent",
-      "split_page_count": 22,
+      "split_page_count": 23,
       "expected_page_count": 23,
       "split_pages": [
         {
@@ -622,7 +638,7 @@
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-02.pdf",
-          "file_size_bytes": 55010
+          "file_size_bytes": 55699
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-03.pdf",
@@ -702,11 +718,22 @@
         },
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-22.pdf",
-          "file_size_bytes": 15860997
+          "file_size_bytes": 2660669
+        },
+        {
+          "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-23.pdf",
+          "file_size_bytes": 2673170
         }
       ]
     }
   ],
-  "status": "ok",
-  "errors": []
+  "status": "error",
+  "errors": [
+    "portfolio_current.tex does not include 1 library image(s)",
+    "portfolio_current.tex references 1 missing file(s)",
+    "portfolio_current.tex references 1 file(s) outside the catalogue",
+    "portfolio_current_de.tex does not include 1 library image(s)",
+    "portfolio_current_de.tex references 1 missing file(s)",
+    "portfolio_current_de.tex references 1 file(s) outside the catalogue"
+  ]
 }
