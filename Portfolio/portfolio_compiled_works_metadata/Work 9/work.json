@@ -10,11 +10,12 @@
   "location": "",
   "key": "work09",
   "page_count": 1,
-  "source_meta_docx": "portfolio_compiled_works_metadata/Work 9/Meta.docx",
+  "metadata_file": "portfolio_compiled_works_metadata/Work 9/work.json",
+  "source_meta_docx": "",
   "images": [
     {
-      "filename": "work-09-traffic-01.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 9/work-09-traffic-01.png",
+      "filename": "traffic-01.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 9/traffic-01.png",
       "width_px": 2640,
       "height_px": 2160,
       "aspect_ratio": 1.222222,
@@ -29,8 +30,8 @@
       "page_role": "equal-height spread image 1"
     },
     {
-      "filename": "work-09-traffic-02.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 9/work-09-traffic-02.png",
+      "filename": "traffic-02.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 9/traffic-02.png",
       "width_px": 3024,
       "height_px": 4032,
       "aspect_ratio": 0.75,

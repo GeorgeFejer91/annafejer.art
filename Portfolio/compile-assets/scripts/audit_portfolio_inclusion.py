@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import argparse
 import csv
-import hashlib
 import json
 import re
 import shutil
@@ -16,6 +15,7 @@ from PIL import Image
 Image.MAX_IMAGE_PIXELS = None
 
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".tif", ".tiff"}
+LEGACY_METADATA_FILENAMES = {"Meta.txt", "Meta.docx"}
 CANONICAL_TEX_POINTER = "portfolio_current.tex"
 GERMAN_TEX_POINTER = "portfolio_current_de.tex"
 DEFAULT_TEX_FILE = "portfolio_from_ppt_images_a4.tex"
@@ -25,13 +25,13 @@ CATALOGUE_POLICY = {
     "source_of_truth": {
         "work_order": "The folder names directly under portfolio_compiled_works_metadata are the sole authority for portfolio ordering. Work 1 comes before Work 2, Work 2 before Work 3, and so on by numeric suffix.",
         "work_identity": "The numeric Work N folder is the stable identity and grouping boundary for each artwork throughout the repo.",
-        "metadata": "Metadata files inside a Work N folder describe only that folder's contents: caption text, descriptor fields, image list, and page grouping for that work.",
+        "metadata": "work.json inside each Work N folder is the sole per-work metadata file. It describes only that folder's contents: caption text, descriptor fields, image list, and page grouping for that work.",
         "images": "Image files inside each Work N folder are the authoritative source images for that work.",
         "generated_outputs": "TeX files, PDFs, CSVs, aggregate JSON files, manifests, and page-split outputs are generated from the Work folder order and must not override it.",
     },
     "ordering_rule": "Sort direct child folders matching Work <number> by numeric suffix in ascending order. Do not infer portfolio order from TeX order, PDF page order, CSV row order, file timestamps, image filenames, or metadata fields inside the Work folders.",
-    "image_naming_rule": "On every catalogue refresh, artwork images are renamed to work-XX-title-slug-YY.ext, where XX is the zero-padded Work folder number and YY is the image sequence within that folder.",
-    "metadata_scope_rule": "Meta.txt and work.json may change captions, titles, descriptors, materials, dimensions, locations, and image grouping inside the same Work N folder. They must not change cross-work ordering.",
+    "image_naming_rule": "On every catalogue refresh, artwork images are renamed to title-slug-YY.ext, where title-slug is a short lowercase slug for the artwork title and YY is the image sequence within that folder. Image filenames must not encode the Work folder number or cross-work order.",
+    "metadata_scope_rule": "work.json may change captions, titles, descriptors, materials, dimensions, locations, and image grouping inside the same Work N folder. It must not change cross-work ordering.",
     "tex_rule": "The LaTeX inventory is generated from the Work folder catalogue and should not be treated as the source of truth.",
 }
 
@@ -183,25 +183,12 @@ def parse_meta_txt(path: Path) -> dict[str, str]:
 
 
 def canonical_image_path(folder: Path, work_num: int, title: str, sequence: int, suffix: str) -> Path:
-    slug = slugify(title or f"Work {work_num}")
-    return folder / f"work-{work_num:02d}-{slug}-{sequence:02d}{suffix.lower()}"
+    slug = slugify(title or "untitled")
+    return folder / f"{slug}-{sequence:02d}{suffix.lower()}"
 
 
 def canonical_tex_filename(catalog: list[dict[str, Any]]) -> str:
-    if not catalog:
-        return DEFAULT_TEX_FILE
-    first = min(int(work["work_number"]) for work in catalog)
-    last = max(int(work["work_number"]) for work in catalog)
-    count = len(catalog)
-    signature = "-".join(
-        f"{int(work['work_number']):02d}-{slugify(work['title'])}"
-        for work in catalog
-    )
-    compact_signature = re.sub(r"[^a-z0-9]+", "-", signature).strip("-")
-    digest = hashlib.sha1(signature.encode("utf-8")).hexdigest()[:10]
-    if len(compact_signature) > 120:
-        compact_signature = compact_signature[:120].rstrip("-")
-    return f"portfolio_a4_work-{first:02d}-to-{last:02d}_{count}-works_{digest}_{compact_signature}.tex"
+    return "portfolio_a4_catalogue.tex"
 
 
 def language_tex_filename(catalog: list[dict[str, Any]], language: str) -> str:
@@ -243,6 +230,13 @@ def canonicalize_work_images(folder: Path, work_num: int, title: str, root: Path
                 }
             )
     return rows
+
+
+def remove_legacy_metadata_files(folder: Path) -> None:
+    for filename in LEGACY_METADATA_FILENAMES:
+        path = folder / filename
+        if path.exists():
+            path.unlink()
 
 
 def rewrite_tex_image_paths(root: Path, rename_rows: list[dict[str, Any]]) -> None:
@@ -334,10 +328,16 @@ def normalize_catalog(root: Path) -> list[dict[str, Any]]:
         number = work_number(folder)
         work_json = json_load(folder / "work.json", {})
         meta_txt = parse_meta_txt(folder / "Meta.txt")
-        base = {**catalog_by_number.get(number, {}), **work_json, **meta_txt}
+        base = {**catalog_by_number.get(number, {}), **meta_txt, **work_json}
         title = base.get("title") or f"Work {number}"
-        filename_rows.extend(canonicalize_work_images(folder, number, title, root))
+        rename_rows = canonicalize_work_images(folder, number, title, root)
+        filename_rows.extend(rename_rows)
         existing_images = {image.get("filename"): image for image in base.get("images", [])}
+        for row in rename_rows:
+            old_name = Path(row["old_path"]).name
+            new_name = Path(row["new_path"]).name
+            if old_name in existing_images:
+                existing_images[new_name] = existing_images[old_name]
         image_paths = sorted(
             path
             for path in folder.iterdir()
@@ -348,7 +348,7 @@ def normalize_catalog(root: Path) -> list[dict[str, Any]]:
             for sequence, path in enumerate(image_paths, start=1)
         ]
         page_count = max((int(image["work_page"]) for image in images), default=0)
-        source_meta_docx = rel(folder / "Meta.docx", root) if (folder / "Meta.docx").exists() else ""
+        metadata_file = rel(folder / "work.json", root)
         work = {
             "work_number": number,
             "work_label": f"Work {number}",
@@ -361,7 +361,8 @@ def normalize_catalog(root: Path) -> list[dict[str, Any]]:
             "location": base.get("location", ""),
             "key": f"work{number:02d}",
             "page_count": page_count,
-            "source_meta_docx": source_meta_docx,
+            "metadata_file": metadata_file,
+            "source_meta_docx": "",
             "images": images,
             "content_start_page": content_page if page_count else None,
             "content_end_page": content_page + page_count - 1 if page_count else None,
@@ -370,6 +371,7 @@ def normalize_catalog(root: Path) -> list[dict[str, Any]]:
             content_page = int(work["content_end_page"]) + 1
         normalized.append(work)
         write_json(folder / "work.json", work)
+        remove_legacy_metadata_files(folder)
 
     write_json(catalog_path, normalized)
     write_catalog_csv(metadata_root / "catalog.csv", normalized)
@@ -741,9 +743,10 @@ def sync_tex_content_pages(tex_path: Path, catalog: list[dict[str, Any]], langua
     tex_path.write_text(updated, encoding="utf-8")
 
 
-def pdf_info(path: Path) -> dict[str, Any]:
+def pdf_info(path: Path, root: Path | None = None) -> dict[str, Any]:
+    display_path = rel(path, root) if root is not None else path.as_posix()
     if not path.exists():
-        return {"path": path.as_posix(), "exists": False}
+        return {"path": display_path, "exists": False}
     proc = subprocess.run(
         ["pdfinfo", str(path)],
         text=True,
@@ -753,7 +756,7 @@ def pdf_info(path: Path) -> dict[str, Any]:
     )
     if proc.returncode != 0:
         return {
-            "path": path.as_posix(),
+            "path": display_path,
             "exists": True,
             "readable": False,
             "error": (proc.stderr or proc.stdout).strip(),
@@ -768,7 +771,7 @@ def pdf_info(path: Path) -> dict[str, Any]:
         if line.startswith("Page size:"):
             media_box = line.split(":", 1)[1].strip()
     return {
-        "path": path.as_posix(),
+        "path": display_path,
         "exists": True,
         "readable": True,
         "pages": pages,
@@ -786,7 +789,7 @@ def output_manifest(root: Path, expected_pdf_pages: int) -> dict[str, Any]:
         outputs.append(
             {
                 "key": spec["key"],
-                "pdf": pdf_info(pdf_path),
+                "pdf": pdf_info(pdf_path, root),
                 "split_pages_dir": spec["pages_dir"],
                 "split_page_count": len(page_files),
                 "expected_page_count": expected_pdf_pages,
@@ -890,7 +893,7 @@ def build_manifest(root: Path, catalog: list[dict[str, Any]]) -> tuple[dict[str,
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--write", action="store_true", help="write refreshed JSON/CSV manifests")
-    parser.add_argument("--sync-tex", action="store_true", help="rewrite the TeX inventory from Meta.txt/catalogue data")
+    parser.add_argument("--sync-tex", action="store_true", help="rewrite the TeX inventory from work.json/catalogue data")
     parser.add_argument("--require-output", action="store_true", help="fail when compiled output PDFs are missing")
     args = parser.parse_args()
 

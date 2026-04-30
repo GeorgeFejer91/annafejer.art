@@ -10,11 +10,12 @@
   "location": "",
   "key": "work14",
   "page_count": 1,
-  "source_meta_docx": "portfolio_compiled_works_metadata/Work 14/Meta.docx",
+  "metadata_file": "portfolio_compiled_works_metadata/Work 14/work.json",
+  "source_meta_docx": "",
   "images": [
     {
-      "filename": "work-14-craig-green-collection-white-01.jpg",
-      "relative_path": "portfolio_compiled_works_metadata/Work 14/work-14-craig-green-collection-white-01.jpg",
+      "filename": "craig-green-collection-white-01.jpg",
+      "relative_path": "portfolio_compiled_works_metadata/Work 14/craig-green-collection-white-01.jpg",
       "width_px": 10398,
       "height_px": 14506,
       "aspect_ratio": 0.716807,
@@ -29,8 +30,8 @@
       "page_role": "equal-height spread image 1"
     },
     {
-      "filename": "work-14-craig-green-collection-white-02.jpg",
-      "relative_path": "portfolio_compiled_works_metadata/Work 14/work-14-craig-green-collection-white-02.jpg",
+      "filename": "craig-green-collection-white-02.jpg",
+      "relative_path": "portfolio_compiled_works_metadata/Work 14/craig-green-collection-white-02.jpg",
       "width_px": 7838,
       "height_px": 10864,
       "aspect_ratio": 0.721465,

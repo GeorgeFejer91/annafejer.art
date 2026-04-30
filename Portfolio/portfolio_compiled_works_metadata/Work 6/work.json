@@ -10,11 +10,12 @@
   "location": "",
   "key": "work06",
   "page_count": 1,
-  "source_meta_docx": "portfolio_compiled_works_metadata/Work 6/Meta.docx",
+  "metadata_file": "portfolio_compiled_works_metadata/Work 6/work.json",
+  "source_meta_docx": "",
   "images": [
     {
-      "filename": "work-06-der-golem-01.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 6/work-06-der-golem-01.png",
+      "filename": "der-golem-01.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 6/der-golem-01.png",
       "width_px": 1550,
       "height_px": 2000,
       "aspect_ratio": 0.775,

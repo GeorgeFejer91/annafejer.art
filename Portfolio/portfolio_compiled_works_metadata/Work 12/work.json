@@ -10,11 +10,12 @@
   "location": "",
   "key": "work12",
   "page_count": 2,
-  "source_meta_docx": "portfolio_compiled_works_metadata/Work 12/Meta.docx",
+  "metadata_file": "portfolio_compiled_works_metadata/Work 12/work.json",
+  "source_meta_docx": "",
   "images": [
     {
-      "filename": "work-12-corset-01.jpg",
-      "relative_path": "portfolio_compiled_works_metadata/Work 12/work-12-corset-01.jpg",
+      "filename": "corset-01.jpg",
+      "relative_path": "portfolio_compiled_works_metadata/Work 12/corset-01.jpg",
       "width_px": 2511,
       "height_px": 1946,
       "aspect_ratio": 1.290339,
@@ -29,8 +30,8 @@
       "page_role": "hero image"
     },
     {
-      "filename": "work-12-corset-02.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 12/work-12-corset-02.png",
+      "filename": "corset-02.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 12/corset-02.png",
       "width_px": 1620,
       "height_px": 2160,
       "aspect_ratio": 0.75,
@@ -45,8 +46,8 @@
       "page_role": "equal-height spread image 1"
     },
     {
-      "filename": "work-12-corset-03.jpg",
-      "relative_path": "portfolio_compiled_works_metadata/Work 12/work-12-corset-03.jpg",
+      "filename": "corset-03.jpg",
+      "relative_path": "portfolio_compiled_works_metadata/Work 12/corset-03.jpg",
       "width_px": 1719,
       "height_px": 2160,
       "aspect_ratio": 0.795833,

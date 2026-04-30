@@ -39,7 +39,7 @@
       "image_count": 3,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 1/work-01-body-frames-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 1/body-frames-01.png",
           "work_page": 1,
           "page_role": "hero image",
           "width_px": 2160,
@@ -47,7 +47,7 @@
           "file_size_bytes": 4173105
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 1/work-01-body-frames-02.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 1/body-frames-02.png",
           "work_page": 2,
           "page_role": "equal-height spread image 1",
           "width_px": 1660,
@@ -55,7 +55,7 @@
           "file_size_bytes": 3575111
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 1/work-01-body-frames-03.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 1/body-frames-03.png",
           "work_page": 2,
           "page_role": "equal-height spread image 2",
           "width_px": 1497,
@@ -74,7 +74,7 @@
       "image_count": 2,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 2/work-02-bodies-of-foil-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 2/bodies-of-foil-01.png",
           "work_page": 1,
           "page_role": "equal-height spread image 1",
           "width_px": 2435,
@@ -82,7 +82,7 @@
           "file_size_bytes": 7642942
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 2/work-02-bodies-of-foil-02.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 2/bodies-of-foil-02.png",
           "work_page": 1,
           "page_role": "equal-height spread image 2",
           "width_px": 2518,
@@ -101,7 +101,7 @@
       "image_count": 3,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 3/work-03-can-you-sit-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-01.png",
           "work_page": 1,
           "page_role": "equal-height spread image 1",
           "width_px": 3024,
@@ -109,7 +109,7 @@
           "file_size_bytes": 14195596
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 3/work-03-can-you-sit-02.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-02.png",
           "work_page": 1,
           "page_role": "equal-height spread image 2",
           "width_px": 3024,
@@ -117,7 +117,7 @@
           "file_size_bytes": 15012790
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 3/work-03-can-you-sit-03.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-03.png",
           "work_page": 2,
           "page_role": "equal-height spread image 2",
           "width_px": 3024,
@@ -136,7 +136,7 @@
       "image_count": 1,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 4/work-04-split-i-01.jpg",
+          "relative_path": "portfolio_compiled_works_metadata/Work 4/split-i-01.jpg",
           "work_page": 1,
           "page_role": "single-page image",
           "width_px": 539,
@@ -155,7 +155,7 @@
       "image_count": 1,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 5/work-05-split-ii-01.jpg",
+          "relative_path": "portfolio_compiled_works_metadata/Work 5/split-ii-01.jpg",
           "work_page": 1,
           "page_role": "single-page image",
           "width_px": 513,
@@ -174,7 +174,7 @@
       "image_count": 1,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 6/work-06-der-golem-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 6/der-golem-01.png",
           "work_page": 1,
           "page_role": "single image",
           "width_px": 1550,
@@ -193,7 +193,7 @@
       "image_count": 2,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-5-hour-illustration-performance-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 7/live-5-hour-illustration-performance-01.png",
           "work_page": 1,
           "page_role": "equal-height spread image 1",
           "width_px": 1251,
@@ -201,7 +201,7 @@
           "file_size_bytes": 2847795
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-5-hour-illustration-performance-02.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 7/live-5-hour-illustration-performance-02.png",
           "work_page": 1,
           "page_role": "equal-height spread image 2",
           "width_px": 1690,
@@ -220,7 +220,7 @@
       "image_count": 1,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 8/work-08-studies-of-brierley-hill-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 8/studies-of-brierley-hill-01.png",
           "work_page": 1,
           "page_role": "single image",
           "width_px": 984,
@@ -239,7 +239,7 @@
       "image_count": 2,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 9/work-09-traffic-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 9/traffic-01.png",
           "work_page": 1,
           "page_role": "equal-height spread image 1",
           "width_px": 2640,
@@ -247,7 +247,7 @@
           "file_size_bytes": 4091730
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 9/work-09-traffic-02.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 9/traffic-02.png",
           "work_page": 1,
           "page_role": "equal-height spread image 2",
           "width_px": 3024,
@@ -266,7 +266,7 @@
       "image_count": 2,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 10/work-10-bricks-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 10/bricks-01.png",
           "work_page": 1,
           "page_role": "equal-height spread image 1",
           "width_px": 4032,
@@ -274,7 +274,7 @@
           "file_size_bytes": 7034635
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 10/work-10-bricks-02.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 10/bricks-02.png",
           "work_page": 1,
           "page_role": "equal-height spread image 2",
           "width_px": 4032,
@@ -293,7 +293,7 @@
       "image_count": 3,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 11/work-11-layers-of-brierley-hill-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 11/layers-of-brierley-hill-01.png",
           "work_page": 1,
           "page_role": "hero image",
           "width_px": 4000,
@@ -301,7 +301,7 @@
           "file_size_bytes": 12169019
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 11/work-11-layers-of-brierley-hill-02.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 11/layers-of-brierley-hill-02.png",
           "work_page": 2,
           "page_role": "equal-height spread image 1",
           "width_px": 3024,
@@ -309,7 +309,7 @@
           "file_size_bytes": 10836388
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 11/work-11-layers-of-brierley-hill-03.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 11/layers-of-brierley-hill-03.png",
           "work_page": 2,
           "page_role": "equal-height spread image 2",
           "width_px": 3024,
@@ -328,7 +328,7 @@
       "image_count": 3,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 12/work-12-corset-01.jpg",
+          "relative_path": "portfolio_compiled_works_metadata/Work 12/corset-01.jpg",
           "work_page": 1,
           "page_role": "hero image",
           "width_px": 2511,
@@ -336,7 +336,7 @@
           "file_size_bytes": 591357
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 12/work-12-corset-02.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 12/corset-02.png",
           "work_page": 2,
           "page_role": "equal-height spread image 1",
           "width_px": 1620,
@@ -344,7 +344,7 @@
           "file_size_bytes": 4032819
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 12/work-12-corset-03.jpg",
+          "relative_path": "portfolio_compiled_works_metadata/Work 12/corset-03.jpg",
           "work_page": 2,
           "page_role": "equal-height spread image 2",
           "width_px": 1719,
@@ -363,7 +363,7 @@
       "image_count": 2,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 13/work-13-craig-green-collection-black-01.jpg",
+          "relative_path": "portfolio_compiled_works_metadata/Work 13/craig-green-collection-black-01.jpg",
           "work_page": 1,
           "page_role": "equal-height spread image 1",
           "width_px": 9500,
@@ -371,7 +371,7 @@
           "file_size_bytes": 8455390
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 13/work-13-craig-green-collection-black-02.jpg",
+          "relative_path": "portfolio_compiled_works_metadata/Work 13/craig-green-collection-black-02.jpg",
           "work_page": 1,
           "page_role": "equal-height spread image 2",
           "width_px": 9770,
@@ -390,7 +390,7 @@
       "image_count": 2,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 14/work-14-craig-green-collection-white-01.jpg",
+          "relative_path": "portfolio_compiled_works_metadata/Work 14/craig-green-collection-white-01.jpg",
           "work_page": 1,
           "page_role": "equal-height spread image 1",
           "width_px": 10398,
@@ -398,7 +398,7 @@
           "file_size_bytes": 9514366
         },
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 14/work-14-craig-green-collection-white-02.jpg",
+          "relative_path": "portfolio_compiled_works_metadata/Work 14/craig-green-collection-white-02.jpg",
           "work_page": 1,
           "page_role": "equal-height spread image 2",
           "width_px": 7838,
@@ -417,7 +417,7 @@
       "image_count": 1,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 15/work-15-the-ethereal-thing-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 15/the-ethereal-thing-01.png",
           "work_page": 1,
           "page_role": "single image",
           "width_px": 7500,
@@ -445,7 +445,7 @@
     {
       "key": "a4",
       "pdf": {
-        "path": "C:/Users/Anna/Documents/GitHub/annafejer.art/Portfolio/Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf",
+        "path": "Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf",
         "exists": true,
         "readable": true,
         "pages": 21,
@@ -545,7 +545,7 @@
     {
       "key": "a4-de",
       "pdf": {
-        "path": "C:/Users/Anna/Documents/GitHub/annafejer.art/Portfolio/Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE.pdf",
+        "path": "Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE.pdf",
         "exists": true,
         "readable": true,
         "pages": 21,

@@ -10,11 +10,12 @@
   "location": "",
   "key": "work08",
   "page_count": 1,
+  "metadata_file": "portfolio_compiled_works_metadata/Work 8/work.json",
   "source_meta_docx": "",
   "images": [
     {
-      "filename": "work-08-studies-of-brierley-hill-01.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 8/work-08-studies-of-brierley-hill-01.png",
+      "filename": "studies-of-brierley-hill-01.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 8/studies-of-brierley-hill-01.png",
       "width_px": 984,
       "height_px": 1230,
       "aspect_ratio": 0.8,

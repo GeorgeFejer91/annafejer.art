@@ -10,11 +10,12 @@
   "location": "",
   "key": "work02",
   "page_count": 1,
-  "source_meta_docx": "portfolio_compiled_works_metadata/Work 2/Meta.docx",
+  "metadata_file": "portfolio_compiled_works_metadata/Work 2/work.json",
+  "source_meta_docx": "",
   "images": [
     {
-      "filename": "work-02-bodies-of-foil-01.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 2/work-02-bodies-of-foil-01.png",
+      "filename": "bodies-of-foil-01.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 2/bodies-of-foil-01.png",
       "width_px": 2435,
       "height_px": 3340,
       "aspect_ratio": 0.729042,
@@ -29,8 +30,8 @@
       "page_role": "equal-height spread image 1"
     },
     {
-      "filename": "work-02-bodies-of-foil-02.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 2/work-02-bodies-of-foil-02.png",
+      "filename": "bodies-of-foil-02.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 2/bodies-of-foil-02.png",
       "width_px": 2518,
       "height_px": 3544,
       "aspect_ratio": 0.710497,

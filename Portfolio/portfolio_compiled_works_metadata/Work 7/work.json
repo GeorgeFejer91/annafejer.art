@@ -10,11 +10,12 @@
   "location": "Kings Heath Eid - England",
   "key": "work07",
   "page_count": 1,
-  "source_meta_docx": "portfolio_compiled_works_metadata/Work 7/Meta.docx",
+  "metadata_file": "portfolio_compiled_works_metadata/Work 7/work.json",
+  "source_meta_docx": "",
   "images": [
     {
-      "filename": "work-07-live-5-hour-illustration-performance-01.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-5-hour-illustration-performance-01.png",
+      "filename": "live-5-hour-illustration-performance-01.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 7/live-5-hour-illustration-performance-01.png",
       "width_px": 1251,
       "height_px": 1728,
       "aspect_ratio": 0.723958,
@@ -29,8 +30,8 @@
       "page_role": "equal-height spread image 1"
     },
     {
-      "filename": "work-07-live-5-hour-illustration-performance-02.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-5-hour-illustration-performance-02.png",
+      "filename": "live-5-hour-illustration-performance-02.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 7/live-5-hour-illustration-performance-02.png",
       "width_px": 1690,
       "height_px": 2048,
       "aspect_ratio": 0.825195,

@@ -4,7 +4,7 @@
     {
       "key": "a4",
       "pdf": {
-        "path": "C:/Users/Anna/Documents/GitHub/annafejer.art/Portfolio/Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf",
+        "path": "Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf",
         "exists": true,
         "readable": true,
         "pages": 21,
@@ -104,7 +104,7 @@
     {
       "key": "a4-de",
       "pdf": {
-        "path": "C:/Users/Anna/Documents/GitHub/annafejer.art/Portfolio/Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE.pdf",
+        "path": "Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE.pdf",
         "exists": true,
         "readable": true,
         "pages": 21,

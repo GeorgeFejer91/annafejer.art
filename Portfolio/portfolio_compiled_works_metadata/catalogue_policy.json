@@ -3,19 +3,19 @@
   "source_of_truth": {
     "work_order": "The folder names directly under portfolio_compiled_works_metadata are the sole authority for portfolio ordering. Work 1 comes before Work 2, Work 2 before Work 3, and so on by numeric suffix.",
     "work_identity": "The numeric Work N folder is the stable identity and grouping boundary for each artwork throughout the repo.",
-    "metadata": "Metadata files inside a Work N folder describe only that folder's contents: caption text, descriptor fields, image list, and page grouping for that work.",
+    "metadata": "work.json inside each Work N folder is the sole per-work metadata file. It describes only that folder's contents: caption text, descriptor fields, image list, and page grouping for that work.",
     "images": "Image files inside each Work N folder are the authoritative source images for that work.",
     "generated_outputs": "TeX files, PDFs, CSVs, aggregate JSON files, manifests, and page-split outputs are generated from the Work folder order and must not override it."
   },
   "ordering_rule": "Sort direct child folders matching Work <number> by numeric suffix in ascending order. Do not infer portfolio order from TeX order, PDF page order, CSV row order, file timestamps, image filenames, or metadata fields inside the Work folders.",
-  "image_naming_rule": "On every catalogue refresh, artwork images are renamed to work-XX-title-slug-YY.ext, where XX is the zero-padded Work folder number and YY is the image sequence within that folder.",
-  "metadata_scope_rule": "Meta.txt and work.json may change captions, titles, descriptors, materials, dimensions, locations, and image grouping inside the same Work N folder. They must not change cross-work ordering.",
+  "image_naming_rule": "On every catalogue refresh, artwork images are renamed to title-slug-YY.ext, where title-slug is a short lowercase slug for the artwork title and YY is the image sequence within that folder. Image filenames must not encode the Work folder number or cross-work order.",
+  "metadata_scope_rule": "work.json may change captions, titles, descriptors, materials, dimensions, locations, and image grouping inside the same Work N folder. It must not change cross-work ordering.",
   "tex_rule": "The LaTeX inventory is generated from the Work folder catalogue and should not be treated as the source of truth.",
   "contract_file": "portfolio_order_contract.json",
   "metadata_policy_file": "portfolio_compiled_works_metadata/catalogue_policy.json",
-  "canonical_tex": "portfolio_a4_work-01-to-15_15-works_44f63b11c9_01-body-frames-02-bodies-of-foil-03-can-you-sit-04-split-i-05-split-ii-06-der-golem-07-live-5-hour-illustration-performa.tex",
+  "canonical_tex": "portfolio_a4_catalogue.tex",
   "compile_tex_pointer": "portfolio_current.tex",
-  "german_tex": "portfolio_a4_de_work-01-to-15_15-works_44f63b11c9_01-body-frames-02-bodies-of-foil-03-can-you-sit-04-split-i-05-split-ii-06-der-golem-07-live-5-hour-illustration-performa.tex",
+  "german_tex": "portfolio_a4_de_catalogue.tex",
   "german_compile_tex_pointer": "portfolio_current_de.tex",
   "work_folder_order": [
     {

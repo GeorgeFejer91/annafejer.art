@@ -10,11 +10,12 @@
   "location": "",
   "key": "work03",
   "page_count": 2,
-  "source_meta_docx": "portfolio_compiled_works_metadata/Work 3/Meta.docx",
+  "metadata_file": "portfolio_compiled_works_metadata/Work 3/work.json",
+  "source_meta_docx": "",
   "images": [
     {
-      "filename": "work-03-can-you-sit-01.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 3/work-03-can-you-sit-01.png",
+      "filename": "can-you-sit-01.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-01.png",
       "width_px": 3024,
       "height_px": 4032,
       "aspect_ratio": 0.75,
@@ -29,8 +30,8 @@
       "page_role": "equal-height spread image 1"
     },
     {
-      "filename": "work-03-can-you-sit-02.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 3/work-03-can-you-sit-02.png",
+      "filename": "can-you-sit-02.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-02.png",
       "width_px": 3024,
       "height_px": 4032,
       "aspect_ratio": 0.75,
@@ -45,8 +46,8 @@
       "page_role": "equal-height spread image 2"
     },
     {
-      "filename": "work-03-can-you-sit-03.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 3/work-03-can-you-sit-03.png",
+      "filename": "can-you-sit-03.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 3/can-you-sit-03.png",
       "width_px": 3024,
       "height_px": 4032,
       "aspect_ratio": 0.75,

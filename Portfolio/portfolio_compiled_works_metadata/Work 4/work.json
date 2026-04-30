@@ -10,11 +10,12 @@
   "location": "",
   "key": "work04",
   "page_count": 1,
-  "source_meta_docx": "portfolio_compiled_works_metadata/Work 4/Meta.docx",
+  "metadata_file": "portfolio_compiled_works_metadata/Work 4/work.json",
+  "source_meta_docx": "",
   "images": [
     {
-      "filename": "work-04-split-i-01.jpg",
-      "relative_path": "portfolio_compiled_works_metadata/Work 4/work-04-split-i-01.jpg",
+      "filename": "split-i-01.jpg",
+      "relative_path": "portfolio_compiled_works_metadata/Work 4/split-i-01.jpg",
       "width_px": 539,
       "height_px": 749,
       "aspect_ratio": 0.719626,

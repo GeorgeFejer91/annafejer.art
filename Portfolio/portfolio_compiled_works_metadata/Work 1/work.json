@@ -10,11 +10,12 @@
   "location": "Exhibition view, Dudley College of Technology, England",
   "key": "work01",
   "page_count": 2,
-  "source_meta_docx": "portfolio_compiled_works_metadata/Work 1/Meta.docx",
+  "metadata_file": "portfolio_compiled_works_metadata/Work 1/work.json",
+  "source_meta_docx": "",
   "images": [
     {
-      "filename": "work-01-body-frames-01.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 1/work-01-body-frames-01.png",
+      "filename": "body-frames-01.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 1/body-frames-01.png",
       "width_px": 2160,
       "height_px": 2796,
       "aspect_ratio": 0.772532,
@@ -29,8 +30,8 @@
       "page_role": "hero image"
     },
     {
-      "filename": "work-01-body-frames-02.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 1/work-01-body-frames-02.png",
+      "filename": "body-frames-02.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 1/body-frames-02.png",
       "width_px": 1660,
       "height_px": 2160,
       "aspect_ratio": 0.768519,
@@ -45,8 +46,8 @@
       "page_role": "equal-height spread image 1"
     },
     {
-      "filename": "work-01-body-frames-03.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 1/work-01-body-frames-03.png",
+      "filename": "body-frames-03.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 1/body-frames-03.png",
       "width_px": 1497,
       "height_px": 2160,
       "aspect_ratio": 0.693056,
