@@ -1,0 +1,11 @@
+{
+  "folders": [
+    {
+      "name": "annafejer.art",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "terminal.integrated.cwd": "${workspaceFolder:annafejer.art}"
+  }
+}
