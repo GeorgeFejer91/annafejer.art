@@ -31,7 +31,7 @@
             min-height: -webkit-fill-available;
         }
 
-        /* Top Bar with CV Button */
+        /* Top Bar with Download Buttons */
         .top-bar {
             position: fixed;
             top: 0;
@@ -41,6 +41,8 @@
             z-index: 1000;
             display: flex;
             justify-content: flex-end;
+            gap: 0.75rem;
+            flex-wrap: wrap;
         }
 
         .cv-button {
@@ -55,6 +57,7 @@
             border: 2px solid #fff;
             transition: all 0.3s ease;
             display: inline-block;
+            text-align: center;
         }
 
         .cv-button:hover {
@@ -309,6 +312,36 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2.5rem;
+        }
+
+        .portfolio-work {
+            background: rgba(255, 255, 255, 0.025);
+            border: 1px solid #2a2a2a;
+            padding: 1rem;
+        }
+
+        .portfolio-image-set {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 0.6rem;
+        }
+
+        .portfolio-image-set img {
+            height: 240px;
+            object-fit: cover;
+            background: #111;
+        }
+
+        .portfolio-work .artwork-info {
+            border-top: 1px solid #2a2a2a;
+            padding-top: 1rem;
+        }
+
+        .portfolio-meta {
+            font-size: 0.85rem;
+            color: #aaa;
+            line-height: 1.5;
+            margin-top: 0.35rem;
         }
 
         .artwork {
@@ -602,7 +635,8 @@
             }
 
             #home h1 {
-                font-size: 3rem;
+                font-size: 2.6rem;
+                letter-spacing: 0.12em;
             }
 
             #home .subtitle {
@@ -617,8 +651,9 @@
             }
 
             .cv-button {
-                padding: 0.6rem 1.2rem;
-                font-size: 0.8rem;
+                padding: 0.58rem 0.65rem;
+                font-size: 0.68rem;
+                letter-spacing: 0.06em;
             }
 
             .gallery-grid {
@@ -627,8 +662,27 @@
             }
 
             .top-bar {
-                padding: 1rem 1rem;
+                padding: 1rem 0.75rem;
                 left: 0;
+                justify-content: center;
+                gap: 0.5rem;
+            }
+
+            .mobile-menu nav {
+                display: grid;
+                grid-template-columns: repeat(5, minmax(0, 1fr));
+                gap: 5px;
+                width: min(320px, 100%);
+                max-width: 320px;
+                margin: 0 auto;
+            }
+
+            .mobile-menu a {
+                min-width: 0 !important;
+                max-width: none !important;
+                width: auto;
+                font-size: 9px;
+                padding: 8px 2px;
             }
 
             section {
@@ -643,9 +697,10 @@
     </style>
 </head>
 <body>
-    <!-- Top Bar with CV Button -->
+    <!-- Top Bar with Download Buttons -->
     <div class="top-bar">
         <a href="./CV/CV_AnnaFejer.pdf" class="cv-button" download>Download CV</a>
+        <a href="./Portfolio/Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN_compressed.pdf" class="cv-button" download>Portfolio PDF</a>
     </div>
 
     <!-- Desktop Side Navigation -->
@@ -671,7 +726,7 @@
     <!-- Home Section -->
     <section id="home">
         <h1>ANNA FEJER</h1>
-        <div class="subtitle">Artist · Game Designer · Au Pair</div>
+        <div class="subtitle">Artist &middot; Game Designer</div>
         <div class="location">Berlin, Germany</div>
     </section>
 
@@ -682,8 +737,8 @@
                 <div class="about-text">
                     <h2>About Me</h2>
                     <p>
-                        I'm a multidisciplinary artist and game designer currently based in Berlin, Germany, 
-                        working as an au pair while continuing to develop my creative practice.
+                        I'm a multidisciplinary artist and game designer based in Berlin, Germany,
+                        continuing to develop my creative practice across installation, illustration, printmaking, collage, and digital media.
                     </p>
                     <p>
                         Recent graduate with a Triple D* in Game Design and a Merit in Foundation Diploma 
@@ -714,6 +769,198 @@
                 <h2>Selected Works</h2>
             </div>
             <div class="gallery-grid">
+                <div class="artwork portfolio-work">
+                    <div class="portfolio-image-set">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%201/embodied-absence-01-A.png" alt="Embodied Absence installation view" loading="lazy" decoding="async">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%201/embodied-absence-02-B.png" alt="Embodied Absence detail" loading="lazy" decoding="async">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%201/embodied-absence-03-B.png" alt="Embodied Absence second detail" loading="lazy" decoding="async">
+                    </div>
+                    <div class="artwork-info">
+                        <div class="artwork-title">Embodied Absence</div>
+                        <div class="artwork-description">Installation, 2025. Glass, metal, sand, fishing line.</div>
+                        <div class="portfolio-meta">175 cm x 210 cm x 70 cm</div>
+                    </div>
+                </div>
+
+                <div class="artwork portfolio-work">
+                    <div class="portfolio-image-set">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%202/reflections-on-wrinkles-01.png" alt="Reflections on Wrinkles illustration" loading="lazy" decoding="async">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%202/reflections-on-wrinkles-02.png" alt="Reflections on Wrinkles second illustration" loading="lazy" decoding="async">
+                    </div>
+                    <div class="artwork-info">
+                        <div class="artwork-title">Reflections on Wrinkles</div>
+                        <div class="artwork-description">Illustration, 2025. Tin foil, ink, paper.</div>
+                        <div class="portfolio-meta">29.7 cm x 21 cm</div>
+                    </div>
+                </div>
+
+                <div class="artwork portfolio-work">
+                    <div class="portfolio-image-set">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%203/out-clave-01-B.png" alt="Out-Clave sculpture detail" loading="lazy" decoding="async">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%203/out-clave-02-B.png" alt="Out-Clave second sculpture detail" loading="lazy" decoding="async">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%203/out-clave-03-A.png" alt="Out-Clave sculpture view" loading="lazy" decoding="async">
+                    </div>
+                    <div class="artwork-info">
+                        <div class="artwork-title">Out-Clave</div>
+                        <div class="artwork-description">Sculpture, 2025. Wire, wood.</div>
+                        <div class="portfolio-meta">25 cm x 10 cm x 10 cm</div>
+                    </div>
+                </div>
+
+                <div class="artwork portfolio-work">
+                    <div class="portfolio-image-set">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%204/riptide-01.jpg" alt="Riptide lino print" loading="lazy" decoding="async">
+                    </div>
+                    <div class="artwork-info">
+                        <div class="artwork-title">Riptide</div>
+                        <div class="artwork-description">Lino print, 2024. Ink, paper.</div>
+                        <div class="portfolio-meta">21 cm x 14.8 cm</div>
+                    </div>
+                </div>
+
+                <div class="artwork portfolio-work">
+                    <div class="portfolio-image-set">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%205/carrion-01.jpg" alt="Carrion lino print" loading="lazy" decoding="async">
+                    </div>
+                    <div class="artwork-info">
+                        <div class="artwork-title">Carrion</div>
+                        <div class="artwork-description">Lino print, 2024. Ink, paper.</div>
+                        <div class="portfolio-meta">21 cm x 14.8 cm</div>
+                    </div>
+                </div>
+
+                <div class="artwork portfolio-work">
+                    <div class="portfolio-image-set">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%206/der-golem-01.png" alt="Der Golem film poster lino print" loading="lazy" decoding="async">
+                    </div>
+                    <div class="artwork-info">
+                        <div class="artwork-title">Der Golem</div>
+                        <div class="artwork-description">Film poster, lino print, 2026. Ink, paper.</div>
+                        <div class="portfolio-meta">29.7 cm x 21 cm</div>
+                    </div>
+                </div>
+
+                <div class="artwork portfolio-work">
+                    <div class="portfolio-image-set">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%207/narrow-stretch-01.png" alt="Narrow Stretch performance canvas" loading="lazy" decoding="async">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%207/narrow-stretch-02.png" alt="Narrow Stretch second performance canvas" loading="lazy" decoding="async">
+                    </div>
+                    <div class="artwork-info">
+                        <div class="artwork-title">Narrow Stretch</div>
+                        <div class="artwork-description">Live 5 hour illustration performance on canvas, 2024. Paint, ink.</div>
+                        <div class="portfolio-meta">118.9 cm x 84.1 cm</div>
+                    </div>
+                </div>
+
+                <div class="artwork portfolio-work">
+                    <div class="portfolio-image-set">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%208/brierley-hill-canal-01.png" alt="Brierley Hill Canal illustration" loading="lazy" decoding="async">
+                    </div>
+                    <div class="artwork-info">
+                        <div class="artwork-title">Brierley Hill Canal</div>
+                        <div class="artwork-description">Illustration, 2025. Ink, paper.</div>
+                        <div class="portfolio-meta">29.7 cm x 21 cm</div>
+                    </div>
+                </div>
+
+                <div class="artwork portfolio-work">
+                    <div class="portfolio-image-set">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%209/layers-of-brierley-hill-01-A.png" alt="Layers of Brierley Hill installation" loading="lazy" decoding="async">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%209/layers-of-brierley-hill-02-B.png" alt="Layers of Brierley Hill detail" loading="lazy" decoding="async">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%209/layers-of-brierley-hill-03-B.png" alt="Layers of Brierley Hill second detail" loading="lazy" decoding="async">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%209/layers-of-brierley-hill-04-A.png" alt="Layers of Brierley Hill alternate view" loading="lazy" decoding="async">
+                    </div>
+                    <div class="artwork-info">
+                        <div class="artwork-title">Layers of Brierley Hill</div>
+                        <div class="artwork-description">Installation, 2025. Metal grates, cardboard, tape, paint, fishing line.</div>
+                        <div class="portfolio-meta">110 cm x 100 cm x 80 cm</div>
+                    </div>
+                </div>
+
+                <div class="artwork portfolio-work">
+                    <div class="portfolio-image-set">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%2010/brierley-hill-illustrations-01.png" alt="Brierley Hill Illustrations drawing" loading="lazy" decoding="async">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%2010/brierley-hill-illustrations-02.png" alt="Brierley Hill Illustrations second drawing" loading="lazy" decoding="async">
+                    </div>
+                    <div class="artwork-info">
+                        <div class="artwork-title">Brierley Hill Illustrations</div>
+                        <div class="artwork-description">Illustration, 2025. Ink, paper.</div>
+                        <div class="portfolio-meta">29.7 cm x 21 cm</div>
+                    </div>
+                </div>
+
+                <div class="artwork portfolio-work">
+                    <div class="portfolio-image-set">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%2011/bricks-01.png" alt="Bricks installation" loading="lazy" decoding="async">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%2011/bricks-02.png" alt="Bricks second installation view" loading="lazy" decoding="async">
+                    </div>
+                    <div class="artwork-info">
+                        <div class="artwork-title">Bricks</div>
+                        <div class="artwork-description">Installation, 2025. Polystyrene, newspaper, maps, copper pipes, fishing line.</div>
+                        <div class="portfolio-meta">85 cm x 120 cm x 45 cm</div>
+                    </div>
+                </div>
+
+                <div class="artwork portfolio-work">
+                    <div class="portfolio-image-set">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%2012/traffic-01.png" alt="Traffic installation" loading="lazy" decoding="async">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%2012/traffic-02.png" alt="Traffic second installation view" loading="lazy" decoding="async">
+                    </div>
+                    <div class="artwork-info">
+                        <div class="artwork-title">Traffic</div>
+                        <div class="artwork-description">Installation, 2025. Polystyrene, newspaper, maps, plastic, copper pipes, fishing line.</div>
+                        <div class="portfolio-meta">125 cm x 170 cm x 30 cm</div>
+                    </div>
+                </div>
+
+                <div class="artwork portfolio-work">
+                    <div class="portfolio-image-set">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%2013/thorax-01.jpg" alt="Thorax digital photograph" loading="lazy" decoding="async">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%2013/thorax-02.png" alt="Thorax studio image" loading="lazy" decoding="async">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%2013/thorax-03.jpg" alt="Thorax second digital photograph" loading="lazy" decoding="async">
+                    </div>
+                    <div class="artwork-info">
+                        <div class="artwork-title">Thorax</div>
+                        <div class="artwork-description">Digital photograph, 2025. Balloons, umbrella.</div>
+                        <div class="portfolio-meta">29.7 cm x 21 cm</div>
+                    </div>
+                </div>
+
+                <div class="artwork portfolio-work">
+                    <div class="portfolio-image-set">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%2014/craig-green-black-i-ii-01.jpg" alt="Craig Green Black I collage" loading="lazy" decoding="async">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%2014/craig-green-black-i-ii-02.jpg" alt="Craig Green Black II collage" loading="lazy" decoding="async">
+                    </div>
+                    <div class="artwork-info">
+                        <div class="artwork-title">Craig Green (Black) I &amp; II</div>
+                        <div class="artwork-description">Collage, 2025. Paper, prints, oil.</div>
+                        <div class="portfolio-meta">21 cm x 14.4 cm</div>
+                    </div>
+                </div>
+
+                <div class="artwork portfolio-work">
+                    <div class="portfolio-image-set">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%2015/craig-green-white-i-ii-01.jpg" alt="Craig Green White I collage" loading="lazy" decoding="async">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%2015/craig-green-white-i-ii-02.jpg" alt="Craig Green White II collage" loading="lazy" decoding="async">
+                    </div>
+                    <div class="artwork-info">
+                        <div class="artwork-title">Craig Green (White) I &amp; II</div>
+                        <div class="artwork-description">Collage, 2025. Paper, prints, oil.</div>
+                        <div class="portfolio-meta">21 cm x 14.4 cm</div>
+                    </div>
+                </div>
+
+                <div class="artwork portfolio-work">
+                    <div class="portfolio-image-set">
+                        <img src="./Portfolio/portfolio_compiled_works_metadata/Work%2016/the-ethereal-thing-01.png" alt="The Ethereal Thing collage" loading="lazy" decoding="async">
+                    </div>
+                    <div class="artwork-info">
+                        <div class="artwork-title">The Ethereal Thing</div>
+                        <div class="artwork-description">Collage, 2025. Metal can, paper, paint.</div>
+                        <div class="portfolio-meta">21 cm x 29.7 cm</div>
+                    </div>
+                </div>
+
                 <div class="artwork">
                     <img src="./Images/1.jpg" alt="Tunnel Vision">
                     <div class="artwork-info">
@@ -807,13 +1054,6 @@
                 <h2>Experience & Skills</h2>
             </div>
             <div class="cv-grid">
-                <div class="cv-item">
-                    <h3>Current Role</h3>
-                    <ul>
-                        <li><strong>Au Pair</strong><br>Berlin, Germany<br>2025–Present</li>
-                    </ul>
-                </div>
-
                 <div class="cv-item">
                     <h3>Education</h3>
                     <ul>
