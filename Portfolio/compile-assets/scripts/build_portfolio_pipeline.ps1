@@ -30,17 +30,20 @@ $EnglishTarget = @{
   Key = "a4"
   Tex = "portfolio_current.tex"
   BuildPdfName = "portfolio_from_ppt_images_a4.pdf"
-  FinalPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf"
-  CompressedPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_compressed.pdf"
-  PageDir = Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent"
-  PagePrefix = "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent"
+  FinalPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst_EN.pdf"
+  CompressedPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst_EN_compressed.pdf"
+  PageDir = Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst_EN"
+  PagePrefix = "Fejer_Anna_88398_Mappe_BildendeKunst_EN"
   LegacyPaths = @(
     (Join-Path $Root "portfolio_from_ppt_images.pdf"),
     (Join-Path $Root "portfolio_from_ppt_images_a4.pdf"),
+    (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf"),
+    (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_compressed.pdf"),
     (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_A4.pdf"),
     (Join-Path $BuildDir "portfolio_from_ppt_images.pdf"),
     (Join-Path $BuildDir "portfolio_from_ppt_images_a4.pdf"),
     (Join-Path ([Environment]::GetFolderPath("Desktop")) "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf"),
+    (Join-Path ([Environment]::GetFolderPath("Desktop")) "Fejer_Anna_88398_Mappe_BildendeKunst_EN.pdf"),
     (Join-Path ([Environment]::GetFolderPath("Desktop")) "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_A4.pdf")
   )
 }
@@ -49,19 +52,25 @@ $GermanTarget = @{
   Key = "a4-de"
   Tex = "portfolio_current_de.tex"
   BuildPdfName = "portfolio_current_de.pdf"
-  FinalPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE.pdf"
-  CompressedPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE_compressed.pdf"
-  PageDir = Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE"
-  PagePrefix = "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE"
+  FinalPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst.pdf"
+  CompressedPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst_compressed.pdf"
+  PageDir = Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst"
+  PagePrefix = "Fejer_Anna_88398_Mappe_BildendeKunst"
   LegacyPaths = @(
     (Join-Path $Root "portfolio_current_de.pdf"),
     (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE.pdf"),
-    (Join-Path ([Environment]::GetFolderPath("Desktop")) "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE.pdf")
+    (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE_compressed.pdf"),
+    (Join-Path ([Environment]::GetFolderPath("Desktop")) "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE.pdf"),
+    (Join-Path ([Environment]::GetFolderPath("Desktop")) "Fejer_Anna_88398_Mappe_BildendeKunst.pdf")
   )
 }
 
 $ObsoletePaths = @(
   (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_A4.pdf"),
+  (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf"),
+  (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_compressed.pdf"),
+  (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE.pdf"),
+  (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE_compressed.pdf"),
   (Join-Path $BuildDir "portfolio_from_ppt_images.pdf"),
   (Join-Path $BuildDir "portfolio_from_ppt_images_a4.pdf"),
   (Join-Path $Root "portfolio_from_ppt_images.pdf"),
@@ -69,10 +78,12 @@ $ObsoletePaths = @(
 )
 
 $ObsoleteDirs = @(
-  (Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_A4")
+  (Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_A4"),
+  (Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent"),
+  (Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE")
 )
 
-$Targets = if ($Language -eq "all") { @($EnglishTarget, $GermanTarget) } elseif ($Language -eq "de") { @($GermanTarget) } else { @($EnglishTarget) }
+$Targets = if ($Language -eq "all") { @($GermanTarget, $EnglishTarget) } elseif ($Language -eq "de") { @($GermanTarget) } else { @($EnglishTarget) }
 
 if (-not $SkipPdf) {
   python $AuditScript --write --sync-tex
@@ -87,7 +98,7 @@ if (-not $SkipPdf) {
       $GermanTarget.Tex = [string]$policy.german_compile_tex_pointer
     }
   }
-  $Targets = if ($Language -eq "all") { @($EnglishTarget, $GermanTarget) } elseif ($Language -eq "de") { @($GermanTarget) } else { @($EnglishTarget) }
+  $Targets = if ($Language -eq "all") { @($GermanTarget, $EnglishTarget) } elseif ($Language -eq "de") { @($GermanTarget) } else { @($EnglishTarget) }
   foreach ($target in $Targets) {
     $target.BuildPdfName = [System.IO.Path]::ChangeExtension($target.Tex, ".pdf")
   }
