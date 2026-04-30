@@ -253,10 +253,10 @@
     "work_number": 6,
     "work_label": "Work 6",
     "folder": "Work 6",
-    "title": "Golem",
+    "title": "Der Golem",
     "year": "2026",
     "materials": "Ink, Paper",
-    "format": "Lino Print",
+    "format": "Filmplakat",
     "size": "29.7 cm x 21 cm",
     "location": "",
     "key": "work06",
@@ -264,8 +264,8 @@
     "source_meta_docx": "portfolio_compiled_works_metadata/Work 6/Meta.docx",
     "images": [
       {
-        "filename": "work-06-golem-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 6/work-06-golem-01.png",
+        "filename": "work-06-der-golem-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 6/work-06-der-golem-01.png",
         "width_px": 1550,
         "height_px": 2000,
         "aspect_ratio": 0.775,
@@ -277,7 +277,7 @@
         "file_size_bytes": 2407491,
         "sequence": 1,
         "work_page": 1,
-        "page_role": "single-page image"
+        "page_role": "single image"
       }
     ],
     "content_start_page": 8,
@@ -298,8 +298,8 @@
     "source_meta_docx": "portfolio_compiled_works_metadata/Work 7/Meta.docx",
     "images": [
       {
-        "filename": "work-07-live-illustration-performance-in-collaboration-with-lucy-maclauchlan-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-illustration-performance-in-collaboration-with-lucy-maclauchlan-01.png",
+        "filename": "work-07-live-5-hour-illustration-performance-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-5-hour-illustration-performance-01.png",
         "width_px": 1251,
         "height_px": 1728,
         "aspect_ratio": 0.723958,
@@ -314,8 +314,8 @@
         "page_role": "equal-height spread image 1"
       },
       {
-        "filename": "work-07-live-illustration-performance-in-collaboration-with-lucy-maclauchlan-02.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-illustration-performance-in-collaboration-with-lucy-maclauchlan-02.png",
+        "filename": "work-07-live-5-hour-illustration-performance-02.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-5-hour-illustration-performance-02.png",
         "width_px": 1690,
         "height_px": 2048,
         "aspect_ratio": 0.825195,
@@ -348,8 +348,8 @@
     "source_meta_docx": "",
     "images": [
       {
-        "filename": "bridge 1.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 8/bridge 1.png",
+        "filename": "work-08-studies-of-brierley-hill-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 8/work-08-studies-of-brierley-hill-01.png",
         "width_px": 984,
         "height_px": 1230,
         "aspect_ratio": 0.8,
@@ -548,8 +548,8 @@
     "source_meta_docx": "portfolio_compiled_works_metadata/Work 12/Meta.docx",
     "images": [
       {
-        "filename": "work-08-corset-01.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 12/work-08-corset-01.jpg",
+        "filename": "work-12-corset-01.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 12/work-12-corset-01.jpg",
         "width_px": 2511,
         "height_px": 1946,
         "aspect_ratio": 1.290339,
@@ -564,8 +564,8 @@
         "page_role": "hero image"
       },
       {
-        "filename": "work-08-corset-02.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 12/work-08-corset-02.png",
+        "filename": "work-12-corset-02.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 12/work-12-corset-02.png",
         "width_px": 1620,
         "height_px": 2160,
         "aspect_ratio": 0.75,
@@ -580,8 +580,8 @@
         "page_role": "equal-height spread image 1"
       },
       {
-        "filename": "work-08-corset-03.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 12/work-08-corset-03.jpg",
+        "filename": "work-12-corset-03.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 12/work-12-corset-03.jpg",
         "width_px": 1719,
         "height_px": 2160,
         "aspect_ratio": 0.795833,
@@ -614,8 +614,8 @@
     "source_meta_docx": "portfolio_compiled_works_metadata/Work 13/Meta.docx",
     "images": [
       {
-        "filename": "work-12-craig-green-collection-black-01.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 13/work-12-craig-green-collection-black-01.jpg",
+        "filename": "work-13-craig-green-collection-black-01.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 13/work-13-craig-green-collection-black-01.jpg",
         "width_px": 9500,
         "height_px": 14096,
         "aspect_ratio": 0.67395,
@@ -630,8 +630,8 @@
         "page_role": "equal-height spread image 1"
       },
       {
-        "filename": "work-12-craig-green-collection-black-02.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 13/work-12-craig-green-collection-black-02.jpg",
+        "filename": "work-13-craig-green-collection-black-02.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 13/work-13-craig-green-collection-black-02.jpg",
         "width_px": 9770,
         "height_px": 13915,
         "aspect_ratio": 0.70212,
@@ -664,8 +664,8 @@
     "source_meta_docx": "portfolio_compiled_works_metadata/Work 14/Meta.docx",
     "images": [
       {
-        "filename": "work-13-craig-green-collection-white-01.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 14/work-13-craig-green-collection-white-01.jpg",
+        "filename": "work-14-craig-green-collection-white-01.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 14/work-14-craig-green-collection-white-01.jpg",
         "width_px": 10398,
         "height_px": 14506,
         "aspect_ratio": 0.716807,
@@ -680,8 +680,8 @@
         "page_role": "equal-height spread image 1"
       },
       {
-        "filename": "work-13-craig-green-collection-white-02.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 14/work-13-craig-green-collection-white-02.jpg",
+        "filename": "work-14-craig-green-collection-white-02.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 14/work-14-craig-green-collection-white-02.jpg",
         "width_px": 7838,
         "height_px": 10864,
         "aspect_ratio": 0.721465,
@@ -703,7 +703,7 @@
     "work_number": 15,
     "work_label": "Work 15",
     "folder": "Work 15",
-    "title": "Metal over Mind",
+    "title": "The Ethereal Thing",
     "year": "2025",
     "materials": "Metal Can, Paper, Paint",
     "format": "Collage",
@@ -714,8 +714,8 @@
     "source_meta_docx": "portfolio_compiled_works_metadata/Work 15/Meta.docx",
     "images": [
       {
-        "filename": "work-14-metal-over-mind-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 15/work-14-metal-over-mind-01.png",
+        "filename": "work-15-the-ethereal-thing-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 15/work-15-the-ethereal-thing-01.png",
         "width_px": 7500,
         "height_px": 5500,
         "aspect_ratio": 1.363636,
