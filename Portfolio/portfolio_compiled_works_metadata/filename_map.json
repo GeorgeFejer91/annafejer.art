@@ -85,15 +85,15 @@
   },
   {
     "work": "Work 9",
-    "old_path": "portfolio_compiled_works_metadata/Work 9/work-09-traffic-01.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 9/work-09-traffic-01-A.png",
     "new_path": "portfolio_compiled_works_metadata/Work 9/work-09-traffic-01.png",
-    "renamed": false
+    "renamed": true
   },
   {
     "work": "Work 9",
-    "old_path": "portfolio_compiled_works_metadata/Work 9/work-09-traffic-02.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 9/work-09-traffic-02-A.png",
     "new_path": "portfolio_compiled_works_metadata/Work 9/work-09-traffic-02.png",
-    "renamed": false
+    "renamed": true
   },
   {
     "work": "Work 10",
