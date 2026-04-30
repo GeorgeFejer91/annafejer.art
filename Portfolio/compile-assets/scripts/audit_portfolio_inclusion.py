@@ -21,6 +21,10 @@ CANONICAL_TEX_POINTER = "portfolio_current.tex"
 GERMAN_TEX_POINTER = "portfolio_current_de.tex"
 DEFAULT_TEX_FILE = "portfolio_from_ppt_images_a4.tex"
 TEX_FILES = [CANONICAL_TEX_POINTER, GERMAN_TEX_POINTER]
+TOC_LEFT_X = 70
+TOC_RIGHT_X = 448
+TOC_Y_POSITIONS_8 = [472, 422, 372, 322, 272, 222, 172, 122]
+TOC_Y_POSITIONS_9 = [472, 424, 376, 328, 280, 232, 184, 136, 88]
 CATALOGUE_POLICY = {
     "version": 3,
     "source_of_truth": {
@@ -712,12 +716,24 @@ def sync_tex_language(root: Path, catalog: list[dict[str, Any]], language: str) 
 
 def sync_tex_toc(text: str, catalog: list[dict[str, Any]], language: str, tex_name: str) -> str:
     labels = COVER_TEXT[language]
-    y_positions = [472, 422, 372, 322, 272, 222, 172, 122]
+    rows_per_column = (len(catalog) + 1) // 2
+    if rows_per_column <= len(TOC_Y_POSITIONS_8):
+        y_positions = TOC_Y_POSITIONS_8
+    elif rows_per_column == len(TOC_Y_POSITIONS_9):
+        y_positions = TOC_Y_POSITIONS_9
+    else:
+        raise RuntimeError(
+            f"Table-of-contents layout in {tex_name} supports at most 18 works on one page; "
+            f"found {len(catalog)} works"
+        )
+
+    left_column = catalog[:rows_per_column]
+    right_column = catalog[rows_per_column:]
     rows = []
-    for index, work in enumerate(catalog):
-        x = 70 if index < len(y_positions) else 448
-        y = y_positions[index % len(y_positions)]
-        rows.append(rf"  \tocentryrow{{{work['key']}}}{{{x}}}{{{y}}}%")
+    for index, work in enumerate(left_column):
+        rows.append(rf"  \tocentryrow{{{work['key']}}}{{{TOC_LEFT_X}}}{{{y_positions[index]}}}%")
+    for index, work in enumerate(right_column):
+        rows.append(rf"  \tocentryrow{{{work['key']}}}{{{TOC_RIGHT_X}}}{{{y_positions[index]}}}%")
     block = "\n".join(
         [
             r"\newcommand{\rendertoc}{%",
