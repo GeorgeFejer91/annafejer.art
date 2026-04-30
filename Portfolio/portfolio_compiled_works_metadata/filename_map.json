@@ -49,8 +49,8 @@
   },
   {
     "work": "Work 4",
-    "old_path": "portfolio_compiled_works_metadata/Work 4/riptide-01.jpg",
-    "new_path": "portfolio_compiled_works_metadata/Work 4/riptide-01.jpg",
+    "old_path": "portfolio_compiled_works_metadata/Work 4/untitled-4-01.jpg",
+    "new_path": "portfolio_compiled_works_metadata/Work 4/untitled-4-01.jpg",
     "renamed": false
   },
   {
@@ -99,6 +99,12 @@
     "work": "Work 9",
     "old_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-03-B.png",
     "new_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-03-B.png",
+    "renamed": false
+  },
+  {
+    "work": "Work 9",
+    "old_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-04-A.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-04-A.png",
     "renamed": false
   },
   {
@@ -157,26 +163,26 @@
   },
   {
     "work": "Work 14",
-    "old_path": "portfolio_compiled_works_metadata/Work 14/craig-green-black-i-ii-01.jpg",
-    "new_path": "portfolio_compiled_works_metadata/Work 14/craig-green-black-i-ii-01.jpg",
+    "old_path": "portfolio_compiled_works_metadata/Work 14/untitled-14-01.jpg",
+    "new_path": "portfolio_compiled_works_metadata/Work 14/untitled-14-01.jpg",
     "renamed": false
   },
   {
     "work": "Work 14",
-    "old_path": "portfolio_compiled_works_metadata/Work 14/craig-green-black-i-ii-02.jpg",
-    "new_path": "portfolio_compiled_works_metadata/Work 14/craig-green-black-i-ii-02.jpg",
+    "old_path": "portfolio_compiled_works_metadata/Work 14/untitled-14-02.jpg",
+    "new_path": "portfolio_compiled_works_metadata/Work 14/untitled-14-02.jpg",
     "renamed": false
   },
   {
     "work": "Work 15",
-    "old_path": "portfolio_compiled_works_metadata/Work 15/craig-green-white-i-ii-01.jpg",
-    "new_path": "portfolio_compiled_works_metadata/Work 15/craig-green-white-i-ii-01.jpg",
+    "old_path": "portfolio_compiled_works_metadata/Work 15/untitled-15-01.jpg",
+    "new_path": "portfolio_compiled_works_metadata/Work 15/untitled-15-01.jpg",
     "renamed": false
   },
   {
     "work": "Work 15",
-    "old_path": "portfolio_compiled_works_metadata/Work 15/craig-green-white-i-ii-02.jpg",
-    "new_path": "portfolio_compiled_works_metadata/Work 15/craig-green-white-i-ii-02.jpg",
+    "old_path": "portfolio_compiled_works_metadata/Work 15/untitled-15-02.jpg",
+    "new_path": "portfolio_compiled_works_metadata/Work 15/untitled-15-02.jpg",
     "renamed": false
   },
   {
