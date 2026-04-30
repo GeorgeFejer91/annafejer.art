@@ -48,7 +48,7 @@ GERMAN_TRANSLATIONS = {
         "Illustration": "Illustration",
         "Installation": "Installation",
         "Lino Print": "Linoldruck",
-        "Live 5 Hour Illustration Performance on Canvas": "Live 5-stündige Illustrations-Performance auf Leinwand",
+        "Live 5 Hour Illustration Performance on Canvas": "5-stündige Performance",
         "Sculpture": "Skulptur",
     },
     "materials": {
