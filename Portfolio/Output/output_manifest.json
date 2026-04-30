@@ -1,5 +1,5 @@
 {
-  "expected_pdf_page_count": 22,
+  "expected_pdf_page_count": 23,
   "outputs": [
     {
       "key": "a4",
@@ -13,7 +13,7 @@
       },
       "split_pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN",
       "split_page_count": 22,
-      "expected_page_count": 22,
+      "expected_page_count": 23,
       "split_pages": [
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN-page-01.pdf",
@@ -117,7 +117,7 @@
       },
       "split_pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent",
       "split_page_count": 22,
-      "expected_page_count": 22,
+      "expected_page_count": 23,
       "split_pages": [
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-01.pdf",

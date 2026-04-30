@@ -769,28 +769,28 @@
     "work_number": 16,
     "work_label": "Work 16",
     "folder": "Work 16",
-    "title": "The Ethereal Thing",
-    "year": "2025",
-    "materials": "Metal Can, Paper, Paint",
-    "format": "Collage",
-    "size": "21 cm x 29.7 cm",
+    "title": "Untitled 16",
+    "year": "",
+    "materials": "",
+    "format": "",
+    "size": "",
     "location": "",
     "key": "work16",
     "page_count": 1,
     "metadata_file": "portfolio_compiled_works_metadata/Work 16/work.json",
     "images": [
       {
-        "filename": "the-ethereal-thing-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 16/the-ethereal-thing-01.png",
-        "width_px": 7500,
-        "height_px": 5500,
-        "aspect_ratio": 1.363636,
-        "mode": "RGB",
+        "filename": "untitled-16-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 16/untitled-16-01.png",
+        "width_px": 3706,
+        "height_px": 1671,
+        "aspect_ratio": 2.217834,
+        "mode": "RGBA",
         "dpi": [
           72.009,
           72.009
         ],
-        "file_size_bytes": 15859356,
+        "file_size_bytes": 3109695,
         "sequence": 1,
         "work_page": 1,
         "page_role": "single image"
@@ -798,5 +798,39 @@
     ],
     "content_start_page": 20,
     "content_end_page": 20
+  },
+  {
+    "work_number": 17,
+    "work_label": "Work 17",
+    "folder": "Work 17",
+    "title": "The Ethereal Thing",
+    "year": "2025",
+    "materials": "Metal Can, Paper, Paint",
+    "format": "Collage",
+    "size": "21 cm x 29.7 cm",
+    "location": "",
+    "key": "work17",
+    "page_count": 1,
+    "metadata_file": "portfolio_compiled_works_metadata/Work 17/work.json",
+    "images": [
+      {
+        "filename": "the-ethereal-thing-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 17/the-ethereal-thing-01.png",
+        "width_px": 3706,
+        "height_px": 1675,
+        "aspect_ratio": 2.212537,
+        "mode": "RGBA",
+        "dpi": [
+          72.009,
+          72.009
+        ],
+        "file_size_bytes": 3114930,
+        "sequence": 1,
+        "work_page": 1,
+        "page_role": "single image"
+      }
+    ],
+    "content_start_page": 21,
+    "content_end_page": 21
   }
 ]

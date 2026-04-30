@@ -187,8 +187,14 @@
   },
   {
     "work": "Work 16",
-    "old_path": "portfolio_compiled_works_metadata/Work 16/the-ethereal-thing-01.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 16/the-ethereal-thing-01.png",
-    "renamed": false
+    "old_path": "portfolio_compiled_works_metadata/Work 16/FOIL 3.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 16/untitled-16-01.png",
+    "renamed": true
+  },
+  {
+    "work": "Work 17",
+    "old_path": "portfolio_compiled_works_metadata/Work 17/Reflections on foil II.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 17/the-ethereal-thing-01.png",
+    "renamed": true
   }
 ]

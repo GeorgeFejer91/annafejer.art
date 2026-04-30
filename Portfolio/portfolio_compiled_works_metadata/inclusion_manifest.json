@@ -19,16 +19,17 @@
     13,
     14,
     15,
-    16
+    16,
+    17
   ],
   "tex_sources": [
     "portfolio_current.tex",
     "portfolio_current_de.tex"
   ],
-  "work_count": 16,
-  "library_image_count": 32,
-  "content_page_count": 20,
-  "expected_pdf_page_count": 22,
+  "work_count": 17,
+  "library_image_count": 33,
+  "content_page_count": 21,
+  "expected_pdf_page_count": 23,
   "works": [
     {
       "work_number": 1,
@@ -446,32 +447,51 @@
     {
       "work_number": 16,
       "folder": "Work 16",
-      "title": "The Ethereal Thing",
+      "title": "Untitled 16",
       "page_count": 1,
       "content_start_page": 20,
       "content_end_page": 20,
       "image_count": 1,
       "images": [
         {
-          "relative_path": "portfolio_compiled_works_metadata/Work 16/the-ethereal-thing-01.png",
+          "relative_path": "portfolio_compiled_works_metadata/Work 16/untitled-16-01.png",
           "work_page": 1,
           "page_role": "single image",
-          "width_px": 7500,
-          "height_px": 5500,
-          "file_size_bytes": 15859356
+          "width_px": 3706,
+          "height_px": 1671,
+          "file_size_bytes": 3109695
+        }
+      ]
+    },
+    {
+      "work_number": 17,
+      "folder": "Work 17",
+      "title": "The Ethereal Thing",
+      "page_count": 1,
+      "content_start_page": 21,
+      "content_end_page": 21,
+      "image_count": 1,
+      "images": [
+        {
+          "relative_path": "portfolio_compiled_works_metadata/Work 17/the-ethereal-thing-01.png",
+          "work_page": 1,
+          "page_role": "single image",
+          "width_px": 3706,
+          "height_px": 1675,
+          "file_size_bytes": 3114930
         }
       ]
     }
   ],
   "tex_inclusion_checks": {
     "portfolio_current.tex": {
-      "image_reference_count": 32,
+      "image_reference_count": 33,
       "missing_library_images": [],
       "missing_files": [],
       "extra_references": []
     },
     "portfolio_current_de.tex": {
-      "image_reference_count": 32,
+      "image_reference_count": 33,
       "missing_library_images": [],
       "missing_files": [],
       "extra_references": []
@@ -490,7 +510,7 @@
       },
       "split_pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN",
       "split_page_count": 22,
-      "expected_page_count": 22,
+      "expected_page_count": 23,
       "split_pages": [
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN-page-01.pdf",
@@ -594,7 +614,7 @@
       },
       "split_pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent",
       "split_page_count": 22,
-      "expected_page_count": 22,
+      "expected_page_count": 23,
       "split_pages": [
         {
           "path": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent-page-01.pdf",

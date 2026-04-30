@@ -111,8 +111,14 @@
     {
       "work_number": 16,
       "folder": "Work 16",
-      "title": "The Ethereal Thing",
+      "title": "Untitled 16",
       "key": "work16"
+    },
+    {
+      "work_number": 17,
+      "folder": "Work 17",
+      "title": "The Ethereal Thing",
+      "key": "work17"
     }
   ]
 }
