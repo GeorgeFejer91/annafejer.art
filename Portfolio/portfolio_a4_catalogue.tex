@@ -193,7 +193,7 @@
   \node[anchor=north west,inner sep=0pt,text width=690pt,align=left] at (42,82){\fontsize{13.4}{15.8}\selectfont\bfseries\color{PortfolioInk}\workfield{#1}{title}};%
   \ifcsempty{w@#1@captionmeta}{}{\node[anchor=north west,inner sep=0pt,text width=690pt,align=left] at (42,62){\fontsize{10.1}{12.1}\selectfont\color{PortfolioGraphite}\workfield{#1}{captionmeta}};}%
   \ifcsempty{w@#1@details}{}{\node[anchor=north west,inner sep=0pt,text width=690pt,align=left] at (42,47){\fontsize{10.1}{12.1}\selectfont\color{PortfolioGraphite}\workfield{#1}{details}};}%
-  \draw[PortfolioInk,line width=0.8pt] (790,36) -- (790,76);\node[anchor=east,inner sep=0pt] at (815.8898,49){\fontsize{11.4}{13.4}\selectfont\bfseries\color{PortfolioInk}\padpagenum{\numexpr\csname w@#1@start\endcsname+#2-1\relax}};%
+  \draw[PortfolioInk,line width=0.8pt] (808,36) -- (808,76);\node[anchor=east,inner sep=0pt] at (833.8898,49){\fontsize{11.4}{13.4}\selectfont\bfseries\color{PortfolioInk}\padpagenum{\numexpr\csname w@#1@start\endcsname+#2-1\relax}};%
 }
 \newcommand{\tocentryrow}[4][0]{%
 \pgfmathsetmacro{\toctitlex}{#3+64}\pgfmathsetmacro{\tocrangex}{#3+324}\pgfmathsetmacro{\tocmetay}{#4-18-#1}%
