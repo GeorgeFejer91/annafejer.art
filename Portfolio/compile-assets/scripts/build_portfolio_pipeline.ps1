@@ -30,19 +30,19 @@ $EnglishTarget = @{
   Key = "a4"
   Tex = "portfolio_current.tex"
   BuildPdfName = "portfolio_from_ppt_images_a4.pdf"
-  FinalPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst_EN.pdf"
-  CompressedPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst_EN_compressed.pdf"
-  PageDir = Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst_EN"
-  PagePrefix = "Fejer_Anna_88398_Mappe_BildendeKunst_EN"
+  FinalPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN.pdf"
+  CompressedPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN_compressed.pdf"
+  PageDir = Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN"
+  PagePrefix = "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN"
   LegacyPaths = @(
     (Join-Path $Root "portfolio_from_ppt_images.pdf"),
     (Join-Path $Root "portfolio_from_ppt_images_a4.pdf"),
-    (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf"),
-    (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_compressed.pdf"),
+    (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst_EN.pdf"),
+    (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst_EN_compressed.pdf"),
     (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_A4.pdf"),
     (Join-Path $BuildDir "portfolio_from_ppt_images.pdf"),
     (Join-Path $BuildDir "portfolio_from_ppt_images_a4.pdf"),
-    (Join-Path ([Environment]::GetFolderPath("Desktop")) "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf"),
+    (Join-Path ([Environment]::GetFolderPath("Desktop")) "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN.pdf"),
     (Join-Path ([Environment]::GetFolderPath("Desktop")) "Fejer_Anna_88398_Mappe_BildendeKunst_EN.pdf"),
     (Join-Path ([Environment]::GetFolderPath("Desktop")) "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_A4.pdf")
   )
@@ -52,14 +52,17 @@ $GermanTarget = @{
   Key = "a4-de"
   Tex = "portfolio_current_de.tex"
   BuildPdfName = "portfolio_current_de.pdf"
-  FinalPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst.pdf"
-  CompressedPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst_compressed.pdf"
-  PageDir = Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst"
-  PagePrefix = "Fejer_Anna_88398_Mappe_BildendeKunst"
+  FinalPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf"
+  CompressedPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_compressed.pdf"
+  PageDir = Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent"
+  PagePrefix = "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent"
   LegacyPaths = @(
     (Join-Path $Root "portfolio_current_de.pdf"),
+    (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst.pdf"),
+    (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst_compressed.pdf"),
     (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE.pdf"),
     (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE_compressed.pdf"),
+    (Join-Path ([Environment]::GetFolderPath("Desktop")) "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf"),
     (Join-Path ([Environment]::GetFolderPath("Desktop")) "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE.pdf"),
     (Join-Path ([Environment]::GetFolderPath("Desktop")) "Fejer_Anna_88398_Mappe_BildendeKunst.pdf")
   )
@@ -67,8 +70,10 @@ $GermanTarget = @{
 
 $ObsoletePaths = @(
   (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_A4.pdf"),
-  (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf"),
-  (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_compressed.pdf"),
+  (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst.pdf"),
+  (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst_compressed.pdf"),
+  (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst_EN.pdf"),
+  (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst_EN_compressed.pdf"),
   (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE.pdf"),
   (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE_compressed.pdf"),
   (Join-Path $BuildDir "portfolio_from_ppt_images.pdf"),
@@ -79,7 +84,8 @@ $ObsoletePaths = @(
 
 $ObsoleteDirs = @(
   (Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_A4"),
-  (Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent"),
+  (Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst"),
+  (Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst_EN"),
   (Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE")
 )
 

@@ -86,15 +86,15 @@ COVER_TEXT = {
 OUTPUTS = [
     {
         "key": "a4",
-        "pdf": "Output/Fejer_Anna_88398_Mappe_BildendeKunst_EN.pdf",
-        "pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst_EN",
-        "page_prefix": "Fejer_Anna_88398_Mappe_BildendeKunst_EN",
+        "pdf": "Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN.pdf",
+        "pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN",
+        "page_prefix": "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN",
     },
     {
         "key": "a4-de",
-        "pdf": "Output/Fejer_Anna_88398_Mappe_BildendeKunst.pdf",
-        "pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst",
-        "page_prefix": "Fejer_Anna_88398_Mappe_BildendeKunst",
+        "pdf": "Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf",
+        "pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent",
+        "page_prefix": "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent",
     },
 ]
 
