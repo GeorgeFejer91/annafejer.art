@@ -1,20 +1,20 @@
 {
-  "work_number": 8,
-  "work_label": "Work 8",
-  "folder": "Work 8",
+  "work_number": 12,
+  "work_label": "Work 12",
+  "folder": "Work 12",
   "title": "Corset",
   "year": "2025",
   "materials": "Balloons, Umbrella",
   "format": "Digital Photograph",
   "size": "29.7 cm x 21 cm",
   "location": "",
-  "key": "work08",
+  "key": "work12",
   "page_count": 2,
-  "source_meta_docx": "portfolio_compiled_works_metadata/Work 8/Meta.docx",
+  "source_meta_docx": "portfolio_compiled_works_metadata/Work 12/Meta.docx",
   "images": [
     {
       "filename": "work-08-corset-01.jpg",
-      "relative_path": "portfolio_compiled_works_metadata/Work 8/work-08-corset-01.jpg",
+      "relative_path": "portfolio_compiled_works_metadata/Work 12/work-08-corset-01.jpg",
       "width_px": 2511,
       "height_px": 1946,
       "aspect_ratio": 1.290339,
@@ -30,7 +30,7 @@
     },
     {
       "filename": "work-08-corset-02.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 8/work-08-corset-02.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 12/work-08-corset-02.png",
       "width_px": 1620,
       "height_px": 2160,
       "aspect_ratio": 0.75,
@@ -46,7 +46,7 @@
     },
     {
       "filename": "work-08-corset-03.jpg",
-      "relative_path": "portfolio_compiled_works_metadata/Work 8/work-08-corset-03.jpg",
+      "relative_path": "portfolio_compiled_works_metadata/Work 12/work-08-corset-03.jpg",
       "width_px": 1719,
       "height_px": 2160,
       "aspect_ratio": 0.795833,
@@ -61,6 +61,6 @@
       "page_role": "equal-height spread image 2"
     }
   ],
-  "content_start_page": 9,
-  "content_end_page": 10
+  "content_start_page": 15,
+  "content_end_page": 16
 }

@@ -1,20 +1,20 @@
 {
-  "work_number": 14,
-  "work_label": "Work 14",
-  "folder": "Work 14",
+  "work_number": 15,
+  "work_label": "Work 15",
+  "folder": "Work 15",
   "title": "Metal over Mind",
   "year": "2025",
   "materials": "Metal Can, Paper, Paint",
   "format": "Collage",
   "size": "21 cm x 29.7 cm",
   "location": "",
-  "key": "work14",
+  "key": "work15",
   "page_count": 1,
-  "source_meta_docx": "portfolio_compiled_works_metadata/Work 14/Meta.docx",
+  "source_meta_docx": "portfolio_compiled_works_metadata/Work 15/Meta.docx",
   "images": [
     {
       "filename": "work-14-metal-over-mind-01.png",
-      "relative_path": "portfolio_compiled_works_metadata/Work 14/work-14-metal-over-mind-01.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 15/work-14-metal-over-mind-01.png",
       "width_px": 7500,
       "height_px": 5500,
       "aspect_ratio": 1.363636,
@@ -29,6 +29,6 @@
       "page_role": "single image"
     }
   ],
-  "content_start_page": 17,
-  "content_end_page": 17
+  "content_start_page": 19,
+  "content_end_page": 19
 }

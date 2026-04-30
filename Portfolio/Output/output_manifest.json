@@ -4,12 +4,8 @@
     {
       "key": "a4",
       "pdf": {
-        "path": "C:/Users/cogpsy-vrlab/Documents/GitHub/annafejer.art/Portfolio/Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf",
-        "exists": true,
-        "readable": true,
-        "pages": 21,
-        "page_size": "841.89 x 595.276 pts (A4)",
-        "file_size_bytes": 189699672
+        "path": "C:/Users/Anna/Documents/GitHub/annafejer.art/Portfolio/Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf",
+        "exists": false
       },
       "split_pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent",
       "split_page_count": 21,

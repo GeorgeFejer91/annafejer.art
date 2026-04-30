@@ -15,17 +15,20 @@
     {
       "filename": "work-05-split-ii-01.jpg",
       "relative_path": "portfolio_compiled_works_metadata/Work 5/work-05-split-ii-01.jpg",
-      "width_px": 1333,
+      "width_px": 513,
       "height_px": 749,
-      "aspect_ratio": 1.779706,
+      "aspect_ratio": 0.684913,
       "mode": "RGB",
-      "dpi": null,
-      "file_size_bytes": 60009,
+      "dpi": [
+        96,
+        96
+      ],
+      "file_size_bytes": 74602,
       "sequence": 1,
       "work_page": 1,
       "page_role": "single-page image"
     }
   ],
-  "content_start_page": 6,
-  "content_end_page": 6
+  "content_start_page": 7,
+  "content_end_page": 7
 }

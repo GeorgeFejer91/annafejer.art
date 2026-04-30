@@ -32,14 +32,14 @@
       "filename": "work-09-traffic-02.png",
       "relative_path": "portfolio_compiled_works_metadata/Work 9/work-09-traffic-02.png",
       "width_px": 3024,
-      "height_px": 3131,
-      "aspect_ratio": 0.965826,
-      "mode": "RGBA",
+      "height_px": 4032,
+      "aspect_ratio": 0.75,
+      "mode": "RGB",
       "dpi": [
         72.009,
         72.009
       ],
-      "file_size_bytes": 6589469,
+      "file_size_bytes": 6657604,
       "sequence": 2,
       "work_page": 1,
       "page_role": "equal-height spread image 2"

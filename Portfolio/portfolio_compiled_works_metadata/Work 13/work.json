@@ -1,20 +1,20 @@
 {
-  "work_number": 12,
-  "work_label": "Work 12",
-  "folder": "Work 12",
+  "work_number": 13,
+  "work_label": "Work 13",
+  "folder": "Work 13",
   "title": "Craig Green Collection Black",
   "year": "2025",
   "materials": "Paper, Prints, Oil",
   "format": "Collage",
   "size": "21 cm x 14.4 cm",
   "location": "",
-  "key": "work12",
+  "key": "work13",
   "page_count": 1,
-  "source_meta_docx": "portfolio_compiled_works_metadata/Work 12/Meta.docx",
+  "source_meta_docx": "portfolio_compiled_works_metadata/Work 13/Meta.docx",
   "images": [
     {
       "filename": "work-12-craig-green-collection-black-01.jpg",
-      "relative_path": "portfolio_compiled_works_metadata/Work 12/work-12-craig-green-collection-black-01.jpg",
+      "relative_path": "portfolio_compiled_works_metadata/Work 13/work-12-craig-green-collection-black-01.jpg",
       "width_px": 9500,
       "height_px": 14096,
       "aspect_ratio": 0.67395,
@@ -30,7 +30,7 @@
     },
     {
       "filename": "work-12-craig-green-collection-black-02.jpg",
-      "relative_path": "portfolio_compiled_works_metadata/Work 12/work-12-craig-green-collection-black-02.jpg",
+      "relative_path": "portfolio_compiled_works_metadata/Work 13/work-12-craig-green-collection-black-02.jpg",
       "width_px": 9770,
       "height_px": 13915,
       "aspect_ratio": 0.70212,
@@ -45,6 +45,6 @@
       "page_role": "equal-height spread image 2"
     }
   ],
-  "content_start_page": 15,
-  "content_end_page": 15
+  "content_start_page": 17,
+  "content_end_page": 17
 }

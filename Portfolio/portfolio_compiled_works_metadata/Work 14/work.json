@@ -1,20 +1,20 @@
 {
-  "work_number": 13,
-  "work_label": "Work 13",
-  "folder": "Work 13",
+  "work_number": 14,
+  "work_label": "Work 14",
+  "folder": "Work 14",
   "title": "Craig Green Collection White",
   "year": "2025",
   "materials": "Paper, Prints, Oil",
   "format": "Collage",
   "size": "21 cm x 14.4 cm",
   "location": "",
-  "key": "work13",
+  "key": "work14",
   "page_count": 1,
-  "source_meta_docx": "portfolio_compiled_works_metadata/Work 13/Meta.docx",
+  "source_meta_docx": "portfolio_compiled_works_metadata/Work 14/Meta.docx",
   "images": [
     {
       "filename": "work-13-craig-green-collection-white-01.jpg",
-      "relative_path": "portfolio_compiled_works_metadata/Work 13/work-13-craig-green-collection-white-01.jpg",
+      "relative_path": "portfolio_compiled_works_metadata/Work 14/work-13-craig-green-collection-white-01.jpg",
       "width_px": 10398,
       "height_px": 14506,
       "aspect_ratio": 0.716807,
@@ -30,7 +30,7 @@
     },
     {
       "filename": "work-13-craig-green-collection-white-02.jpg",
-      "relative_path": "portfolio_compiled_works_metadata/Work 13/work-13-craig-green-collection-white-02.jpg",
+      "relative_path": "portfolio_compiled_works_metadata/Work 14/work-13-craig-green-collection-white-02.jpg",
       "width_px": 7838,
       "height_px": 10864,
       "aspect_ratio": 0.721465,
@@ -45,6 +45,6 @@
       "page_role": "equal-height spread image 2"
     }
   ],
-  "content_start_page": 16,
-  "content_end_page": 16
+  "content_start_page": 18,
+  "content_end_page": 18
 }

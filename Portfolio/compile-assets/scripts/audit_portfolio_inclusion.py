@@ -175,7 +175,7 @@ def normalize_catalog(root: Path) -> list[dict[str, Any]]:
             "format": base.get("format", ""),
             "size": base.get("size", ""),
             "location": base.get("location", ""),
-            "key": base.get("key") or f"work{number:02d}",
+            "key": f"work{number:02d}",
             "page_count": page_count,
             "source_meta_docx": source_meta_docx,
             "images": images,

@@ -1,0 +1,34 @@
+{
+  "work_number": 8,
+  "work_label": "Work 8",
+  "folder": "Work 8",
+  "title": "Studies of Brierley Hill",
+  "year": "2025",
+  "materials": "Ink, Paper",
+  "format": "Illustration",
+  "size": "29.7 cm x 21 cm",
+  "location": "",
+  "key": "work08",
+  "page_count": 1,
+  "source_meta_docx": "",
+  "images": [
+    {
+      "filename": "bridge 1.png",
+      "relative_path": "portfolio_compiled_works_metadata/Work 8/bridge 1.png",
+      "width_px": 984,
+      "height_px": 1230,
+      "aspect_ratio": 0.8,
+      "mode": "RGB",
+      "dpi": [
+        191.99859999999998,
+        191.99859999999998
+      ],
+      "file_size_bytes": 830490,
+      "sequence": 1,
+      "work_page": 1,
+      "page_role": "single image"
+    }
+  ],
+  "content_start_page": 10,
+  "content_end_page": 10
+}
