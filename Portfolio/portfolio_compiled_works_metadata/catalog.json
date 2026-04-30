@@ -119,19 +119,53 @@
     "work_number": 3,
     "work_label": "Work 3",
     "folder": "Work 3",
+    "title": "Reflections on Wrinkles II",
+    "year": "2025",
+    "materials": "Tin Foil, Ink, Paper",
+    "format": "Illustration",
+    "size": "10 cm x 10 cm",
+    "location": "",
+    "key": "work03",
+    "page_count": 1,
+    "metadata_file": "portfolio_compiled_works_metadata/Work 3/work.json",
+    "images": [
+      {
+        "filename": "reflections-on-wrinkles-ii-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 3/reflections-on-wrinkles-ii-01.png",
+        "width_px": 3706,
+        "height_px": 1671,
+        "aspect_ratio": 2.217834,
+        "mode": "RGBA",
+        "dpi": [
+          72.009,
+          72.009
+        ],
+        "file_size_bytes": 3109695,
+        "sequence": 1,
+        "work_page": 1,
+        "page_role": "single image"
+      }
+    ],
+    "content_start_page": 4,
+    "content_end_page": 4
+  },
+  {
+    "work_number": 4,
+    "work_label": "Work 4",
+    "folder": "Work 4",
     "title": "Out-Clave",
     "year": "2025",
     "materials": "Wire, Wood",
     "format": "Sculpture",
     "size": "25 cm x 10 cm x 10 cm",
     "location": "",
-    "key": "work03",
+    "key": "work04",
     "page_count": 2,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 3/work.json",
+    "metadata_file": "portfolio_compiled_works_metadata/Work 4/work.json",
     "images": [
       {
         "filename": "out-clave-01-B.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 3/out-clave-01-B.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 4/out-clave-01-B.png",
         "width_px": 3024,
         "height_px": 4032,
         "aspect_ratio": 0.75,
@@ -147,7 +181,7 @@
       },
       {
         "filename": "out-clave-02-B.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 3/out-clave-02-B.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 4/out-clave-02-B.png",
         "width_px": 3024,
         "height_px": 4032,
         "aspect_ratio": 0.75,
@@ -163,7 +197,7 @@
       },
       {
         "filename": "out-clave-03-A.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 3/out-clave-03-A.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 4/out-clave-03-A.png",
         "width_px": 3024,
         "height_px": 4032,
         "aspect_ratio": 0.75,
@@ -178,26 +212,26 @@
         "page_role": "page 1 image"
       }
     ],
-    "content_start_page": 4,
-    "content_end_page": 5
+    "content_start_page": 5,
+    "content_end_page": 6
   },
   {
-    "work_number": 4,
-    "work_label": "Work 4",
-    "folder": "Work 4",
+    "work_number": 5,
+    "work_label": "Work 5",
+    "folder": "Work 5",
     "title": "Riptide",
     "year": "2024",
     "materials": "Ink, Paper",
     "format": "Lino Print",
     "size": "21 cm x 14.8 cm",
     "location": "",
-    "key": "work04",
+    "key": "work05",
     "page_count": 1,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 4/work.json",
+    "metadata_file": "portfolio_compiled_works_metadata/Work 5/work.json",
     "images": [
       {
         "filename": "riptide-01.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 4/riptide-01.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 5/riptide-01.jpg",
         "width_px": 539,
         "height_px": 749,
         "aspect_ratio": 0.719626,
@@ -212,26 +246,26 @@
         "page_role": "single-page image"
       }
     ],
-    "content_start_page": 6,
-    "content_end_page": 6
+    "content_start_page": 7,
+    "content_end_page": 7
   },
   {
-    "work_number": 5,
-    "work_label": "Work 5",
-    "folder": "Work 5",
+    "work_number": 6,
+    "work_label": "Work 6",
+    "folder": "Work 6",
     "title": "Carrion",
     "year": "2024",
     "materials": "Ink, Paper",
     "format": "Lino Print",
     "size": "21 cm x 14.8 cm",
     "location": "",
-    "key": "work05",
+    "key": "work06",
     "page_count": 1,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 5/work.json",
+    "metadata_file": "portfolio_compiled_works_metadata/Work 6/work.json",
     "images": [
       {
         "filename": "carrion-01.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 5/carrion-01.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 6/carrion-01.jpg",
         "width_px": 513,
         "height_px": 749,
         "aspect_ratio": 0.684913,
@@ -246,26 +280,26 @@
         "page_role": "single-page image"
       }
     ],
-    "content_start_page": 7,
-    "content_end_page": 7
+    "content_start_page": 8,
+    "content_end_page": 8
   },
   {
-    "work_number": 6,
-    "work_label": "Work 6",
-    "folder": "Work 6",
+    "work_number": 7,
+    "work_label": "Work 7",
+    "folder": "Work 7",
     "title": "Der Golem",
     "year": "2026",
     "materials": "Ink, Paper",
     "format": "Filmplakat, Linoldruck",
     "size": "29.7 cm x 21 cm",
     "location": "",
-    "key": "work06",
+    "key": "work07",
     "page_count": 1,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 6/work.json",
+    "metadata_file": "portfolio_compiled_works_metadata/Work 7/work.json",
     "images": [
       {
         "filename": "der-golem-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 6/der-golem-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 7/der-golem-01.png",
         "width_px": 1550,
         "height_px": 2000,
         "aspect_ratio": 0.775,
@@ -280,26 +314,26 @@
         "page_role": "single image"
       }
     ],
-    "content_start_page": 8,
-    "content_end_page": 8
+    "content_start_page": 9,
+    "content_end_page": 9
   },
   {
-    "work_number": 7,
-    "work_label": "Work 7",
-    "folder": "Work 7",
+    "work_number": 8,
+    "work_label": "Work 8",
+    "folder": "Work 8",
     "title": "Narrow Stretch",
     "year": "2024",
     "materials": "Paint, Ink",
     "format": "Live 5 Hour Illustration Performance on Canvas",
     "size": "118.9 cm x 84.1 cm",
-    "location": "Kings eath Eid - England",
-    "key": "work07",
+    "location": "Kings Heath Eid - England",
+    "key": "work08",
     "page_count": 1,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 7/work.json",
+    "metadata_file": "portfolio_compiled_works_metadata/Work 8/work.json",
     "images": [
       {
         "filename": "narrow-stretch-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 7/narrow-stretch-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 8/narrow-stretch-01.png",
         "width_px": 1251,
         "height_px": 1728,
         "aspect_ratio": 0.723958,
@@ -315,7 +349,7 @@
       },
       {
         "filename": "narrow-stretch-02.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 7/narrow-stretch-02.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 8/narrow-stretch-02.png",
         "width_px": 1690,
         "height_px": 2048,
         "aspect_ratio": 0.825195,
@@ -330,26 +364,26 @@
         "page_role": "equal-height spread image 2"
       }
     ],
-    "content_start_page": 9,
-    "content_end_page": 9
+    "content_start_page": 10,
+    "content_end_page": 10
   },
   {
-    "work_number": 8,
-    "work_label": "Work 8",
-    "folder": "Work 8",
+    "work_number": 9,
+    "work_label": "Work 9",
+    "folder": "Work 9",
     "title": "Brierley Hill Canal",
     "year": "2025",
     "materials": "Ink, Paper",
     "format": "Illustration",
     "size": "29.7 cm x 21 cm",
     "location": "",
-    "key": "work08",
+    "key": "work09",
     "page_count": 1,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 8/work.json",
+    "metadata_file": "portfolio_compiled_works_metadata/Work 9/work.json",
     "images": [
       {
         "filename": "brierley-hill-canal-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 8/brierley-hill-canal-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 9/brierley-hill-canal-01.png",
         "width_px": 984,
         "height_px": 1230,
         "aspect_ratio": 0.8,
@@ -364,26 +398,26 @@
         "page_role": "single image"
       }
     ],
-    "content_start_page": 10,
-    "content_end_page": 10
+    "content_start_page": 11,
+    "content_end_page": 11
   },
   {
-    "work_number": 9,
-    "work_label": "Work 9",
-    "folder": "Work 9",
+    "work_number": 10,
+    "work_label": "Work 10",
+    "folder": "Work 10",
     "title": "Layers of Brierley Hill",
     "year": "2025",
     "materials": "Metal Grates, Cardboard, Tape, Paint, Fishing Line",
     "format": "Installation",
     "size": "110 cm x 100 cm x 80 cm",
     "location": "Exhibition at Dudley College of Technology",
-    "key": "work09",
+    "key": "work10",
     "page_count": 2,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 9/work.json",
+    "metadata_file": "portfolio_compiled_works_metadata/Work 10/work.json",
     "images": [
       {
         "filename": "layers-of-brierley-hill-01-A.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-01-A.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 10/layers-of-brierley-hill-01-A.png",
         "width_px": 4000,
         "height_px": 4500,
         "aspect_ratio": 0.888889,
@@ -399,7 +433,7 @@
       },
       {
         "filename": "layers-of-brierley-hill-02-B.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-02-B.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 10/layers-of-brierley-hill-02-B.png",
         "width_px": 3024,
         "height_px": 4032,
         "aspect_ratio": 0.75,
@@ -415,7 +449,7 @@
       },
       {
         "filename": "layers-of-brierley-hill-03-B.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-03-B.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 10/layers-of-brierley-hill-03-B.png",
         "width_px": 3024,
         "height_px": 4032,
         "aspect_ratio": 0.75,
@@ -431,7 +465,7 @@
       },
       {
         "filename": "layers-of-brierley-hill-04-A.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 9/layers-of-brierley-hill-04-A.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 10/layers-of-brierley-hill-04-A.png",
         "width_px": 3024,
         "height_px": 3520,
         "aspect_ratio": 0.859091,
@@ -446,26 +480,26 @@
         "page_role": "page 1 image"
       }
     ],
-    "content_start_page": 11,
-    "content_end_page": 12
+    "content_start_page": 12,
+    "content_end_page": 13
   },
   {
-    "work_number": 10,
-    "work_label": "Work 10",
-    "folder": "Work 10",
+    "work_number": 11,
+    "work_label": "Work 11",
+    "folder": "Work 11",
     "title": "Brierley Hill Illustrations",
     "year": "2025",
     "materials": "Ink, Paper",
     "format": "Illustration",
     "size": "29.7 cm x 21 cm",
     "location": "",
-    "key": "work10",
+    "key": "work11",
     "page_count": 1,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 10/work.json",
+    "metadata_file": "portfolio_compiled_works_metadata/Work 11/work.json",
     "images": [
       {
         "filename": "brierley-hill-illustrations-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 10/brierley-hill-illustrations-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 11/brierley-hill-illustrations-01.png",
         "width_px": 3024,
         "height_px": 4032,
         "aspect_ratio": 0.75,
@@ -481,7 +515,7 @@
       },
       {
         "filename": "brierley-hill-illustrations-02.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 10/brierley-hill-illustrations-02.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 11/brierley-hill-illustrations-02.png",
         "width_px": 3024,
         "height_px": 4032,
         "aspect_ratio": 0.75,
@@ -496,26 +530,26 @@
         "page_role": "equal-height spread image 2"
       }
     ],
-    "content_start_page": 13,
-    "content_end_page": 13
+    "content_start_page": 14,
+    "content_end_page": 14
   },
   {
-    "work_number": 11,
-    "work_label": "Work 11",
-    "folder": "Work 11",
+    "work_number": 12,
+    "work_label": "Work 12",
+    "folder": "Work 12",
     "title": "Bricks",
     "year": "2025",
     "materials": "Polystyrene, Newspaper, Maps, Copper Pipes, Fishing line",
     "format": "Installation",
     "size": "85 cm x 120 cm x 45 cm",
     "location": "",
-    "key": "work11",
+    "key": "work12",
     "page_count": 1,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 11/work.json",
+    "metadata_file": "portfolio_compiled_works_metadata/Work 12/work.json",
     "images": [
       {
         "filename": "bricks-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 11/bricks-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 12/bricks-01.png",
         "width_px": 4032,
         "height_px": 3024,
         "aspect_ratio": 1.333333,
@@ -531,7 +565,7 @@
       },
       {
         "filename": "bricks-02.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 11/bricks-02.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 12/bricks-02.png",
         "width_px": 4032,
         "height_px": 3024,
         "aspect_ratio": 1.333333,
@@ -546,26 +580,26 @@
         "page_role": "equal-height spread image 2"
       }
     ],
-    "content_start_page": 14,
-    "content_end_page": 14
+    "content_start_page": 15,
+    "content_end_page": 15
   },
   {
-    "work_number": 12,
-    "work_label": "Work 12",
-    "folder": "Work 12",
+    "work_number": 13,
+    "work_label": "Work 13",
+    "folder": "Work 13",
     "title": "Traffic",
     "year": "2025",
     "materials": "Polystyrene, Newspaper, Maps, Plastic, Copper Pipes, Fishing Line",
     "format": "Installation",
     "size": "125 cm x 170 cm x 30 cm",
     "location": "",
-    "key": "work12",
+    "key": "work13",
     "page_count": 1,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 12/work.json",
+    "metadata_file": "portfolio_compiled_works_metadata/Work 13/work.json",
     "images": [
       {
         "filename": "traffic-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 12/traffic-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 13/traffic-01.png",
         "width_px": 2640,
         "height_px": 2160,
         "aspect_ratio": 1.222222,
@@ -581,7 +615,7 @@
       },
       {
         "filename": "traffic-02.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 12/traffic-02.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 13/traffic-02.png",
         "width_px": 3024,
         "height_px": 4032,
         "aspect_ratio": 0.75,
@@ -596,26 +630,26 @@
         "page_role": "equal-height spread image 2"
       }
     ],
-    "content_start_page": 15,
-    "content_end_page": 15
+    "content_start_page": 16,
+    "content_end_page": 16
   },
   {
-    "work_number": 13,
-    "work_label": "Work 13",
-    "folder": "Work 13",
+    "work_number": 14,
+    "work_label": "Work 14",
+    "folder": "Work 14",
     "title": "Thorax",
     "year": "2025",
     "materials": "Balloons, Umbrella",
     "format": "Digital Photograph",
     "size": "29.7 cm x 21 cm",
     "location": "",
-    "key": "work13",
+    "key": "work14",
     "page_count": 2,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 13/work.json",
+    "metadata_file": "portfolio_compiled_works_metadata/Work 14/work.json",
     "images": [
       {
         "filename": "thorax-01.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 13/thorax-01.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 14/thorax-01.jpg",
         "width_px": 2511,
         "height_px": 1946,
         "aspect_ratio": 1.290339,
@@ -631,7 +665,7 @@
       },
       {
         "filename": "thorax-02.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 13/thorax-02.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 14/thorax-02.png",
         "width_px": 1620,
         "height_px": 2160,
         "aspect_ratio": 0.75,
@@ -647,7 +681,7 @@
       },
       {
         "filename": "thorax-03.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 13/thorax-03.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 14/thorax-03.jpg",
         "width_px": 1719,
         "height_px": 2160,
         "aspect_ratio": 0.795833,
@@ -662,26 +696,26 @@
         "page_role": "equal-height spread image 2"
       }
     ],
-    "content_start_page": 16,
-    "content_end_page": 17
+    "content_start_page": 17,
+    "content_end_page": 18
   },
   {
-    "work_number": 14,
-    "work_label": "Work 14",
-    "folder": "Work 14",
+    "work_number": 15,
+    "work_label": "Work 15",
+    "folder": "Work 15",
     "title": "Craig Green (Black) I & II",
     "year": "2025",
     "materials": "Paper, Prints, Oil",
     "format": "Collage",
     "size": "21 cm x 14.4 cm",
     "location": "",
-    "key": "work14",
+    "key": "work15",
     "page_count": 1,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 14/work.json",
+    "metadata_file": "portfolio_compiled_works_metadata/Work 15/work.json",
     "images": [
       {
         "filename": "craig-green-black-i-ii-01.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 14/craig-green-black-i-ii-01.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 15/craig-green-black-i-ii-01.jpg",
         "width_px": 9500,
         "height_px": 14096,
         "aspect_ratio": 0.67395,
@@ -697,7 +731,7 @@
       },
       {
         "filename": "craig-green-black-i-ii-02.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 14/craig-green-black-i-ii-02.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 15/craig-green-black-i-ii-02.jpg",
         "width_px": 9770,
         "height_px": 13915,
         "aspect_ratio": 0.70212,
@@ -712,26 +746,26 @@
         "page_role": "equal-height spread image 2"
       }
     ],
-    "content_start_page": 18,
-    "content_end_page": 18
+    "content_start_page": 19,
+    "content_end_page": 19
   },
   {
-    "work_number": 15,
-    "work_label": "Work 15",
-    "folder": "Work 15",
+    "work_number": 16,
+    "work_label": "Work 16",
+    "folder": "Work 16",
     "title": "Craig Green (White) I & II",
     "year": "2025",
     "materials": "Paper, Prints, Oil",
     "format": "Collage",
     "size": "21 cm x 14.4 cm",
     "location": "",
-    "key": "work15",
+    "key": "work16",
     "page_count": 1,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 15/work.json",
+    "metadata_file": "portfolio_compiled_works_metadata/Work 16/work.json",
     "images": [
       {
         "filename": "craig-green-white-i-ii-01.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 15/craig-green-white-i-ii-01.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 16/craig-green-white-i-ii-01.jpg",
         "width_px": 10398,
         "height_px": 14506,
         "aspect_ratio": 0.716807,
@@ -747,7 +781,7 @@
       },
       {
         "filename": "craig-green-white-i-ii-02.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 15/craig-green-white-i-ii-02.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 16/craig-green-white-i-ii-02.jpg",
         "width_px": 7838,
         "height_px": 10864,
         "aspect_ratio": 0.721465,
@@ -760,40 +794,6 @@
         "sequence": 2,
         "work_page": 1,
         "page_role": "equal-height spread image 2"
-      }
-    ],
-    "content_start_page": 19,
-    "content_end_page": 19
-  },
-  {
-    "work_number": 16,
-    "work_label": "Work 16",
-    "folder": "Work 16",
-    "title": "Reflections on Wrinkles II",
-    "year": "2025",
-    "materials": "Tin Foil, Ink, Paper",
-    "format": "Illustration",
-    "size": "10 cm x 10 cm",
-    "location": "",
-    "key": "work16",
-    "page_count": 1,
-    "metadata_file": "portfolio_compiled_works_metadata/Work 16/work.json",
-    "images": [
-      {
-        "filename": "reflections-on-wrinkles-ii-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 16/reflections-on-wrinkles-ii-01.png",
-        "width_px": 3706,
-        "height_px": 1671,
-        "aspect_ratio": 2.217834,
-        "mode": "RGBA",
-        "dpi": [
-          72.009,
-          72.009
-        ],
-        "file_size_bytes": 3109695,
-        "sequence": 1,
-        "work_page": 1,
-        "page_role": "single image"
       }
     ],
     "content_start_page": 20,
@@ -816,15 +816,15 @@
       {
         "filename": "the-ethereal-thing-01.png",
         "relative_path": "portfolio_compiled_works_metadata/Work 17/the-ethereal-thing-01.png",
-        "width_px": 3706,
-        "height_px": 1675,
-        "aspect_ratio": 2.212537,
-        "mode": "RGBA",
+        "width_px": 7500,
+        "height_px": 5500,
+        "aspect_ratio": 1.363636,
+        "mode": "RGB",
         "dpi": [
           72.009,
           72.009
         ],
-        "file_size_bytes": 3114930,
+        "file_size_bytes": 15859356,
         "sequence": 1,
         "work_page": 1,
         "page_role": "single image"
