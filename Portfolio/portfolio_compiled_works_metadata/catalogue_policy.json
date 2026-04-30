@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "source_of_truth": {
+    "work_order": "The numbered folders portfolio_compiled_works_metadata/Work 1, Work 2, ... define the permanent portfolio order.",
+    "metadata": "Each Work N/Meta.txt file is the human-editable metadata source for that work.",
+    "images": "Image files inside each Work N folder are the authoritative source images for that work."
+  },
+  "ordering_rule": "Sort work folders by their numeric suffix in ascending order. Do not infer portfolio order from TeX order, file timestamps, or filenames outside the Work folders.",
+  "image_naming_rule": "On every catalogue refresh, artwork images are renamed to work-XX-title-slug-YY.ext, where XX is the zero-padded Work folder number and YY is the image sequence within that folder.",
+  "tex_rule": "The LaTeX inventory is generated from the Work folder catalogue and should not be treated as the source of truth.",
+  "canonical_tex": "portfolio_a4_work-01-to-15_15-works_b001b7086c_01-body-frames-02-bodies-of-foil-03-can-you-sit-04-split-i-05-split-ii-06-golem-07-live-illustration-performance-08-stud.tex",
+  "compile_tex_pointer": "portfolio_current.tex",
+  "work_folder_order": [
+    {
+      "work_number": 1,
+      "folder": "Work 1",
+      "title": "Body Frames",
+      "key": "work01"
+    },
+    {
+      "work_number": 2,
+      "folder": "Work 2",
+      "title": "Bodies of Foil",
+      "key": "work02"
+    },
+    {
+      "work_number": 3,
+      "folder": "Work 3",
+      "title": "Can you Sit?",
+      "key": "work03"
+    },
+    {
+      "work_number": 4,
+      "folder": "Work 4",
+      "title": "Split I",
+      "key": "work04"
+    },
+    {
+      "work_number": 5,
+      "folder": "Work 5",
+      "title": "Split II",
+      "key": "work05"
+    },
+    {
+      "work_number": 6,
+      "folder": "Work 6",
+      "title": "Golem",
+      "key": "work06"
+    },
+    {
+      "work_number": 7,
+      "folder": "Work 7",
+      "title": "Live Illustration Performance",
+      "key": "work07"
+    },
+    {
+      "work_number": 8,
+      "folder": "Work 8",
+      "title": "Studies of Brierley Hill",
+      "key": "work08"
+    },
+    {
+      "work_number": 9,
+      "folder": "Work 9",
+      "title": "Traffic",
+      "key": "work09"
+    },
+    {
+      "work_number": 10,
+      "folder": "Work 10",
+      "title": "Bricks",
+      "key": "work10"
+    },
+    {
+      "work_number": 11,
+      "folder": "Work 11",
+      "title": "Layers of Brierley Hill",
+      "key": "work11"
+    },
+    {
+      "work_number": 12,
+      "folder": "Work 12",
+      "title": "Corset",
+      "key": "work12"
+    },
+    {
+      "work_number": 13,
+      "folder": "Work 13",
+      "title": "Craig Green Collection Black",
+      "key": "work13"
+    },
+    {
+      "work_number": 14,
+      "folder": "Work 14",
+      "title": "Craig Green Collection White",
+      "key": "work14"
+    },
+    {
+      "work_number": 15,
+      "folder": "Work 15",
+      "title": "Metal over Mind",
+      "key": "work15"
+    }
+  ]
+}

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import re
 import subprocess
@@ -14,7 +15,20 @@ from PIL import Image
 Image.MAX_IMAGE_PIXELS = None
 
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".tif", ".tiff"}
-TEX_FILES = ["portfolio_from_ppt_images_a4.tex"]
+CANONICAL_TEX_POINTER = "portfolio_current.tex"
+DEFAULT_TEX_FILE = "portfolio_from_ppt_images_a4.tex"
+TEX_FILES = [CANONICAL_TEX_POINTER]
+CATALOGUE_POLICY = {
+    "version": 1,
+    "source_of_truth": {
+        "work_order": "The numbered folders portfolio_compiled_works_metadata/Work 1, Work 2, ... define the permanent portfolio order.",
+        "metadata": "Each Work N/Meta.txt file is the human-editable metadata source for that work.",
+        "images": "Image files inside each Work N folder are the authoritative source images for that work.",
+    },
+    "ordering_rule": "Sort work folders by their numeric suffix in ascending order. Do not infer portfolio order from TeX order, file timestamps, or filenames outside the Work folders.",
+    "image_naming_rule": "On every catalogue refresh, artwork images are renamed to work-XX-title-slug-YY.ext, where XX is the zero-padded Work folder number and YY is the image sequence within that folder.",
+    "tex_rule": "The LaTeX inventory is generated from the Work folder catalogue and should not be treated as the source of truth.",
+}
 OUTPUTS = [
     {
         "key": "a4",
@@ -49,6 +63,12 @@ def work_number(folder: Path) -> int:
 
 def rel(path: Path, root: Path) -> str:
     return path.relative_to(root).as_posix()
+
+
+def slugify(value: str) -> str:
+    text = value.lower()
+    text = re.sub(r"[^a-z0-9]+", "-", text)
+    return text.strip("-") or "work"
 
 
 def clean_meta_value(value: str) -> str:
@@ -100,6 +120,98 @@ def parse_meta_txt(path: Path) -> dict[str, str]:
     return meta
 
 
+def canonical_image_path(folder: Path, work_num: int, title: str, sequence: int, suffix: str) -> Path:
+    slug = slugify(title or f"Work {work_num}")
+    return folder / f"work-{work_num:02d}-{slug}-{sequence:02d}{suffix.lower()}"
+
+
+def canonical_tex_filename(catalog: list[dict[str, Any]]) -> str:
+    if not catalog:
+        return DEFAULT_TEX_FILE
+    first = min(int(work["work_number"]) for work in catalog)
+    last = max(int(work["work_number"]) for work in catalog)
+    count = len(catalog)
+    signature = "-".join(
+        f"{int(work['work_number']):02d}-{slugify(work['title'])}"
+        for work in catalog
+    )
+    compact_signature = re.sub(r"[^a-z0-9]+", "-", signature).strip("-")
+    digest = hashlib.sha1(signature.encode("utf-8")).hexdigest()[:10]
+    if len(compact_signature) > 120:
+        compact_signature = compact_signature[:120].rstrip("-")
+    return f"portfolio_a4_work-{first:02d}-to-{last:02d}_{count}-works_{digest}_{compact_signature}.tex"
+
+
+def canonicalize_work_images(folder: Path, work_num: int, title: str, root: Path) -> list[dict[str, Any]]:
+    image_paths = sorted(
+        path
+        for path in folder.iterdir()
+        if path.is_file() and path.suffix.lower() in IMAGE_EXTENSIONS
+    )
+    rows: list[dict[str, Any]] = []
+    for sequence, path in enumerate(image_paths, start=1):
+        target = canonical_image_path(folder, work_num, title, sequence, path.suffix)
+        old_rel = rel(path, root)
+        if path.name != target.name:
+            if target.exists():
+                raise RuntimeError(f"Cannot rename {old_rel}: target already exists: {rel(target, root)}")
+            path.rename(target)
+            rows.append(
+                {
+                    "work": f"Work {work_num}",
+                    "old_path": old_rel,
+                    "new_path": rel(target, root),
+                    "renamed": True,
+                }
+            )
+        else:
+            rows.append(
+                {
+                    "work": f"Work {work_num}",
+                    "old_path": old_rel,
+                    "new_path": old_rel,
+                    "renamed": False,
+                }
+            )
+    return rows
+
+
+def rewrite_tex_image_paths(root: Path, rename_rows: list[dict[str, Any]]) -> None:
+    replacements = {
+        row["old_path"]: row["new_path"]
+        for row in rename_rows
+        if row.get("renamed") and row.get("old_path") and row.get("new_path")
+    }
+    if not replacements:
+        return
+    for path in root.glob("portfolio*.tex"):
+        text = path.read_text(encoding="utf-8")
+        updated = text
+        for old, new in replacements.items():
+            updated = updated.replace(old, new)
+        refs = re.findall(
+            r"portfolio_compiled_works_metadata/Work (\d+)/[^{}]+?-(\d+)\.(png|jpg|jpeg|tif|tiff)",
+            updated,
+            re.IGNORECASE,
+        )
+        for work_num, sequence, ext in refs:
+            old_match = re.search(
+                rf"portfolio_compiled_works_metadata/Work {work_num}/[^{{}}]+-{sequence}\.{ext}",
+                updated,
+                re.IGNORECASE,
+            )
+            if not old_match:
+                continue
+            old_ref = old_match.group(0)
+            if (root / old_ref).exists():
+                continue
+            candidates = sorted((root / f"portfolio_compiled_works_metadata/Work {work_num}").glob(f"*-{sequence}.{ext.lower()}"))
+            if candidates:
+                updated = updated.replace(old_ref, rel(candidates[0], root))
+        if updated != text:
+            path.write_text(updated, encoding="utf-8")
+
+
 def image_info(path: Path, root: Path, sequence: int, existing: dict[str, Any], total: int) -> dict[str, Any]:
     with Image.open(path) as image:
         dpi = image.info.get("dpi") or [None, None]
@@ -145,6 +257,7 @@ def normalize_catalog(root: Path) -> list[dict[str, Any]]:
     existing_catalog = json_load(catalog_path, [])
     catalog_by_number = {int(work["work_number"]): work for work in existing_catalog}
     normalized: list[dict[str, Any]] = []
+    filename_rows: list[dict[str, Any]] = []
 
     folders = sorted(metadata_root.glob("Work *"), key=work_number)
     content_page = 1
@@ -153,6 +266,8 @@ def normalize_catalog(root: Path) -> list[dict[str, Any]]:
         work_json = json_load(folder / "work.json", {})
         meta_txt = parse_meta_txt(folder / "Meta.txt")
         base = {**catalog_by_number.get(number, {}), **work_json, **meta_txt}
+        title = base.get("title") or f"Work {number}"
+        filename_rows.extend(canonicalize_work_images(folder, number, title, root))
         existing_images = {image.get("filename"): image for image in base.get("images", [])}
         image_paths = sorted(
             path
@@ -169,13 +284,13 @@ def normalize_catalog(root: Path) -> list[dict[str, Any]]:
             "work_number": number,
             "work_label": f"Work {number}",
             "folder": folder.name,
-            "title": base.get("title") or f"Work {number}",
+            "title": title,
             "year": base.get("year", ""),
             "materials": base.get("materials", ""),
             "format": base.get("format", ""),
             "size": base.get("size", ""),
             "location": base.get("location", ""),
-            "key": base.get("key") or f"work{number:02d}",
+            "key": f"work{number:02d}",
             "page_count": page_count,
             "source_meta_docx": source_meta_docx,
             "images": images,
@@ -189,7 +304,8 @@ def normalize_catalog(root: Path) -> list[dict[str, Any]]:
 
     write_json(catalog_path, normalized)
     write_catalog_csv(metadata_root / "catalog.csv", normalized)
-    write_filename_maps(metadata_root, normalized)
+    write_filename_maps(metadata_root, filename_rows)
+    write_policy(metadata_root, normalized)
     return normalized
 
 
@@ -232,26 +348,31 @@ def write_catalog_csv(path: Path, catalog: list[dict[str, Any]]) -> None:
             )
 
 
-def write_filename_maps(metadata_root: Path, catalog: list[dict[str, Any]]) -> None:
-    existing = json_load(metadata_root / "filename_map.json", [])
-    by_new_path = {row.get("new_path"): row for row in existing}
-    rows = []
-    for work in catalog:
-        for image in work["images"]:
-            old = by_new_path.get(image["relative_path"], {})
-            rows.append(
-                {
-                    "work": work["work_label"],
-                    "old_path": old.get("old_path", image["relative_path"]),
-                    "new_path": image["relative_path"],
-                    "renamed": bool(old.get("renamed", False)),
-                }
-            )
+def write_filename_maps(metadata_root: Path, rows: list[dict[str, Any]]) -> None:
     write_json(metadata_root / "filename_map.json", rows)
     with (metadata_root / "filename_map.csv").open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=["work", "old_path", "new_path", "renamed"])
         writer.writeheader()
         writer.writerows(rows)
+
+
+def write_policy(metadata_root: Path, catalog: list[dict[str, Any]]) -> None:
+    tex_filename = canonical_tex_filename(catalog)
+    payload = {
+        **CATALOGUE_POLICY,
+        "canonical_tex": tex_filename,
+        "compile_tex_pointer": CANONICAL_TEX_POINTER,
+        "work_folder_order": [
+            {
+                "work_number": work["work_number"],
+                "folder": work["folder"],
+                "title": work["title"],
+                "key": work["key"],
+            }
+            for work in catalog
+        ],
+    }
+    write_json(metadata_root / "catalogue_policy.json", payload)
 
 
 def parse_tex_references(root: Path) -> dict[str, list[str]]:
@@ -261,8 +382,47 @@ def parse_tex_references(root: Path) -> dict[str, list[str]]:
     )
     refs: dict[str, list[str]] = {}
     for tex_name in TEX_FILES:
-        refs[tex_name] = sorted(set(pattern.findall((root / tex_name).read_text(encoding="utf-8"))))
+        tex_path = root / tex_name
+        text = tex_path.read_text(encoding="utf-8")
+        input_matches = re.findall(r"\\input\{([^{}]+)\}", text)
+        for input_name in input_matches:
+            input_path = root / input_name
+            if input_path.exists():
+                text += "\n" + input_path.read_text(encoding="utf-8")
+        refs[tex_name] = sorted(set(pattern.findall(text)))
     return refs
+
+
+def sync_canonical_tex_filename(root: Path, catalog: list[dict[str, Any]]) -> Path:
+    desired = root / canonical_tex_filename(catalog)
+    pointer = root / CANONICAL_TEX_POINTER
+    current = desired if desired.exists() else None
+
+    if current is None:
+        candidates = sorted(
+            [
+                path
+                for path in root.glob("portfolio*.tex")
+                if path.name not in {CANONICAL_TEX_POINTER}
+            ],
+            key=lambda path: path.stat().st_mtime,
+            reverse=True,
+        )
+        current = candidates[0] if candidates else root / DEFAULT_TEX_FILE
+
+    if current.exists() and current.resolve() != desired.resolve():
+        if desired.exists():
+            desired.unlink()
+        current.rename(desired)
+    elif not desired.exists() and current.exists():
+        desired.write_text(current.read_text(encoding="utf-8"), encoding="utf-8")
+
+    pointer.write_text(
+        "% This file is a stable compile pointer. The generated catalogue TeX is:\n"
+        f"\\input{{{desired.name}}}\n",
+        encoding="utf-8",
+    )
+    return desired
 
 
 def tex_escape(value: Any) -> str:
@@ -350,13 +510,89 @@ def sync_tex_inventory(root: Path, catalog: list[dict[str, Any]]) -> None:
         r"(?=\\newcommand\{\\computeworkranges\})",
         re.DOTALL,
     )
-    for tex_name in TEX_FILES:
-        path = root / tex_name
+    canonical_tex = sync_canonical_tex_filename(root, catalog)
+    rewrite_tex_image_paths(root, [])
+    for path in [canonical_tex]:
         text = path.read_text(encoding="utf-8")
         updated, count = pattern.subn(lambda _match: inventory, text, count=1)
         if count != 1:
-            raise RuntimeError(f"Could not locate inventory block in {tex_name}")
+            raise RuntimeError(f"Could not locate inventory block in {path.name}")
         path.write_text(updated, encoding="utf-8")
+    sync_tex_content_pages(canonical_tex, catalog)
+
+
+ART_CENTER_X = 421.0
+ART_CENTER_Y = 343.5
+ART_FRAME_W = 758.0
+ART_FRAME_H = 427.0
+PAIR_GAP = 56.0
+
+
+def image_aspect(image: dict[str, Any]) -> float:
+    width = float(image.get("width_px") or 1)
+    height = float(image.get("height_px") or 1)
+    return width / height if height else 1.0
+
+
+def grouped_work_pages(work: dict[str, Any]) -> list[list[dict[str, Any]]]:
+    pages: dict[int, list[dict[str, Any]]] = {}
+    for image in sorted(work["images"], key=lambda item: int(item["sequence"])):
+        pages.setdefault(int(image["work_page"]), []).append(image)
+    return [pages[number] for number in sorted(pages)]
+
+
+def paired_image_lines(images: list[dict[str, Any]]) -> list[str]:
+    if len(images) == 1:
+        image = images[0]
+        return [
+            rf"\fitimagebox{{{ART_CENTER_X:.3f}}}{{{ART_CENTER_Y:.3f}}}{{{ART_FRAME_W:.3f}}}{{{ART_FRAME_H:.3f}}}{{{image['relative_path']}}}"
+        ]
+
+    aspects = [image_aspect(image) for image in images]
+    available_width = ART_FRAME_W - PAIR_GAP * (len(images) - 1)
+    height = min(ART_FRAME_H, available_width / sum(aspects))
+    widths = [aspect * height for aspect in aspects]
+    total_width = sum(widths) + PAIR_GAP * (len(images) - 1)
+    cursor = ART_CENTER_X - total_width / 2
+    lines = []
+    for image, width in zip(images, widths):
+        center_x = cursor + width / 2
+        lines.append(
+            rf"\fitimageheight{{{center_x:.3f}}}{{{ART_CENTER_Y:.3f}}}{{{height:.3f}}}{{{image['relative_path']}}}"
+        )
+        cursor += width + PAIR_GAP
+    return lines
+
+
+def content_pages_tex(catalog: list[dict[str, Any]]) -> str:
+    chunks: list[str] = []
+    for work in catalog:
+        chunks.extend(
+            [
+                "% ---------------------------------------------------------------------",
+                f"% Work {work['work_number']} - {work['title']}",
+                "% ---------------------------------------------------------------------",
+            ]
+        )
+        for page_index, images in enumerate(grouped_work_pages(work), start=1):
+            chunks.append(r"\begin{portfoliopage}")
+            if page_index == 1:
+                chunks.append(rf"\worktarget{{{work['key']}}}")
+            chunks.extend(paired_image_lines(images))
+            chunks.append(rf"\artworkcaption{{{work['key']}}}{{{page_index}}}")
+            chunks.append(r"\end{portfoliopage}")
+            chunks.append("")
+    return "\n".join(chunks).rstrip()
+
+
+def sync_tex_content_pages(tex_path: Path, catalog: list[dict[str, Any]]) -> None:
+    text = tex_path.read_text(encoding="utf-8")
+    start = text.find("% ---------------------------------------------------------------------\n% Work ")
+    end = text.rfind(r"\end{document}")
+    if start == -1 or end == -1 or start >= end:
+        raise RuntimeError(f"Could not locate generated work page block in {tex_path.name}")
+    updated = text[:start] + content_pages_tex(catalog) + "\n\n" + text[end:]
+    tex_path.write_text(updated, encoding="utf-8")
 
 
 def pdf_info(path: Path) -> dict[str, Any]:
@@ -498,7 +734,11 @@ def main() -> int:
     root = repo_root()
     catalog = normalize_catalog(root) if args.write else json_load(root / "portfolio_compiled_works_metadata" / "catalog.json", [])
     if args.sync_tex:
-        sync_tex_inventory(root, catalog)
+        try:
+            sync_tex_inventory(root, catalog)
+        except Exception as exc:
+            print(f"ERROR: {exc}")
+            return 1
     manifest, errors = build_manifest(root, catalog)
 
     if args.require_output:

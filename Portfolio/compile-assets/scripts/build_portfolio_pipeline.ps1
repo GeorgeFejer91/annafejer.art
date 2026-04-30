@@ -14,6 +14,7 @@ $PageRoot = Join-Path $OutputRoot "pages"
 $ViewerScript = Join-Path $ScriptDir "refresh_portfolio_pdf_viewers.ps1"
 $SplitScript = Join-Path $ScriptDir "split_portfolio_pages.ps1"
 $AuditScript = Join-Path $ScriptDir "audit_portfolio_inclusion.py"
+$PolicyPath = Join-Path $Root "portfolio_compiled_works_metadata\catalogue_policy.json"
 
 Set-Location $Root
 New-Item -ItemType Directory -Force -Path $OutputRoot, $BuildDir, $PageRoot | Out-Null
@@ -22,7 +23,7 @@ Get-ChildItem -LiteralPath $BuildDir -Directory -Filter "run-*" -ErrorAction Sil
 
 $Target = @{
   Key = "a4"
-  Tex = "portfolio_from_ppt_images_a4.tex"
+  Tex = "portfolio_current.tex"
   BuildPdfName = "portfolio_from_ppt_images_a4.pdf"
   FinalPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf"
   PageDir = Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent"
@@ -55,6 +56,14 @@ $Targets = @($Target)
 if (-not $SkipPdf) {
   python $AuditScript --write --sync-tex
   if ($LASTEXITCODE -ne 0) { throw "Portfolio metadata sync failed" }
+
+  if (Test-Path -LiteralPath $PolicyPath) {
+    $policy = Get-Content -LiteralPath $PolicyPath -Raw | ConvertFrom-Json
+    if ($policy.compile_tex_pointer) {
+      $Target.Tex = [string]$policy.compile_tex_pointer
+    }
+  }
+  $Target.BuildPdfName = [System.IO.Path]::ChangeExtension($Target.Tex, ".pdf")
 
   $closePaths = @($Targets | ForEach-Object { $_.FinalPdf; $_.LegacyPaths })
   powershell -NoProfile -ExecutionPolicy Bypass -File $ViewerScript -Close -Paths $closePaths

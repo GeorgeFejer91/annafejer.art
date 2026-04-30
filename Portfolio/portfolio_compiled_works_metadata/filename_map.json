@@ -1,21 +1,21 @@
 [
   {
     "work": "Work 1",
-    "old_path": "portfolio_compiled_works_metadata/Work 1/work-01-body-01.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 1/work-01-body-frames-01.png",
     "new_path": "portfolio_compiled_works_metadata/Work 1/work-01-body-frames-01.png",
-    "renamed": true
+    "renamed": false
   },
   {
     "work": "Work 1",
-    "old_path": "portfolio_compiled_works_metadata/Work 1/work-01-body-02.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 1/work-01-body-frames-02.png",
     "new_path": "portfolio_compiled_works_metadata/Work 1/work-01-body-frames-02.png",
-    "renamed": true
+    "renamed": false
   },
   {
     "work": "Work 1",
-    "old_path": "portfolio_compiled_works_metadata/Work 1/work-01-body-03.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 1/work-01-body-frames-03.png",
     "new_path": "portfolio_compiled_works_metadata/Work 1/work-01-body-frames-03.png",
-    "renamed": true
+    "renamed": false
   },
   {
     "work": "Work 2",
@@ -42,6 +42,12 @@
     "renamed": false
   },
   {
+    "work": "Work 3",
+    "old_path": "portfolio_compiled_works_metadata/Work 3/work-03-can-you-sit-03.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 3/work-03-can-you-sit-03.png",
+    "renamed": false
+  },
+  {
     "work": "Work 4",
     "old_path": "portfolio_compiled_works_metadata/Work 4/work-04-split-i-01.jpg",
     "new_path": "portfolio_compiled_works_metadata/Work 4/work-04-split-i-01.jpg",
@@ -61,32 +67,20 @@
   },
   {
     "work": "Work 7",
-    "old_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-illustration-performance-in-collaboration-with-lucy-maclauchlan-01.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-illustration-performance-in-collaboration-with-lucy-maclauchlan-01.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-illustration-performance-01.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-illustration-performance-01.png",
     "renamed": false
   },
   {
     "work": "Work 7",
-    "old_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-illustration-performance-in-collaboration-with-lucy-maclauchlan-02.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-illustration-performance-in-collaboration-with-lucy-maclauchlan-02.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-illustration-performance-02.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-illustration-performance-02.png",
     "renamed": false
   },
   {
     "work": "Work 8",
-    "old_path": "portfolio_compiled_works_metadata/Work 8/work-08-corset-01.jpg",
-    "new_path": "portfolio_compiled_works_metadata/Work 8/work-08-corset-01.jpg",
-    "renamed": false
-  },
-  {
-    "work": "Work 8",
-    "old_path": "portfolio_compiled_works_metadata/Work 8/work-08-corset-02.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 8/work-08-corset-02.png",
-    "renamed": false
-  },
-  {
-    "work": "Work 8",
-    "old_path": "portfolio_compiled_works_metadata/Work 8/work-08-corset-03.jpg",
-    "new_path": "portfolio_compiled_works_metadata/Work 8/work-08-corset-03.jpg",
+    "old_path": "portfolio_compiled_works_metadata/Work 8/work-08-studies-of-brierley-hill-01.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 8/work-08-studies-of-brierley-hill-01.png",
     "renamed": false
   },
   {
@@ -133,32 +127,50 @@
   },
   {
     "work": "Work 12",
-    "old_path": "portfolio_compiled_works_metadata/Work 12/work-12-craig-green-collection-black-01.jpg",
-    "new_path": "portfolio_compiled_works_metadata/Work 12/work-12-craig-green-collection-black-01.jpg",
+    "old_path": "portfolio_compiled_works_metadata/Work 12/work-12-corset-01.jpg",
+    "new_path": "portfolio_compiled_works_metadata/Work 12/work-12-corset-01.jpg",
     "renamed": false
   },
   {
     "work": "Work 12",
-    "old_path": "portfolio_compiled_works_metadata/Work 12/work-12-craig-green-collection-black-02.jpg",
-    "new_path": "portfolio_compiled_works_metadata/Work 12/work-12-craig-green-collection-black-02.jpg",
+    "old_path": "portfolio_compiled_works_metadata/Work 12/work-12-corset-02.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 12/work-12-corset-02.png",
+    "renamed": false
+  },
+  {
+    "work": "Work 12",
+    "old_path": "portfolio_compiled_works_metadata/Work 12/work-12-corset-03.jpg",
+    "new_path": "portfolio_compiled_works_metadata/Work 12/work-12-corset-03.jpg",
     "renamed": false
   },
   {
     "work": "Work 13",
-    "old_path": "portfolio_compiled_works_metadata/Work 13/work-13-craig-green-collection-white-01.jpg",
-    "new_path": "portfolio_compiled_works_metadata/Work 13/work-13-craig-green-collection-white-01.jpg",
+    "old_path": "portfolio_compiled_works_metadata/Work 13/work-13-craig-green-collection-black-01.jpg",
+    "new_path": "portfolio_compiled_works_metadata/Work 13/work-13-craig-green-collection-black-01.jpg",
     "renamed": false
   },
   {
     "work": "Work 13",
-    "old_path": "portfolio_compiled_works_metadata/Work 13/work-13-craig-green-collection-white-02.jpg",
-    "new_path": "portfolio_compiled_works_metadata/Work 13/work-13-craig-green-collection-white-02.jpg",
+    "old_path": "portfolio_compiled_works_metadata/Work 13/work-13-craig-green-collection-black-02.jpg",
+    "new_path": "portfolio_compiled_works_metadata/Work 13/work-13-craig-green-collection-black-02.jpg",
     "renamed": false
   },
   {
     "work": "Work 14",
-    "old_path": "portfolio_compiled_works_metadata/Work 14/work-14-metal-over-mind-01.png",
-    "new_path": "portfolio_compiled_works_metadata/Work 14/work-14-metal-over-mind-01.png",
+    "old_path": "portfolio_compiled_works_metadata/Work 14/work-14-craig-green-collection-white-01.jpg",
+    "new_path": "portfolio_compiled_works_metadata/Work 14/work-14-craig-green-collection-white-01.jpg",
+    "renamed": false
+  },
+  {
+    "work": "Work 14",
+    "old_path": "portfolio_compiled_works_metadata/Work 14/work-14-craig-green-collection-white-02.jpg",
+    "new_path": "portfolio_compiled_works_metadata/Work 14/work-14-craig-green-collection-white-02.jpg",
+    "renamed": false
+  },
+  {
+    "work": "Work 15",
+    "old_path": "portfolio_compiled_works_metadata/Work 15/work-15-metal-over-mind-01.png",
+    "new_path": "portfolio_compiled_works_metadata/Work 15/work-15-metal-over-mind-01.png",
     "renamed": false
   }
 ]

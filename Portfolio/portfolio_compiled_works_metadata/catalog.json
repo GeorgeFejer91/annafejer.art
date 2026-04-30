@@ -24,7 +24,7 @@
           191.99859999999998,
           191.99859999999998
         ],
-        "file_size_bytes": 4207371,
+        "file_size_bytes": 4173105,
         "sequence": 1,
         "work_page": 1,
         "page_role": "hero image"
@@ -40,7 +40,7 @@
           191.99859999999998,
           191.99859999999998
         ],
-        "file_size_bytes": 3870737,
+        "file_size_bytes": 3575111,
         "sequence": 2,
         "work_page": 2,
         "page_role": "equal-height spread image 1"
@@ -56,7 +56,7 @@
           191.99859999999998,
           191.99859999999998
         ],
-        "file_size_bytes": 3495921,
+        "file_size_bytes": 3426444,
         "sequence": 3,
         "work_page": 2,
         "page_role": "equal-height spread image 2"
@@ -126,7 +126,7 @@
     "size": "25 cm x 10 cm x 10 cm",
     "location": "",
     "key": "work03",
-    "page_count": 1,
+    "page_count": 2,
     "source_meta_docx": "portfolio_compiled_works_metadata/Work 3/Meta.docx",
     "images": [
       {
@@ -160,10 +160,26 @@
         "sequence": 2,
         "work_page": 1,
         "page_role": "equal-height spread image 2"
+      },
+      {
+        "filename": "work-03-can-you-sit-03.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 3/work-03-can-you-sit-03.png",
+        "width_px": 3024,
+        "height_px": 4032,
+        "aspect_ratio": 0.75,
+        "mode": "RGB",
+        "dpi": [
+          72.009,
+          72.009
+        ],
+        "file_size_bytes": 12701314,
+        "sequence": 3,
+        "work_page": 2,
+        "page_role": "equal-height spread image 2"
       }
     ],
     "content_start_page": 4,
-    "content_end_page": 4
+    "content_end_page": 5
   },
   {
     "work_number": 4,
@@ -182,19 +198,22 @@
       {
         "filename": "work-04-split-i-01.jpg",
         "relative_path": "portfolio_compiled_works_metadata/Work 4/work-04-split-i-01.jpg",
-        "width_px": 809,
+        "width_px": 539,
         "height_px": 749,
-        "aspect_ratio": 1.080107,
+        "aspect_ratio": 0.719626,
         "mode": "RGB",
-        "dpi": null,
-        "file_size_bytes": 143143,
+        "dpi": [
+          96,
+          96
+        ],
+        "file_size_bytes": 147352,
         "sequence": 1,
         "work_page": 1,
         "page_role": "single-page image"
       }
     ],
-    "content_start_page": 5,
-    "content_end_page": 5
+    "content_start_page": 6,
+    "content_end_page": 6
   },
   {
     "work_number": 5,
@@ -213,19 +232,22 @@
       {
         "filename": "work-05-split-ii-01.jpg",
         "relative_path": "portfolio_compiled_works_metadata/Work 5/work-05-split-ii-01.jpg",
-        "width_px": 1333,
+        "width_px": 513,
         "height_px": 749,
-        "aspect_ratio": 1.779706,
+        "aspect_ratio": 0.684913,
         "mode": "RGB",
-        "dpi": null,
-        "file_size_bytes": 60009,
+        "dpi": [
+          96,
+          96
+        ],
+        "file_size_bytes": 74602,
         "sequence": 1,
         "work_page": 1,
         "page_role": "single-page image"
       }
     ],
-    "content_start_page": 6,
-    "content_end_page": 6
+    "content_start_page": 7,
+    "content_end_page": 7
   },
   {
     "work_number": 6,
@@ -258,14 +280,14 @@
         "page_role": "single-page image"
       }
     ],
-    "content_start_page": 7,
-    "content_end_page": 7
+    "content_start_page": 8,
+    "content_end_page": 8
   },
   {
     "work_number": 7,
     "work_label": "Work 7",
     "folder": "Work 7",
-    "title": "Live Illustration Performance in collaboration with Lucy Maclauchlan",
+    "title": "Live Illustration Performance",
     "year": "2024",
     "materials": "Paint, Ink",
     "format": "Canvas",
@@ -276,8 +298,8 @@
     "source_meta_docx": "portfolio_compiled_works_metadata/Work 7/Meta.docx",
     "images": [
       {
-        "filename": "work-07-live-illustration-performance-in-collaboration-with-lucy-maclauchlan-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-illustration-performance-in-collaboration-with-lucy-maclauchlan-01.png",
+        "filename": "work-07-live-illustration-performance-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-illustration-performance-01.png",
         "width_px": 1251,
         "height_px": 1728,
         "aspect_ratio": 0.723958,
@@ -292,8 +314,8 @@
         "page_role": "equal-height spread image 1"
       },
       {
-        "filename": "work-07-live-illustration-performance-in-collaboration-with-lucy-maclauchlan-02.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-illustration-performance-in-collaboration-with-lucy-maclauchlan-02.png",
+        "filename": "work-07-live-illustration-performance-02.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 7/work-07-live-illustration-performance-02.png",
         "width_px": 1690,
         "height_px": 2048,
         "aspect_ratio": 0.825195,
@@ -308,73 +330,41 @@
         "page_role": "equal-height spread image 2"
       }
     ],
-    "content_start_page": 8,
-    "content_end_page": 8
+    "content_start_page": 9,
+    "content_end_page": 9
   },
   {
     "work_number": 8,
     "work_label": "Work 8",
     "folder": "Work 8",
-    "title": "Corset",
+    "title": "Studies of Brierley Hill",
     "year": "2025",
-    "materials": "Balloons, Umbrella",
-    "format": "Digital Photograph",
+    "materials": "Ink, Paper",
+    "format": "Illustration",
     "size": "29.7 cm x 21 cm",
     "location": "",
     "key": "work08",
-    "page_count": 2,
-    "source_meta_docx": "portfolio_compiled_works_metadata/Work 8/Meta.docx",
+    "page_count": 1,
+    "source_meta_docx": "",
     "images": [
       {
-        "filename": "work-08-corset-01.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 8/work-08-corset-01.jpg",
-        "width_px": 2511,
-        "height_px": 1946,
-        "aspect_ratio": 1.290339,
-        "mode": "RGB",
-        "dpi": [
-          72,
-          72
-        ],
-        "file_size_bytes": 591357,
-        "sequence": 1,
-        "work_page": 1,
-        "page_role": "hero image"
-      },
-      {
-        "filename": "work-08-corset-02.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 8/work-08-corset-02.png",
-        "width_px": 1620,
-        "height_px": 2160,
-        "aspect_ratio": 0.75,
+        "filename": "work-08-studies-of-brierley-hill-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 8/work-08-studies-of-brierley-hill-01.png",
+        "width_px": 984,
+        "height_px": 1230,
+        "aspect_ratio": 0.8,
         "mode": "RGB",
         "dpi": [
           191.99859999999998,
           191.99859999999998
         ],
-        "file_size_bytes": 4032819,
-        "sequence": 2,
-        "work_page": 2,
-        "page_role": "equal-height spread image 1"
-      },
-      {
-        "filename": "work-08-corset-03.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 8/work-08-corset-03.jpg",
-        "width_px": 1719,
-        "height_px": 2160,
-        "aspect_ratio": 0.795833,
-        "mode": "RGB",
-        "dpi": [
-          72,
-          72
-        ],
-        "file_size_bytes": 411014,
-        "sequence": 3,
-        "work_page": 2,
-        "page_role": "equal-height spread image 2"
+        "file_size_bytes": 830490,
+        "sequence": 1,
+        "work_page": 1,
+        "page_role": "single image"
       }
     ],
-    "content_start_page": 9,
+    "content_start_page": 10,
     "content_end_page": 10
   },
   {
@@ -411,14 +401,14 @@
         "filename": "work-09-traffic-02.png",
         "relative_path": "portfolio_compiled_works_metadata/Work 9/work-09-traffic-02.png",
         "width_px": 3024,
-        "height_px": 3131,
-        "aspect_ratio": 0.965826,
-        "mode": "RGBA",
+        "height_px": 4032,
+        "aspect_ratio": 0.75,
+        "mode": "RGB",
         "dpi": [
           72.009,
           72.009
         ],
-        "file_size_bytes": 6589469,
+        "file_size_bytes": 6657604,
         "sequence": 2,
         "work_page": 1,
         "page_role": "equal-height spread image 2"
@@ -502,7 +492,7 @@
           72.009,
           72.009
         ],
-        "file_size_bytes": 12980716,
+        "file_size_bytes": 12169019,
         "sequence": 1,
         "work_page": 1,
         "page_role": "hero image"
@@ -518,7 +508,7 @@
           96.012,
           96.012
         ],
-        "file_size_bytes": 11049386,
+        "file_size_bytes": 10836388,
         "sequence": 2,
         "work_page": 2,
         "page_role": "equal-height spread image 1"
@@ -547,19 +537,85 @@
     "work_number": 12,
     "work_label": "Work 12",
     "folder": "Work 12",
+    "title": "Corset",
+    "year": "2025",
+    "materials": "Balloons, Umbrella",
+    "format": "Digital Photograph",
+    "size": "29.7 cm x 21 cm",
+    "location": "",
+    "key": "work12",
+    "page_count": 2,
+    "source_meta_docx": "portfolio_compiled_works_metadata/Work 12/Meta.docx",
+    "images": [
+      {
+        "filename": "work-12-corset-01.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 12/work-12-corset-01.jpg",
+        "width_px": 2511,
+        "height_px": 1946,
+        "aspect_ratio": 1.290339,
+        "mode": "RGB",
+        "dpi": [
+          72,
+          72
+        ],
+        "file_size_bytes": 591357,
+        "sequence": 1,
+        "work_page": 1,
+        "page_role": "hero image"
+      },
+      {
+        "filename": "work-12-corset-02.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 12/work-12-corset-02.png",
+        "width_px": 1620,
+        "height_px": 2160,
+        "aspect_ratio": 0.75,
+        "mode": "RGB",
+        "dpi": [
+          191.99859999999998,
+          191.99859999999998
+        ],
+        "file_size_bytes": 4032819,
+        "sequence": 2,
+        "work_page": 2,
+        "page_role": "equal-height spread image 1"
+      },
+      {
+        "filename": "work-12-corset-03.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 12/work-12-corset-03.jpg",
+        "width_px": 1719,
+        "height_px": 2160,
+        "aspect_ratio": 0.795833,
+        "mode": "RGB",
+        "dpi": [
+          72,
+          72
+        ],
+        "file_size_bytes": 411014,
+        "sequence": 3,
+        "work_page": 2,
+        "page_role": "equal-height spread image 2"
+      }
+    ],
+    "content_start_page": 15,
+    "content_end_page": 16
+  },
+  {
+    "work_number": 13,
+    "work_label": "Work 13",
+    "folder": "Work 13",
     "title": "Craig Green Collection Black",
     "year": "2025",
     "materials": "Paper, Prints, Oil",
     "format": "Collage",
     "size": "21 cm x 14.4 cm",
     "location": "",
-    "key": "work12",
+    "key": "work13",
     "page_count": 1,
-    "source_meta_docx": "portfolio_compiled_works_metadata/Work 12/Meta.docx",
+    "source_meta_docx": "portfolio_compiled_works_metadata/Work 13/Meta.docx",
     "images": [
       {
-        "filename": "work-12-craig-green-collection-black-01.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 12/work-12-craig-green-collection-black-01.jpg",
+        "filename": "work-13-craig-green-collection-black-01.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 13/work-13-craig-green-collection-black-01.jpg",
         "width_px": 9500,
         "height_px": 14096,
         "aspect_ratio": 0.67395,
@@ -574,8 +630,8 @@
         "page_role": "equal-height spread image 1"
       },
       {
-        "filename": "work-12-craig-green-collection-black-02.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 12/work-12-craig-green-collection-black-02.jpg",
+        "filename": "work-13-craig-green-collection-black-02.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 13/work-13-craig-green-collection-black-02.jpg",
         "width_px": 9770,
         "height_px": 13915,
         "aspect_ratio": 0.70212,
@@ -590,26 +646,26 @@
         "page_role": "equal-height spread image 2"
       }
     ],
-    "content_start_page": 15,
-    "content_end_page": 15
+    "content_start_page": 17,
+    "content_end_page": 17
   },
   {
-    "work_number": 13,
-    "work_label": "Work 13",
-    "folder": "Work 13",
+    "work_number": 14,
+    "work_label": "Work 14",
+    "folder": "Work 14",
     "title": "Craig Green Collection White",
     "year": "2025",
     "materials": "Paper, Prints, Oil",
     "format": "Collage",
     "size": "21 cm x 14.4 cm",
     "location": "",
-    "key": "work13",
+    "key": "work14",
     "page_count": 1,
-    "source_meta_docx": "portfolio_compiled_works_metadata/Work 13/Meta.docx",
+    "source_meta_docx": "portfolio_compiled_works_metadata/Work 14/Meta.docx",
     "images": [
       {
-        "filename": "work-13-craig-green-collection-white-01.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 13/work-13-craig-green-collection-white-01.jpg",
+        "filename": "work-14-craig-green-collection-white-01.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 14/work-14-craig-green-collection-white-01.jpg",
         "width_px": 10398,
         "height_px": 14506,
         "aspect_ratio": 0.716807,
@@ -624,8 +680,8 @@
         "page_role": "equal-height spread image 1"
       },
       {
-        "filename": "work-13-craig-green-collection-white-02.jpg",
-        "relative_path": "portfolio_compiled_works_metadata/Work 13/work-13-craig-green-collection-white-02.jpg",
+        "filename": "work-14-craig-green-collection-white-02.jpg",
+        "relative_path": "portfolio_compiled_works_metadata/Work 14/work-14-craig-green-collection-white-02.jpg",
         "width_px": 7838,
         "height_px": 10864,
         "aspect_ratio": 0.721465,
@@ -640,26 +696,26 @@
         "page_role": "equal-height spread image 2"
       }
     ],
-    "content_start_page": 16,
-    "content_end_page": 16
+    "content_start_page": 18,
+    "content_end_page": 18
   },
   {
-    "work_number": 14,
-    "work_label": "Work 14",
-    "folder": "Work 14",
+    "work_number": 15,
+    "work_label": "Work 15",
+    "folder": "Work 15",
     "title": "Metal over Mind",
     "year": "2025",
     "materials": "Metal Can, Paper, Paint",
     "format": "Collage",
     "size": "21 cm x 29.7 cm",
     "location": "",
-    "key": "work14",
+    "key": "work15",
     "page_count": 1,
-    "source_meta_docx": "portfolio_compiled_works_metadata/Work 14/Meta.docx",
+    "source_meta_docx": "portfolio_compiled_works_metadata/Work 15/Meta.docx",
     "images": [
       {
-        "filename": "work-14-metal-over-mind-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 14/work-14-metal-over-mind-01.png",
+        "filename": "work-15-metal-over-mind-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 15/work-15-metal-over-mind-01.png",
         "width_px": 7500,
         "height_px": 5500,
         "aspect_ratio": 1.363636,
@@ -674,7 +730,7 @@
         "page_role": "single image"
       }
     ],
-    "content_start_page": 17,
-    "content_end_page": 17
+    "content_start_page": 19,
+    "content_end_page": 19
   }
 ]
