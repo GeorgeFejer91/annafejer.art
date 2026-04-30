@@ -705,8 +705,40 @@ def sync_tex_language(root: Path, catalog: list[dict[str, Any]], language: str) 
         updated, count = pattern.subn(lambda _match: inventory, text, count=1)
         if count != 1:
             raise RuntimeError(f"Could not locate inventory block in {path.name}")
+        updated = sync_tex_toc(updated, catalog, language, path.name)
         path.write_text(updated, encoding="utf-8")
     sync_tex_content_pages(canonical_tex, catalog, language)
+
+
+def sync_tex_toc(text: str, catalog: list[dict[str, Any]], language: str, tex_name: str) -> str:
+    labels = COVER_TEXT[language]
+    y_positions = [472, 422, 372, 322, 272, 222, 172, 122]
+    rows = []
+    for index, work in enumerate(catalog):
+        x = 70 if index < len(y_positions) else 448
+        y = y_positions[index % len(y_positions)]
+        rows.append(rf"  \tocentryrow{{{work['key']}}}{{{x}}}{{{y}}}%")
+    block = "\n".join(
+        [
+            r"\newcommand{\rendertoc}{%",
+            rf"  \node[anchor=west,inner sep=0pt] at (70,520){{\fontsize{{34}}{{40}}\selectfont\bfseries\color{{PortfolioInk}} {labels['contents']}}};%",
+            r"  \draw[PortfolioRule,line width=0.6pt] (70,492) -- (772,492);%",
+            rf"  \node[anchor=east,inner sep=0pt] at (772,504){{\fontsize{{9.5}}{{11}}\selectfont\color{{PortfolioGraphite}}\textsc{{{labels['pages']}}}}};%",
+            r"  \draw[PortfolioRule,line width=0.4pt] (421,484) -- (421,46);%",
+            *rows,
+            "}",
+        ]
+    )
+    updated, count = re.subn(
+        r"\\newcommand\{\\rendertoc\}\{%.*?\n\}\n\\begin\{document\}",
+        lambda _match: block + "\n" + r"\begin{document}",
+        text,
+        count=1,
+        flags=re.DOTALL,
+    )
+    if count != 1:
+        raise RuntimeError(f"Could not locate table-of-contents block in {tex_name}")
+    return updated
 
 
 ART_CENTER_X = 421.0
