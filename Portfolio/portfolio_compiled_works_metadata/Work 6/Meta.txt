@@ -1,17 +1,17 @@
 Work: Work 6
 Folder: Work 6
-Title: Golem
+Title: Der Golem
 Year of creation: 2026
-Format: Lino Print
+Format: Filmplakat
 Materials: Ink, Paper
 Size: 29.7 cm x 21 cm
 Location: 
 Portfolio content pages: 07
 
 Images used by LaTeX:
-  1. work-06-golem-01.png - 1550 x 2000 px, RGBA, dpi 350 x 350, 2.30 MB, page 1, single-page image
+  1. work-06-der-golem-01.png - 1550 x 2000 px, RGBA, dpi 350 x 350, 2.30 MB, page 1, single-page image
 
 Raw Meta.docx text:
-  Title: Golem
+  Title: Der Golem
   Year of creation: 2026
-  Materials: Ink, PaperFormat: Lino Print Size: 29.7cm x 21cmLocation: (blank)
+  Materials: Ink, PaperFormat: Filmplakat Size: 29.7cm x 21cmLocation: (blank)

@@ -253,10 +253,10 @@
     "work_number": 6,
     "work_label": "Work 6",
     "folder": "Work 6",
-    "title": "Golem",
+    "title": "Der Golem",
     "year": "2026",
     "materials": "Ink, Paper",
-    "format": "Lino Print",
+    "format": "Filmplakat",
     "size": "29.7 cm x 21 cm",
     "location": "",
     "key": "work06",
@@ -264,8 +264,8 @@
     "source_meta_docx": "portfolio_compiled_works_metadata/Work 6/Meta.docx",
     "images": [
       {
-        "filename": "work-06-golem-01.png",
-        "relative_path": "portfolio_compiled_works_metadata/Work 6/work-06-golem-01.png",
+        "filename": "work-06-der-golem-01.png",
+        "relative_path": "portfolio_compiled_works_metadata/Work 6/work-06-der-golem-01.png",
         "width_px": 1550,
         "height_px": 2000,
         "aspect_ratio": 0.775,
@@ -277,7 +277,7 @@
         "file_size_bytes": 2407491,
         "sequence": 1,
         "work_page": 1,
-        "page_role": "single-page image"
+        "page_role": "single image"
       }
     ],
     "content_start_page": 8,

@@ -1,7 +1,9 @@
 param(
   [switch]$SkipPdf,
   [switch]$NoOpen,
-  [switch]$Full
+  [switch]$Full,
+  [ValidateSet("en", "de", "all")]
+  [string]$Language = "all"
 )
 
 $ErrorActionPreference = "Stop"
@@ -21,7 +23,7 @@ New-Item -ItemType Directory -Force -Path $OutputRoot, $BuildDir, $PageRoot | Ou
 Get-ChildItem -LiteralPath $BuildDir -Directory -Filter "run-*" -ErrorAction SilentlyContinue |
   Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
 
-$Target = @{
+$EnglishTarget = @{
   Key = "a4"
   Tex = "portfolio_current.tex"
   BuildPdfName = "portfolio_from_ppt_images_a4.pdf"
@@ -39,6 +41,20 @@ $Target = @{
   )
 }
 
+$GermanTarget = @{
+  Key = "a4-de"
+  Tex = "portfolio_current_de.tex"
+  BuildPdfName = "portfolio_current_de.pdf"
+  FinalPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE.pdf"
+  PageDir = Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE"
+  PagePrefix = "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE"
+  LegacyPaths = @(
+    (Join-Path $Root "portfolio_current_de.pdf"),
+    (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE.pdf"),
+    (Join-Path ([Environment]::GetFolderPath("Desktop")) "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE.pdf")
+  )
+}
+
 $ObsoletePaths = @(
   (Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_A4.pdf"),
   (Join-Path $BuildDir "portfolio_from_ppt_images.pdf"),
@@ -51,7 +67,7 @@ $ObsoleteDirs = @(
   (Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_A4")
 )
 
-$Targets = @($Target)
+$Targets = if ($Language -eq "all") { @($EnglishTarget, $GermanTarget) } elseif ($Language -eq "de") { @($GermanTarget) } else { @($EnglishTarget) }
 
 if (-not $SkipPdf) {
   python $AuditScript --write --sync-tex
@@ -60,10 +76,16 @@ if (-not $SkipPdf) {
   if (Test-Path -LiteralPath $PolicyPath) {
     $policy = Get-Content -LiteralPath $PolicyPath -Raw | ConvertFrom-Json
     if ($policy.compile_tex_pointer) {
-      $Target.Tex = [string]$policy.compile_tex_pointer
+      $EnglishTarget.Tex = [string]$policy.compile_tex_pointer
+    }
+    if ($policy.german_compile_tex_pointer) {
+      $GermanTarget.Tex = [string]$policy.german_compile_tex_pointer
     }
   }
-  $Target.BuildPdfName = [System.IO.Path]::ChangeExtension($Target.Tex, ".pdf")
+  $Targets = if ($Language -eq "all") { @($EnglishTarget, $GermanTarget) } elseif ($Language -eq "de") { @($GermanTarget) } else { @($EnglishTarget) }
+  foreach ($target in $Targets) {
+    $target.BuildPdfName = [System.IO.Path]::ChangeExtension($target.Tex, ".pdf")
+  }
 
   $closePaths = @($Targets | ForEach-Object { $_.FinalPdf; $_.LegacyPaths })
   powershell -NoProfile -ExecutionPolicy Bypass -File $ViewerScript -Close -Paths $closePaths
@@ -113,7 +135,9 @@ if (-not $SkipPdf) {
 }
 
 Write-Host "Portfolio PDF compile complete."
-Write-Host "PDF: $($Target.FinalPdf)"
+foreach ($target in $Targets) {
+  Write-Host "PDF: $($target.FinalPdf)"
+}
 
 if (-not $SkipPdf -and -not $NoOpen) {
   $openPaths = @($Targets | ForEach-Object { $_.FinalPdf })

@@ -5,6 +5,7 @@ import csv
 import hashlib
 import json
 import re
+import shutil
 import subprocess
 from pathlib import Path
 from typing import Any
@@ -16,8 +17,9 @@ Image.MAX_IMAGE_PIXELS = None
 
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".tif", ".tiff"}
 CANONICAL_TEX_POINTER = "portfolio_current.tex"
+GERMAN_TEX_POINTER = "portfolio_current_de.tex"
 DEFAULT_TEX_FILE = "portfolio_from_ppt_images_a4.tex"
-TEX_FILES = [CANONICAL_TEX_POINTER]
+TEX_FILES = [CANONICAL_TEX_POINTER, GERMAN_TEX_POINTER]
 CATALOGUE_POLICY = {
     "version": 1,
     "source_of_truth": {
@@ -29,12 +31,66 @@ CATALOGUE_POLICY = {
     "image_naming_rule": "On every catalogue refresh, artwork images are renamed to work-XX-title-slug-YY.ext, where XX is the zero-padded Work folder number and YY is the image sequence within that folder.",
     "tex_rule": "The LaTeX inventory is generated from the Work folder catalogue and should not be treated as the source of truth.",
 }
+
+GERMAN_TRANSLATIONS = {
+    "format": {
+        "Canvas": "Leinwand",
+        "Collage": "Collage",
+        "Digital Photograph": "Digitale Fotografie",
+        "Illustration": "Illustration",
+        "Installation": "Installation",
+        "Lino Print": "Linoldruck",
+        "Sculpture": "Skulptur",
+    },
+    "materials": {
+        "Balloons": "Luftballons",
+        "Cardboard": "Karton",
+        "Copper Pipes": "Kupferrohre",
+        "Fishing line": "Angelschnur",
+        "Fishing Line": "Angelschnur",
+        "Glass": "Glas",
+        "Ink": "Tusche",
+        "Maps": "Karten",
+        "Metal": "Metall",
+        "Metal Can": "Metalldose",
+        "Metal Grates": "Metallgitter",
+        "Newspaper": "Zeitungspapier",
+        "Oil": "Öl",
+        "Paint": "Farbe",
+        "Paper": "Papier",
+        "Plastic": "Kunststoff",
+        "Polystyrene": "Polystyrol",
+        "Prints": "Drucke",
+        "Sand": "Sand",
+        "Tape": "Klebeband",
+        "Tin foil": "Alufolie",
+        "Umbrella": "Regenschirm",
+        "Wire": "Draht",
+        "Wood": "Holz",
+    },
+    "location": {
+        "Exhibition view, Dudley College of Technology, England": "Ausstellungsansicht, Dudley College of Technology, England",
+        "Exhibition at Dudley College of Technology": "Ausstellung am Dudley College of Technology",
+        "Kings Heath Eid - England": "Kings Heath Eid, England",
+    },
+}
+
+COVER_TEXT = {
+    "en": {"portfolio": "Portfolio", "selected": "Selected works, 2024-2026", "contents": "Contents", "pages": "Pages", "work": "Work"},
+    "de": {"portfolio": "Mappe", "selected": "Ausgewählte Arbeiten, 2024-2026", "contents": "Inhalt", "pages": "Seiten", "work": "Werk"},
+}
 OUTPUTS = [
     {
         "key": "a4",
         "pdf": "Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent.pdf",
         "pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent",
         "page_prefix": "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent",
+    },
+    {
+        "key": "a4-de",
+        "pdf": "Output/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE.pdf",
+        "pages_dir": "Output/pages/Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE",
+        "page_prefix": "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_DE",
     },
 ]
 
@@ -140,6 +196,13 @@ def canonical_tex_filename(catalog: list[dict[str, Any]]) -> str:
     if len(compact_signature) > 120:
         compact_signature = compact_signature[:120].rstrip("-")
     return f"portfolio_a4_work-{first:02d}-to-{last:02d}_{count}-works_{digest}_{compact_signature}.tex"
+
+
+def language_tex_filename(catalog: list[dict[str, Any]], language: str) -> str:
+    english_name = canonical_tex_filename(catalog)
+    if language == "en":
+        return english_name
+    return english_name.replace("portfolio_a4_", f"portfolio_a4_{language}_", 1)
 
 
 def canonicalize_work_images(folder: Path, work_num: int, title: str, root: Path) -> list[dict[str, Any]]:
@@ -357,11 +420,14 @@ def write_filename_maps(metadata_root: Path, rows: list[dict[str, Any]]) -> None
 
 
 def write_policy(metadata_root: Path, catalog: list[dict[str, Any]]) -> None:
-    tex_filename = canonical_tex_filename(catalog)
+    tex_filename = language_tex_filename(catalog, "en")
+    german_tex_filename = language_tex_filename(catalog, "de")
     payload = {
         **CATALOGUE_POLICY,
         "canonical_tex": tex_filename,
         "compile_tex_pointer": CANONICAL_TEX_POINTER,
+        "german_tex": german_tex_filename,
+        "german_compile_tex_pointer": GERMAN_TEX_POINTER,
         "work_folder_order": [
             {
                 "work_number": work["work_number"],
@@ -383,6 +449,8 @@ def parse_tex_references(root: Path) -> dict[str, list[str]]:
     refs: dict[str, list[str]] = {}
     for tex_name in TEX_FILES:
         tex_path = root / tex_name
+        if not tex_path.exists():
+            continue
         text = tex_path.read_text(encoding="utf-8")
         input_matches = re.findall(r"\\input\{([^{}]+)\}", text)
         for input_name in input_matches:
@@ -393,27 +461,37 @@ def parse_tex_references(root: Path) -> dict[str, list[str]]:
     return refs
 
 
-def sync_canonical_tex_filename(root: Path, catalog: list[dict[str, Any]]) -> Path:
-    desired = root / canonical_tex_filename(catalog)
-    pointer = root / CANONICAL_TEX_POINTER
+def sync_canonical_tex_filename(root: Path, catalog: list[dict[str, Any]], language: str = "en") -> Path:
+    desired = root / language_tex_filename(catalog, language)
+    pointer = root / (GERMAN_TEX_POINTER if language == "de" else CANONICAL_TEX_POINTER)
     current = desired if desired.exists() else None
 
     if current is None:
+        generated_names = {CANONICAL_TEX_POINTER, GERMAN_TEX_POINTER}
         candidates = sorted(
             [
                 path
                 for path in root.glob("portfolio*.tex")
-                if path.name not in {CANONICAL_TEX_POINTER}
+                if path.name not in generated_names and ("_de_" in path.name) == (language == "de")
             ],
             key=lambda path: path.stat().st_mtime,
             reverse=True,
         )
-        current = candidates[0] if candidates else root / DEFAULT_TEX_FILE
+        if candidates:
+            current = candidates[0]
+        elif language == "de":
+            english_tex = root / language_tex_filename(catalog, "en")
+            current = english_tex if english_tex.exists() else root / DEFAULT_TEX_FILE
+        else:
+            current = root / DEFAULT_TEX_FILE
 
     if current.exists() and current.resolve() != desired.resolve():
         if desired.exists():
             desired.unlink()
-        current.rename(desired)
+        if language == "de" and current.name == language_tex_filename(catalog, "en"):
+            shutil.copyfile(current, desired)
+        else:
+            current.rename(desired)
     elif not desired.exists() and current.exists():
         desired.write_text(current.read_text(encoding="utf-8"), encoding="utf-8")
 
@@ -444,7 +522,30 @@ def tex_join(parts: list[str]) -> str:
     return r"\artsep{}".join(parts)
 
 
-def tex_meta(work: dict[str, Any]) -> str:
+def translate_term(value: str, language: str, category: str) -> str:
+    if language != "de" or not value:
+        return value
+    return GERMAN_TRANSLATIONS.get(category, {}).get(value, value)
+
+
+def translate_list(value: str, language: str, category: str) -> str:
+    if language != "de" or not value:
+        return value
+    return ", ".join(translate_term(part.strip(), language, category) for part in value.split(","))
+
+
+def localized_work(work: dict[str, Any], language: str) -> dict[str, Any]:
+    if language == "en":
+        return work
+    localized = dict(work)
+    localized["format"] = translate_term(str(work.get("format", "")), language, "format")
+    localized["materials"] = translate_list(str(work.get("materials", "")), language, "materials")
+    localized["location"] = translate_term(str(work.get("location", "")), language, "location")
+    return localized
+
+
+def tex_meta(work: dict[str, Any], language: str = "en") -> str:
+    work = localized_work(work, language)
     parts = []
     if work.get("format"):
         parts.append(r"\textsc{" + tex_escape(work["format"]) + "}")
@@ -453,14 +554,16 @@ def tex_meta(work: dict[str, Any]) -> str:
     return tex_join(parts)
 
 
-def tex_details(work: dict[str, Any]) -> str:
+def tex_details(work: dict[str, Any], language: str = "en") -> str:
+    work = localized_work(work, language)
     parts = []
     if work.get("materials"):
         parts.append(tex_escape(work["materials"]))
     return tex_join(parts)
 
 
-def tex_caption_details(work: dict[str, Any]) -> str:
+def tex_caption_details(work: dict[str, Any], language: str = "en") -> str:
+    work = localized_work(work, language)
     parts = []
     if work.get("materials"):
         parts.append(tex_escape(work["materials"]))
@@ -471,7 +574,8 @@ def tex_caption_details(work: dict[str, Any]) -> str:
     return tex_join(parts)
 
 
-def tex_toc_meta(work: dict[str, Any]) -> str:
+def tex_toc_meta(work: dict[str, Any], language: str = "en") -> str:
+    work = localized_work(work, language)
     parts = []
     if work.get("format"):
         parts.append(r"\textsc{" + tex_escape(work["format"]) + "}")
@@ -483,6 +587,11 @@ def tex_toc_meta(work: dict[str, Any]) -> str:
 
 
 def sync_tex_inventory(root: Path, catalog: list[dict[str, Any]]) -> None:
+    for language in ["en", "de"]:
+        sync_tex_language(root, catalog, language)
+
+
+def sync_tex_language(root: Path, catalog: list[dict[str, Any]], language: str) -> None:
     inventory_lines = [
         "% =====================================================================",
         "% INVENTORY - generated from the numbered Work folders.",
@@ -494,9 +603,9 @@ def sync_tex_inventory(root: Path, catalog: list[dict[str, Any]]) -> None:
         inventory_lines.extend(
             [
                 rf"\definework{{{key}}}{{{work['work_number']}}}{{{work['page_count']}}}",
-                rf"  {{{tex_escape(work['title'])}}}{{{tex_meta(work)}}}",
-                rf"  {{{tex_caption_details(work)}}}{{}}",
-                rf"\setworktocmeta{{{key}}}{{{tex_toc_meta(work)}}}",
+                rf"  {{{tex_escape(work['title'])}}}{{{tex_meta(work, language)}}}",
+                rf"  {{{tex_caption_details(work, language)}}}{{}}",
+                rf"\setworktocmeta{{{key}}}{{{tex_toc_meta(work, language)}}}",
                 "",
             ]
         )
@@ -510,15 +619,21 @@ def sync_tex_inventory(root: Path, catalog: list[dict[str, Any]]) -> None:
         r"(?=\\newcommand\{\\computeworkranges\})",
         re.DOTALL,
     )
-    canonical_tex = sync_canonical_tex_filename(root, catalog)
+    canonical_tex = sync_canonical_tex_filename(root, catalog, language)
+    if language == "de":
+        english_tex = root / language_tex_filename(catalog, "en")
+        if not english_tex.exists():
+            raise RuntimeError(f"Cannot build German TeX because {english_tex.name} does not exist")
+        shutil.copyfile(english_tex, canonical_tex)
     rewrite_tex_image_paths(root, [])
     for path in [canonical_tex]:
         text = path.read_text(encoding="utf-8")
+        text = localize_static_tex(text, language)
         updated, count = pattern.subn(lambda _match: inventory, text, count=1)
         if count != 1:
             raise RuntimeError(f"Could not locate inventory block in {path.name}")
         path.write_text(updated, encoding="utf-8")
-    sync_tex_content_pages(canonical_tex, catalog)
+    sync_tex_content_pages(canonical_tex, catalog, language)
 
 
 ART_CENTER_X = 421.0
@@ -526,6 +641,24 @@ ART_CENTER_Y = 343.5
 ART_FRAME_W = 758.0
 ART_FRAME_H = 427.0
 PAIR_GAP = 56.0
+
+
+def localize_static_tex(text: str, language: str) -> str:
+    labels = COVER_TEXT[language]
+    text = re.sub(
+        r"\\newcommand\{\\worklabel\}\[1\]\{[^}]*\\csname w@#1@order\\endcsname\}",
+        rf"\\newcommand{{\\worklabel}}[1]{{{labels['work']} \\csname w@#1@order\\endcsname}}",
+        text,
+    )
+    replacements = {
+        r"\fontsize{38}{44}\selectfont\color{PortfolioGraphite} Portfolio": rf"\fontsize{{38}}{{44}}\selectfont\color{{PortfolioGraphite}} {labels['portfolio']}",
+        "Selected works, 2024-2026": labels["selected"],
+        r"\fontsize{34}{40}\selectfont\bfseries\color{PortfolioInk} Contents": rf"\fontsize{{34}}{{40}}\selectfont\bfseries\color{{PortfolioInk}} {labels['contents']}",
+        r"\textsc{Pages}": rf"\textsc{{{labels['pages']}}}",
+    }
+    for old, new in replacements.items():
+        text = text.replace(old, new)
+    return text
 
 
 def image_aspect(image: dict[str, Any]) -> float:
@@ -564,13 +697,14 @@ def paired_image_lines(images: list[dict[str, Any]]) -> list[str]:
     return lines
 
 
-def content_pages_tex(catalog: list[dict[str, Any]]) -> str:
+def content_pages_tex(catalog: list[dict[str, Any]], language: str = "en") -> str:
     chunks: list[str] = []
+    work_label = COVER_TEXT[language]["work"]
     for work in catalog:
         chunks.extend(
             [
                 "% ---------------------------------------------------------------------",
-                f"% Work {work['work_number']} - {work['title']}",
+                f"% {work_label} {work['work_number']} - {work['title']}",
                 "% ---------------------------------------------------------------------",
             ]
         )
@@ -585,13 +719,15 @@ def content_pages_tex(catalog: list[dict[str, Any]]) -> str:
     return "\n".join(chunks).rstrip()
 
 
-def sync_tex_content_pages(tex_path: Path, catalog: list[dict[str, Any]]) -> None:
+def sync_tex_content_pages(tex_path: Path, catalog: list[dict[str, Any]], language: str = "en") -> None:
     text = tex_path.read_text(encoding="utf-8")
     start = text.find("% ---------------------------------------------------------------------\n% Work ")
+    if start == -1:
+        start = text.find("% ---------------------------------------------------------------------\n% Werk ")
     end = text.rfind(r"\end{document}")
     if start == -1 or end == -1 or start >= end:
         raise RuntimeError(f"Could not locate generated work page block in {tex_path.name}")
-    updated = text[:start] + content_pages_tex(catalog) + "\n\n" + text[end:]
+    updated = text[:start] + content_pages_tex(catalog, language) + "\n\n" + text[end:]
     tex_path.write_text(updated, encoding="utf-8")
 
 
