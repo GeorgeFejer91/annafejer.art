@@ -12,6 +12,7 @@ $ErrorActionPreference = "Stop"
 
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $Root = (Resolve-Path (Join-Path $ScriptDir "..\..")).Path
+$SiteRoot = (Resolve-Path (Join-Path $Root "..")).Path
 $OutputRoot = Join-Path $Root "Output"
 $BuildDir = Join-Path $OutputRoot "build"
 $PageRoot = Join-Path $OutputRoot "pages"
@@ -32,6 +33,7 @@ $EnglishTarget = @{
   BuildPdfName = "portfolio_from_ppt_images_a4.pdf"
   FinalPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN.pdf"
   CompressedPdf = Join-Path $OutputRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN_compressed.pdf"
+  PublicPdf = Join-Path $SiteRoot "portfolio.pdf"
   PageDir = Join-Path $PageRoot "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN"
   PagePrefix = "Fejer_Anna_88398_Mappe_BildendeKunst-Absolvent_EN"
   LegacyPaths = @(
@@ -109,7 +111,7 @@ if (-not $SkipPdf) {
     $target.BuildPdfName = [System.IO.Path]::ChangeExtension($target.Tex, ".pdf")
   }
 
-  $closePaths = @($Targets | ForEach-Object { $_.FinalPdf; $_.CompressedPdf; $_.LegacyPaths })
+  $closePaths = @($Targets | ForEach-Object { $_.FinalPdf; $_.CompressedPdf; $_.PublicPdf; $_.LegacyPaths })
   powershell -NoProfile -ExecutionPolicy Bypass -File $ViewerScript -Close -Paths $closePaths
   if ($LASTEXITCODE -ne 0) { throw "Could not close open portfolio PDF viewers" }
 
@@ -152,6 +154,11 @@ if (-not $SkipPdf) {
       if ($LASTEXITCODE -ne 0) { throw "PDF compression failed for $($target.FinalPdf)" }
     }
 
+    if ($target.PublicPdf) {
+      $publicSource = if ($Compress -and (Test-Path -LiteralPath $target.CompressedPdf)) { $target.CompressedPdf } else { $target.FinalPdf }
+      Copy-Item -LiteralPath $publicSource -Destination $target.PublicPdf -Force
+    }
+
     Remove-Item -LiteralPath $runBuildDir -Recurse -Force -ErrorAction SilentlyContinue
   }
 
@@ -166,6 +173,9 @@ foreach ($target in $Targets) {
   Write-Host "PDF: $($target.FinalPdf)"
   if ($Compress -and (Test-Path -LiteralPath $target.CompressedPdf)) {
     Write-Host "Compressed PDF: $($target.CompressedPdf)"
+  }
+  if ($target.PublicPdf -and (Test-Path -LiteralPath $target.PublicPdf)) {
+    Write-Host "Public PDF: $($target.PublicPdf)"
   }
 }
 
