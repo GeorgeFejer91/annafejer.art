@@ -43,3 +43,7 @@ Inspect Git state before and after work. Stage only intended paths, keep commits
 - Continue with the remaining project-specific rules in the root `AGENTS.md`.
 - Read the root `README.md` when present for product purpose and supported usage.
 - Read only the task-relevant build, architecture, testing, and release documents.
+
+## HTML UI skill route
+
+For new or changed text-bearing HTML/CSS interfaces, load the installed `uncodixfy-pretext` skill ([source](https://github.com/GeorgeFejer91/uncodixfy-pretext/blob/main/SKILL.md)) and its Pretext reference. It nests `ponytail` and the original Uncodixfy visual discipline. Preserve this project's established design and stack; implement real `@chenglou/pretext` measurement for bounded text in the touched UI, not a CSS-only or test-only substitute. Design box geometry first, then handle measured no-fit with readable reflow, space, or an accessible full-value route. Verify the rendered target at narrow widths, 320 CSS px reflow, 200% text/zoom, and long or localized strings. This route does not claim existing UI has already been migrated or qualified.
